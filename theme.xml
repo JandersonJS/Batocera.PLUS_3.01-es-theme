@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Theme:   Batocera.PLUS
+version: 2.1
+author:  Caetano Ramos, Marcio Renato Boufleuer
+atualização e manutenção: Janderson "LordOgro" Siqueira
+license: creative commons CC-BY-NC-SA
+
+------------------------------------------------------------------
+
+Tema Carbon baseado no tema "simples" por Nils Bonenberger...Adaptado como tema principal para o batocera.Plus por Caetano Ramos e continuado por Marcio Renato Boufleuer.
+Atualmente mantido por Janderson "LordOgro" Siqueira.
+Todos os créditos da criação do tema se devem ao autor Eric Hettervik (Rookervik)
+Deixamos aqui o nosso agradecimento!...
+
+Carbon theme based on the "simple" theme by Nils Bonenberger ... Adapted as the main theme for batocera.Plus by Marcio Renato Boufleuer.
+All credits for the creation of the theme are due to the author Eric Hettervik (Rookervik)
+We leave here our thanks! ...
+-->
+
+<theme defaultView="detailed">
+    <formatVersion>7</formatVersion>
+    <include>./main/midia/system.xml</include>
+
+    <variables>
+        <baseColor>8b0000</baseColor>
+        <gradientEndColor></gradientEndColor>
+        <centerFadeColor></centerFadeColor>
+        <backgroundColor></backgroundColor>
+        <bottomBarColor></bottomBarColor>
+        <glowColor></glowColor>
+        <groupColor>BD4747</groupColor>
+        <groupSeparatorColor>BD4747</groupSeparatorColor>
+        <backgroundImage></backgroundImage>
+        <tilesViewName>Tiles</tilesViewName>
+        <roundBorderSubsetName>Round borders</roundBorderSubsetName>
+        <blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
+        <previewBarSubsetName>Preview bar</previewBarSubsetName>
+        <videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
+        <zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>
+        <hideselectionSubsetName>Hide selection</hideselectionSubsetName>
+        <systemBackgroundName>System background</systemBackgroundName>
+        <optimizesmallscreensSubsetName>Optimize for small screens</optimizesmallscreensSubsetName>
+        <helpSubsetName>Help icons</helpSubsetName>
+        <systemViewName>System view</systemViewName>
+        <colored>Colored</colored>
+        <subset.colorset>Colorset</subset.colorset>
+        <subset.shader>Shader</subset.shader>
+    </variables>
+
+    <!-- French -->
+    <variables lang="fr">
+        <tilesViewName>Vignettes</tilesViewName>
+        <basicGridName>Boites</basicGridName>
+        <carouselViewName>Carrousel</carouselViewName>
+        <blue>Bleu</blue>
+        <red>Rouge</red>
+        <green>Vert</green>
+        <yellow>Jaune</yellow>
+        <none>Aucun</none>
+        <roundBorderSubsetName>Bords arrondis</roundBorderSubsetName>
+        <blinkBorderSubsetName>Bords clignotants</blinkBorderSubsetName>
+        <yes>Oui</yes>
+        <no>Non</no>
+        <systemBackgroundName>Arrière-plan</systemBackgroundName>
+        <systemViewName>Vue Système</systemViewName>
+        <previewBarSubsetName>Volet aperçu</previewBarSubsetName>
+        <videoboxesSubsetName>Afficher la video en mode boite</videoboxesSubsetName>
+        <zoomboxesSubsetName>Zoomer les boites</zoomboxesSubsetName>
+        <hideselectionSubsetName>Masquer la sélection</hideselectionSubsetName>
+        <optimizesmallscreensSubsetName>Optimiser pour les petits écrans</optimizesmallscreensSubsetName>
+        <helpSubsetName>Icônes d'aide</helpSubsetName>
+        <colored>Colorés</colored>
+        <subset.colorset>Jeux de couleurs</subset.colorset>
+        <subset.shader>Effets TV</subset.shader>
+    </variables>
+
+    <!-- Portuguese -->
+    <variables lang="pt">
+        <tilesViewName>Miniaturas</tilesViewName>
+        <basicGridName>Caixas</basicGridName>
+        <carouselViewName>Carrossel</carouselViewName>
+        <blue>Azul</blue>
+        <red>Vermelho</red>Ex
+        <green>Verde</green>Ex
+        <yellow>Amarelo</yellow>
+        <none>Nenhum</none>
+        <roundBorderSubsetName>Cantos arredondados</roundBorderSubsetName>
+        <blinkBorderSubsetName>Bordas piscantes</blinkBorderSubsetName>
+        <yes>Sim</yes>
+        <no>Não</no>
+        <systemBackgroundName>Fundo</systemBackgroundName>
+        <systemViewName>Layout do sistema</systemViewName>
+        <previewBarSubsetName>Painel de visualização</previewBarSubsetName>
+        <videoboxesSubsetName>Exibir o vídeo no modo de caixa</videoboxesSubsetName>
+        <zoomboxesSubsetName>Amplie as caixas</zoomboxesSubsetName>
+        <Orientation>Orientação</Orientation>
+        <hideselectionSubsetName>Ocultar seleção</hideselectionSubsetName>
+        <optimizesmallscreensSubsetName>Otimize para telas pequenas</optimizesmallscreensSubsetName>
+        <helpSubsetName>Ícones de ajuda</helpSubsetName>
+        <colored>Cores</colored>
+        <subset.colorset>Esquema de cores</subset.colorset>
+        <subset.shader>Efeitos de TV</subset.shader>
+    </variables>
+
+  <!-- Colorsets  -->
+  <subset name="colorset" displayName="${subset.colorset}">
+    <include name="blue" displayName="${blue}">./main/colorsets/blue.xml</include>
+    <include name="red" displayName="${red}">./main/colorsets/red.xml</include>
+    <include name="green" displayName="${green}">./main/colorsets/green.xml</include>
+    <include name="cyan"  displayName="${cyan}">./main/colorsets/cyan.xml</include>
+    <include name="yellow" displayName="${yellow}">./main/colorsets/yellow.xml</include>
+    <include name="violet"  displayName="${violet}">./main/colorsets/violet.xml</include>
+    <include name="orange"  displayName="${orange}">./main/colorsets/orange.xml</include>
+    <include name="gray" displayName="${gray}">./main/colorsets/gray.xml</include>
+  </subset>
+
+    <view name="system,basic,detailed,grid">
+        <helpsystem name="help">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+        </helpsystem>
+    </view>
+
+    <view name="system">
+        <!--
+        <sound name="directory">
+            <path>./music</path>
+        </sound>
+        -->
+
+        <carousel name="systemcarousel">
+            <color>DDEEFFFF</color>
+            <colorEnd>FFFFFFDE</colorEnd>
+            <systemInfoDelay>500</systemInfoDelay>
+        </carousel>
+
+        <image name="carousel-shadow" extra="static">
+            <path>./main/midia/shadow.png</path>
+            <color>FFFFFF88</color>
+            <pos>0 0.6162</pos>
+            <origin>0 0</origin>
+            <size>1 0.055</size>
+            <zIndex>0</zIndex>
+        </image>
+
+        <image name="background" extra="true">
+            <tile>false</tile>
+            <size>1 1</size>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/background.svg</path>
+        </image>
+
+        <!-- Used by random box need to be declared there -->
+
+        <image name="box" extra="static">
+            <pos>0.18 0.81</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.24 0.24</maxSize>
+            <zIndex>12</zIndex>
+            <visible>false</visible>
+        </image>
+
+        <video name="videobox" extra="static">
+            <pos>0.18 0.81</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <maxSize>0.24 0.24</maxSize>
+            <visible>false</visible>
+            <zIndex>12</zIndex>
+        </video>
+
+        <image name="background" extra="static">
+            <tile>false</tile>
+            <size>1 1</size>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/background.svg</path>
+            <zIndex>10</zIndex>
+        </image>
+
+        <image name="band1" extra="static">
+            <size>0.03 1</size>
+            <pos>0.80 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>12</zIndex>
+        </image>
+
+        <image name="band2" extra="static">
+            <size>0.03 1</size>
+            <pos>0.829 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>12</zIndex>
+        </image>
+
+        <image name="band3" extra="static">
+            <size>0.03 1</size>
+            <pos>0.858 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>12</zIndex>
+        </image>
+
+        <image name="band4" extra="static">
+            <size>0.03 1</size>
+            <pos>0.887 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>12</zIndex>
+        </image>
+
+        <text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="static">
+            <visible>false</visible>
+            <pos>0.38 0.70</pos>
+            <color>ff9900</color>
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+            <fontSize>0.017</fontSize>
+            <forceUppercase>1</forceUppercase>
+            <size>0.5 0.04</size>
+        </text>
+
+        <text name="logoText">
+            <color>262626</color>
+        </text>
+
+        <text name="logoText">
+            <fontPath>./main/fonts/Cabin-Bold.ttf</fontPath>
+            <forceUppercase>true</forceUppercase>
+        </text>
+
+        <image name="logo">
+            <!-- try png -->
+            <path>./main/logos/${system.theme}.png</path>
+
+            <!-- try svg -->
+            <path>./main/logos/${system.theme}.svg</path>
+
+            <!-- check if lang resources exist -->
+            <path>./main/logos/${system.theme}-${lang}.png</path>
+
+            <path>./main/logos/${system.theme}-${lang}.svg</path>
+            <!--
+            <path>/userdata/themes/${system.theme}/main/${system}.png</path>
+            <path>/userdata/themes/${system.theme}/main/${system}.svg</path>
+            <path>/userdata/themes/${system.theme}/main/${system}-${lang}.png</path>
+            <path>/userdata/themes/${system.theme}/main/${system}-${lang}.svg</path>
+            -->
+        </image>
+
+        <image name="logo" region="eu"></image>
+
+        <image name="logo" region="us">
+            <path>./main/logos/us/${system.theme}.png</path>
+            <path>./main/logos/us/${system.theme}.svg</path>
+        </image>
+        
+        <image name="logo" region="jp">
+            <path>./main/logos/jp/${system.theme}.png</path>
+            <path>./main/logos/jp/${system.theme}.svg</path>
+        </image>
+
+        <image name="BottomBar" extra="static">
+            <tile>false</tile>
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <size>1 0.05</size>
+            <path>./main/midia/footer.png</path>
+            <zIndex>50</zIndex>
+        </image>
+
+        <image name="ControllerOverlay" extra="static">
+            <tile>false</tile>
+            <pos>0.5 0.19</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.3 0</size>
+            <path>./main/midia/splash.svg</path>
+            <path>./main/controllers/${system.theme}.svg</path>
+            <zIndex>19</zIndex>
+        </image>
+    </view>
+
+    <!--
+    <feature supported="manufacturer">
+        <view name="system">
+            <text name="manufacturerName" extra="static">
+                <pos>0.025 0.8</pos>
+                <size>0.98 0.15</size>
+                <text>Manufacturer : ${system.manufacturer}
+Release Year : ${system.releaseYear}</text>
+                <text lang="fr">Constructeur : ${system.manufacturer}
+Année de sortie : ${system.releaseYear}</text>
+                <alignment>left</alignment>
+                <fontPath>./main/Cabin-Regular.ttf</fontPath>
+                <fontSize>0.024</fontSize>
+                <glowSize>1</glowSize>
+                <glowColor></glowColor>
+                <color>ff9900</color>
+                <zIndex>100</zIndex>
+            </text>
+        </view>
+    </feature>
+    -->
+
+  <!-- Subset options for screen -->
+  <subset name="systemview" displayName="${systemViewName}">
+        <include name="plus">./main/systemview/plus.xml</include>
+        <include name="plus2">./main/systemview/plus2.xml</include>
+        <include name="darkened">./main/systemview/horizontaldark.xml</include>
+        <include name="horizontal">./main/systemview/horizontal.xml</include>
+        <include name="legacy" tinyScreen="false">./main/systemview/legacy.xml</include>
+        <include name="transparent" tinyScreen="false">./main/systemview/transparent.xml</include>
+        <include name="simple">./main/systemview/verticalone.xml</include>
+        <include name="vertical">./main/systemview/vertical.xml</include>
+        <include name="wheel">./main/systemview/wheel.xml</include>
+        <include name="arcade">./main/systemview/arcade.xml</include>
+  </subset>
+
+    <!-- Subset option for System view background -->
+    <subset name="systembackground" displayName="${systemBackgroundName}">
+        <include tinyScreen="false" name="mini-consoles">./main/systemsbk/consoles.xml</include>
+        <!-- change default for small screens -->
+        <include name="consoles">./main/systemsbk/batomachines.xml</include>
+        <include tinyScreen="true" name="mini-consoles">./main/systemsbk/consoles.xml</include>
+        <!-- <include name="controllers">./main/systemsbk/animatedbackgroundsubset.xml</include> -->
+        <include name="random video">./main/systemsbk/video.xml</include>
+        <include name="random image">./main/systemsbk/image.xml</include>
+        <include name="random box">./main/systemsbk/box.xml</include>
+        <include name="mini random image">./main/systemsbk/smallscreen.xml</include>
+        <include name="mini random box">./main/systemsbk/smallbox.xml</include>
+        <include name="mini random video">./main/systemsbk/smallvideo.xml</include>
+    </subset>
+
+    <!-- Fix for controller image size -->
+    <include subset="systemview" name="simple">./main/systemview/controllersizefix.xml</include>
+    <include subset="systemview" name="vertical">./main/systemview/controllersizefix.xml</include>
+    <include subset="systemview" name="wheel">./main/systemview/controllersizefix.xml</include>
+
+	<!--AVATAR BACKGROUND-->
+	    <subset name="avatar-background" displayName="Avatar Background">
+	    <include name="golden" displayName="Golden">./main/avatars/background/golden.xml</include>
+	    <include name="color" displayName="Color">./main/avatars/background/color.xml</include>
+            <include name="no" displayName="${no}"/>
+	</subset>  
+
+	<!--NICKNAMES-->
+	    <subset name="system-username" displayName="${theme.username}">
+	    <include name="custom" displayName="${custom}">./custom-username.xml</include>
+	    <include name="cheevos" displayName="Retroachievements ID">./main/usernames/cheevos.xml</include>
+	    <include name="netplay" displayName="Netplay ID">./main/usernames/netplay.xml</include>
+            <include name="no" displayName="${no}"/>
+	</subset>
+
+  <!--AVATARES-->
+<subset name="system-avatar" displayName="${theme.Avatar}" extra="true, static">
+	<include name="custom" displayName="${custom}">./main/avatars/custom.xml</include>
+	<include name="1-Up" displayName="1-Up">./main/avatars/1-Up.xml</include>
+	<include name="mario" displayName="Mario Bros.">./main/avatars/mario.xml</include> 
+	<include name="mario racoon" displayName="Mario Racoon.">./main/avatars/racoon.xml</include>
+	<include name="goomba" displayName="Goomba">./main/avatars/goomba.xml</include>
+	<include name="donkey" displayName="Donkey Kong">./main/avatars/donkey.xml</include> 
+	<include name="baron von blubba" displayName="Baron Von Blubba">./main/avatars/baron von blubba.xml</include>
+	<include name="Bubble Bobble" displayName="Bubble Bobble">./main/avatars/bubble.xml</include>
+	<include name="ghostgoblins" displayName="Arthur (Ghost 'n Goblins)">./main/avatars/ghostgoblins.xml</include>
+	<include name="megaman" displayName="Mega-Man">./main/avatars/megaman.xml</include>
+	<include name="proto" displayName="Proto-Man">./main/avatars/proto.xml</include>
+	<include name="roll" displayName="Roll">./main/avatars/roll.xml</include>
+	<include name="rush" displayName="Rush">./main/avatars/rush.xml</include>
+	<include name="bass" displayName="Bass">./main/avatars/bass.xml</include>
+	<include name="treble" displayName="Treble">./main/avatars/treble.xml</include>
+	<include name="metalslug" displayName="Metal Slug">./main/avatars/metalslug.xml</include>
+	<include name="monkeyisland" displayName="Monkey Island">./main/avatars/monkeyisland.xml</include>
+	<include name="ninja gaiden" displayName="Ryu Hayabusa (Ninja Gaiden)">./main/avatars/ninja gaiden.xml</include>
+	<include name="zelda" displayName="Link (Zelda)">./main/avatars/zelda.xml</include>
+	<include name="samus" displayName="Samus">./main/avatars/samus.xml</include>
+	<include name="samus armor" displayName="Samus Armor">./main/avatars/samus armor.xml</include>
+	<include name="metroid" displayName="Metroid">./main/avatars/metroid.xml</include>
+	<include name="pacman" displayName="Pac-Man">./main/avatars/pacman.xml</include>
+	<include name="pacman-clyde" displayName="Pac-Man Clyde">./main/avatars/pacman-clyde.xml</include>
+	<include name="pacman-Inky" displayName="Pac-Man Inky">./main/avatars/pacman-inky.xml</include>
+	<include name="pacman-blinky" displayName="Pac-Man Blinky">./main/avatars/pacman-blinky.xml</include>
+	<include name="pacman-pinky" displayName="Pac-Man Pinky">./main/avatars/pacman-pinky.xml</include>
+	<include name="sonic" displayName="Sonic">./main/avatars/sonic.xml</include>
+	<include name="tails" displayName="Tails">./main/avatars/tails.xml</include>
+	<include name="wonderboy" displayName="Wonderboy">./main/avatars/wonderboy.xml</include>
+	<include name="fighter" displayName="Fighter">./main/avatars/fighter.xml</include>
+	<include name="black mage" displayName="Black Mage">./main/avatars/black mage.xml</include>
+	<include name="white mage" displayName="White Mage">./main/avatars/white mage.xml</include>
+	<include name="red mage" displayName="Red Mage">./main/avatars/red mage.xml</include>
+	<include name="thief" displayName="Thief">./main/avatars/thief.xml</include>
+	<include name="monk" displayName="Monk">./main/avatars/monk.xml</include>
+	<include name="alucard" displayName="Alucard">./main/avatars/alucard.xml</include>
+	<include name="maria" displayName="Maria Renard">./main/avatars/maria.xml</include>
+	<include name="richter" displayName="Richter Belmont">./main/avatars/richter.xml</include>
+	<include name="dracula" displayName="Dracula">./main/avatars/dracula.xml</include>
+        <include name="no" displayName="${no}"/>
+	</subset>  
+
+  <view name="screen">
+    <text name="clock">
+      <color>ff9900</color>
+      <fontSize>0.035</fontSize>
+      <pos>0.90 0.95</pos>
+      <size>0.09 0.058</size>
+      <fontSize verticalScreen="true">0.028</fontSize>
+      <pos verticalScreen="true">0.90 0.012</pos>
+      <size verticalScreen="true">0.09 0.0275</size>
+      <color verticalScreen="true">FFFFFFA0</color>
+      <alignment>right</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+    <controllerActivity name="controllerActivity">
+      <pos>0.01 0.012</pos>
+      <size>0.185 0.023</size>
+      <itemSpacing>0.003</itemSpacing>
+      <color>ff9900</color>
+      <!-- controllers -->
+      <imagePath>./main/midia/gamepad.svg</imagePath>
+      <gunPath>./main/midia/gun.svg</gunPath>
+      <activityColor>A0A0FFC0</activityColor>
+      <hotkeyColor>FFA0A0C0</hotkeyColor>
+      <!-- wifi 
+      <networkIcon>./main/icons/Network.png</networkIcon>
+      -->
+      <!-- battery 
+      <incharge>./main/battery/incharge.svg</incharge>
+      <full>./main/battery/full.svg</full>
+      <at75>./main/battery/75.svg</at75>
+      <at50>./main/battery/50.svg</at50>
+      <at25>./main/battery/25.svg</at25>
+      <empty>./main/battery/empty.svg</empty>-->
+    </controllerActivity>
+    <batteryIndicator name="batteryIndicator">
+      <pos>0.955 0.012</pos>
+      <pos verticalScreen="true">0.9 0.013</pos>
+      <size>0.033 0.0275</size>
+      <horizontalAlignment>right</horizontalAlignment>
+      <incharge>./main/battery/incharge.svg</incharge>
+      <full>./main/battery/full.svg</full>
+      <at75>./main/battery/75.svg</at75>
+      <at50>./main/battery/50.svg</at50>
+      <at25>./main/battery/25.svg</at25>
+      <empty>./main/battery/empty.svg</empty>
+      <!-- wifi -->
+      <!--    <networkIcon>./main/icons/Network.png</networkIcon>-->
+      <!--<networkIcon>none</networkIcon>-->
+      <color>ff9900</color>
+    </batteryIndicator>
+    <batteryIndicator name="batteryIndicator" tinyScreen="true">
+      <pos>0.915 0.013</pos>
+      <size>0.07 0.07</size>
+    </batteryIndicator>
+    <!--
+    <text name="cheevosUser" extra="true">
+      <text>${cheevos.username}</text>
+      <pos>0.8 0.04</pos>
+      <size>0.187 0.0275</size>
+      <origin>0 0</origin>
+      <alignment>right</alignment>
+      <color>ff9900</color>
+      <fontSize>0.02</fontSize>
+    </text>-->
+  </view>
+
+    <view name="menu">
+        <menuText name="menutitle">
+            <fontPath>./main/fonts/Exo2-BoldCondensed.otf</fontPath>
+            <fontSize>0.042</fontSize>
+            <color>FFFFFF</color>
+        </menuText>
+
+        <menuText name="menufooter">
+            <fontPath>./main/fonts/Exo2-BoldCondensed.otf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>ff9900</color>
+        </menuText>
+
+        <menuText name="menutext">
+            <fontPath>./main/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.031</fontSize>
+            <color>EEEEEE</color>
+            <separatorColor>FEFEFE</separatorColor>
+            <selectorColor>ff9900</selectorColor>
+            <selectorColorEnd>ff9900</selectorColorEnd>
+            <selectedColor>262626</selectedColor>
+            <selectorGradientType>horizontal</selectorGradientType>
+        </menuText>
+
+        <menuTextSmall name="menutextsmall">
+            <fontPath>./main/fonts/Exo2-RegularCondensed.otf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>ff9900</color>
+        </menuTextSmall>
+
+        <!---
+        <menuGroup name="menugroup">
+            <fontPath>./main/Cabin-Bold.ttf</fontPath>
+            <fontSize>0.025</fontSize>
+            <color>${groupColor}</color>
+            <separatorColor>${groupSeparatorColor}</separatorColor>
+            <backgroundColor>00000000</backgroundColor>
+            <lineSpacing>2.5</lineSpacing>
+        </menuGroup>
+        --->
+
+        <menuBackground name="menubg">
+      	    <color>${baseColor}</color>
+            <cornerSize>32 32</cornerSize>
+            <path>./main/midia/frame.png</path>
+        </menuBackground>
+
+        <menuIcons name="menuicons">
+            <iconKodi>./main/icons/Kodi.png</iconKodi>
+            <iconSystem>./main/icons/System.png</iconSystem>
+            <iconUpdates>./main/icons/Updates.png</iconUpdates>
+            <iconGames>./main/icons/Games.png</iconGames>
+            <iconControllers>./main/icons/Controllers.png</iconControllers>
+            <iconUI>./main/icons/UI.png</iconUI>
+            <iconSound>./main/icons/Sound.png</iconSound>
+            <iconNetwork>./main/icons/Network.png</iconNetwork>
+            <iconScraper>./main/icons/Scraper.png</iconScraper>
+            <iconAdvanced>./main/icons/Advanced.png</iconAdvanced>
+            <iconQuit>./main/icons/Quit.png</iconQuit>
+            <iconRestart>./main/icons/Restart.png</iconRestart>
+            <iconShutdown>./main/icons/Shutdown.png</iconShutdown>
+            <iconFastShutdown>./main/icons/Fastshutdown.png</iconFastShutdown>
+            <iconRetroachievements>./main/icons/Contest.png</iconRetroachievements>
+            <iconManual>./main/icons/Manual.png</iconManual>
+        </menuIcons>
+
+        <menuTextEdit name="menutextedit">
+            <inactive>./main/midia/textinput_ninepatch.png</inactive>
+            <active>./main/midia/textinput_ninepatch_active.png</active>
+        </menuTextEdit>
+
+        <menuButton name="menubutton">
+            <path>./main/midia/button.png</path>
+            <filledPath>./main/midia/button_filled.png</filledPath>
+        </menuButton>
+    </view>
+
+    <view name="basic">
+        <image name="background" extra="static">
+            <tile>true</tile>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./main/midia/background.png</path>
+            <zIndex>0</zIndex>
+        </image>
+
+        <image name="back-gamelist" extra="static">
+            <pos>0.01 0.19</pos>
+            <size>0.35 0.735</size>
+            <path>./main/midia//back.png</path>
+        </image>
+
+        <helpsystem name="help">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+        </helpsystem>
+    
+        <image name="footer" extra="static">
+            <size>1 0.065</size>
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <path>./main/midia/footer.png</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <textlist name="gamelist">
+            <pos>0.015 0.20</pos>
+            <size>0.34 0.710</size>
+            <selectorColor>ff9900</selectorColor> <!-- Selection bar -->
+            <selectorColorEnd>DD7700</selectorColorEnd>
+            <selectedColor>262626</selectedColor> <!-- Selection letters -->
+            <selectorGradientType>vertical</selectorGradientType>
+            <primaryColor>ffffff</primaryColor> <!-- Letters -->
+            <secondaryColor>9F9F9F</secondaryColor>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.025</fontSize>
+            <alignment>left</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <scrollSound>./main/sound/scroll.wav</scrollSound>
+            <scrollbarColor>${baseColor}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.005</scrollbarSize>
+            <scrollbarAlignment>outerright</scrollbarAlignment> <!-- innerleft -->
+            <lines>17</lines>
+            <horizontalMargin>0.005</horizontalMargin>
+        </textlist>
+    </view>
+
+    <view name="detailed">
+        <video name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.55 0.33</pos>
+            <maxSize>0.33 0.454</maxSize>
+            <delay>1.2</delay>
+            <default></default>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>false</showSnapshotDelay>
+            <roundCorners>0.02</roundCorners>
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+        </video>
+
+        <image name="background" extra="static">
+            <tile>true</tile>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./main/midia/background.png</path>
+            <zIndex>0</zIndex>
+        </image>
+
+        <image name="back-gamelist" extra="static">
+            <pos>0.01 0.19</pos>
+            <size>0.35 0.73</size>
+            <path>./main/midia/back.png</path>
+        </image>
+
+        <helpsystem name="help">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+        </helpsystem>
+
+        <image name="footer" extra="static">
+            <size>1 0.065</size>
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <path>./main/midia/footer.png</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite">
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <size>0.11 0.03</size>
+        </text>
+
+        <text name="md_releasedate, md_developer, md_publisher, md_genre, md_players, md_lastplayed, md_playcount, md_favorite">
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <size>0.12 0.02</size>
+        </text>
+
+        <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite, md_description">
+            <color>ececec</color>
+        </text>
+
+        <text name="md_releasedate, md_lastplayed, md_developer, md_publisher, md_genre, md_players, md_playcount, md_favorite">
+            <color>ff9900</color>
+        </text>
+
+        <image name="back-image" extra="static">
+            <pos>0.37 0.05</pos>
+            <size>0.36 0.55</size>
+            <path>./main/midia/back.png</path>
+        </image>
+
+        <text name="md_lbl_rating">
+            <pos>0.76 0.49</pos>
+            <forceUppercase>1</forceUppercase>
+            <fontPath>./main/fonts/ubuntu_medium.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <size>0.15 0.02</size>
+        </text>
+
+        <rating name="md_rating">
+            <pos>0.76 0.520</pos>
+            <size>0.05 0.06</size>
+            <filledPath>./main/midia/rating_filled.svg</filledPath>
+            <unfilledPath>./main/midia/rating_empty.svg</unfilledPath>
+        </rating>
+
+        <image name="back-information" extra="static">
+            <pos>0.74 0.05</pos>
+            <size>0.25 0.55</size>
+            <path>./main/midia/back.png</path>
+        </image>
+
+        <text name="md_lbl_releasedate">
+            <forceUppercase>1</forceUppercase>
+            <pos>0.76 0.1</pos>
+        </text>
+
+        <datetime name="md_releasedate">
+            <forceUppercase>1</forceUppercase>
+            <pos>0.865 0.105</pos>
+        </datetime>
+
+        <text name="md_lbl_developer">
+            <pos>0.76 0.16</pos>
+        </text>
+
+        <text name="md_developer">
+            <pos>0.865 0.165</pos>
+        </text>
+
+        <text name="md_lbl_publisher">
+            <pos>0.76 0.20</pos>
+        </text>
+
+        <text name="md_publisher">
+            <pos>0.865 0.205</pos>
+        </text>
+
+        <text name="md_lbl_genre">
+            <pos>0.76 0.24</pos>
+        </text>
+
+        <text name="md_genre">
+            <pos>0.865 0.245</pos>
+        </text>
+
+        <text name="md_lbl_players">
+            <pos>0.76 0.28</pos>
+        </text>
+
+        <text name="md_players">
+            <pos>0.865 0.285</pos>
+        </text>
+
+        <text name="md_lbl_lastplayed">
+            <pos>0.76 0.34</pos>
+        </text>
+
+        <datetime name="md_lastplayed">
+            <pos>0.865 0.345</pos>
+        </datetime>
+
+        <text name="md_lbl_playcount">
+            <pos>0.76 0.38</pos>
+        </text>
+
+        <text name="md_playcount">
+            <pos>0.865 0.385</pos>
+        </text>
+
+        <text name="md_lbl_favorite">
+            <pos>0.76 0.42</pos>
+        </text>
+
+        <text name="md_favorite">
+            <pos>0.865 0.425</pos>
+        </text>
+
+        <image name="back-description" extra="static">
+            <pos>0.37 0.62</pos>
+            <size>0.62 0.280</size>
+            <path>./main/midia/back.png</path>
+        </image>
+
+        <text name="md_description">
+            <pos>0.39 0.652</pos>
+            <size>0.57 0.20</size>
+            <lineSpacing>1.5</lineSpacing>
+            <fontSize>0.023</fontSize>
+            <fontPath>./main/fonts/ubuntu_medium.ttf</fontPath>
+        </text>
+    </view>
+
+    <view name="detailed">
+        <image name="md_image">
+            <origin>0.5 0.5</origin>
+            <pos>0.55 0.33</pos>
+            <maxSize>0.33 0.454</maxSize>
+        </image>
+
+        <textlist name="gamelist">
+            <pos>0.015 0.20</pos>
+            <size>0.34 0.710</size>
+            <selectorColor>ff9900</selectorColor> <!-- Selection bar -->
+            <selectorColorEnd>DD7700</selectorColorEnd>
+            <selectedColor>262626</selectedColor> <!-- Selection letters -->
+            <selectorGradientType>vertical</selectorGradientType>
+            <primaryColor>ffffff</primaryColor> <!-- Letters -->
+            <secondaryColor>9F9F9F</secondaryColor>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.025</fontSize>
+            <alignment>left</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <scrollSound>./main/sound/scroll.wav</scrollSound>
+            <scrollbarColor>${baseColor}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.0055</scrollbarSize>
+            <scrollbarAlignment>outerright</scrollbarAlignment>
+            <lines>17</lines>
+            <horizontalMargin>0.005</horizontalMargin>
+        </textlist>
+
+        <image name="md_hidden">
+            <path>./main/midia/hidden.svg</path>
+            <pos>0.975 0.21</pos>
+            <maxSize>0.02 0.03</maxSize>
+            <origin>0.5 0.5</origin>
+            <color>969696</color>
+            <zIndex>150</zIndex>
+        </image>
+
+        <image name="md_kidgame">
+            <path>./main/midia/kid.svg</path>
+            <pos>0.86 0.9</pos>
+            <maxSize>0.02 0.03</maxSize>
+            <origin>0.5 0.5</origin>
+            <color>969696</color>
+            <zIndex>150</zIndex>
+        </image>
+
+        <image name="md_manual">
+            <path>./main/midia/manual.svg</path>
+            <pos>0.882 0.9</pos>
+            <maxSize>0.02 0.03</maxSize>
+            <origin>0.5 0.5</origin>
+            <color>969696</color>
+            <zIndex>150</zIndex>
+        </image>
+
+        <!--
+        <image name="md_favorite">
+            <pos>0.975 0.21</pos>
+            <maxSize>0.02 0.03</maxSize>
+            <path>./main/midia/favorite.svg</path>
+            <origin>0.5 0.5</origin>
+            <color>969696</color>
+            <zIndex>60</zIndex>
+        </image>-->
+    </view>
+
+    <view name="basic">
+        <image name="bottom" extra="static">
+            <pos>0.01 0.02</pos>
+            <size>0.98 0.15</size>
+            <path>./main/midia/header.png</path>
+        </image>
+
+        <image name="logo">
+            <!-- try png -->
+            <path>./main/logos/${system.theme}.png</path>
+            <path>./main/logos/${system.theme}.svg</path>
+            <path>./main/logos/${system.theme}-${lang}.png</path>
+            <path>./main/logos/${system.theme}-${lang}.svg</path>
+            <!-- if system2 exists, take this version -->
+            <path>./main/logos/${system.theme}2.svg</path>
+            <!--<pos>0.266 0.074</pos><maxSize>0.460 0.126</maxSize>-->
+            <pos>0.5 0.1</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.3 0.12</maxSize>
+        </image>
+
+        <image name="logo" region="eu"></image>
+
+        <image name="logo" region="us">
+            <path>./main/logos/us/${system.theme}.png</path>
+            <path>./main/logos/us/${system.theme}.svg</path>
+        </image>
+
+        <image name="logo" region="jp">
+            <path>./main/logos/jp/${system.theme}.png</path>
+            <path>./main/logos/jp/${system.theme}.svg</path>
+        </image>
+
+        <image name="back-gamelist" extra="static">
+            <pos>0.01 0.19</pos>
+            <size>0.98 0.780</size>
+            <path>./main/midia/back.png</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <text name="logoText">
+            <pos>0.02 0.01</pos>
+            <size>0.98 0.126</size>
+            <alignment>center</alignment>
+            <fontSize>0.055</fontSize>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <color>${baseColor}</color>
+            <color>000000</color>
+            <glowColor>${glowColor}</glowColor>
+            <glowSize>3</glowSize>
+            <glowOffset>1 1</glowOffset>
+        </text>
+
+        <textlist name="gamelist">
+            <pos>0.335 0.20</pos>
+            <size>0.34 0.710</size>
+            <selectorColor>ff9900</selectorColor> <!-- Selection bar -->
+            <selectorColorEnd>DD7700</selectorColorEnd>
+            <selectedColor>262626</selectedColor> <!-- Selection letters -->
+            <selectorGradientType>vertical</selectorGradientType>
+            <primaryColor>ffffff</primaryColor> <!-- Letters -->
+            <secondaryColor>9F9F9F</secondaryColor>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.025</fontSize>
+            <alignment>center</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <scrollSound>./main/sound/scroll.wav</scrollSound>
+            <scrollbarColor>${baseColor}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.0055</scrollbarSize>
+            <scrollbarAlignment>outerright</scrollbarAlignment>
+            <lines>17</lines>
+            <horizontalMargin>0.005</horizontalMargin>
+        </textlist>
+
+        <helpsystem name="help" extra="static">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+        </helpsystem>
+
+        <image name="footer" extra="static">
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <size>1 0.05</size>
+            <path>./main/footer.png</path>
+            <zIndex>1</zIndex>
+        </image>
+    </view>
+
+    <view name="detailed">
+        <image name="bottom" extra="static">
+            <pos>0.01 0.02</pos>
+            <size>0.35 0.15</size>
+            <path>./main/midia/header.png</path>
+        </image>
+
+        <image name="logo">
+            <!-- try png -->
+            <path>./main/logos/${system.theme}.png</path>
+            <path>./main/logos/${system.theme}.svg</path>
+            <path>./main/logos/${system.theme}-${lang}.png</path>
+            <path>./main/logos/${system.theme}-${lang}.svg</path>
+            <!-- if system2 exists, take this version -->
+            <path>./main/logos/${system.theme}2.svg</path>
+            <!--<pos>0.266 0.074</pos><maxSize>0.460 0.126</maxSize>-->
+            <pos>0.18 0.095</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.3 0.12</maxSize>
+        </image>
+
+        <image name="logo" region="eu"></image>
+
+        <image name="logo" region="us">
+            <path>./main/logos/us/${system.theme}.png</path>
+            <path>./main/logos/us/${system.theme}.svg</path>
+        </image>
+
+        <image name="logo" region="jp">
+            <path>./main/logos/jp/${system.theme}.png</path>
+            <path>./main/logos/jp/${system.theme}.svg</path>
+        </image>
+
+        <helpsystem name="help">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+        </helpsystem>
+
+        <image name="footer" extra="static">
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <size>1 0.05</size>
+            <path>./main/footer.png</path>
+            <zIndex>1</zIndex>
+        </image>
+    </view>
+
+    <view name="grid">
+        <helpsystem name="help">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+        </helpsystem>
+
+        <image name="footer" extra="static">
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <size>1 0.05</size>
+            <path>./main/midia/footer.png</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <image name="bottom" extra="static">
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <size>1 0.065</size>
+            <path>./main/midia/bottom.png</path>
+            <color>${baseColor}</color>
+            <zIndex>13</zIndex>
+        </image>
+
+        <image name="back-logo" extra="static">
+            <pos>0.01 0.0.5</pos>
+            <size>0.98 0.16</size>
+            <path>./main/midia/header.png</path>
+            <color>d2d0f2</color>
+        </image>
+
+        <image name="back-gamelist" extra="static">
+            <pos>0.01 0.16</pos>
+            <size>0.98 0.780</size>
+            <path>./main/midia/back.png</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <text name="logoText">
+            <pos>0.02 0.01</pos>
+            <size>0.98 0.126</size>
+            <alignment>center</alignment>
+            <fontSize>0.055</fontSize>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <color>${baseColor}</color>
+            <color>FAFAFA</color>
+            <glowColor>${glowColor}</glowColor>
+            <glowSize>3</glowSize>
+            <glowOffset>1 1</glowOffset>
+        </text>
+
+        <image name="logo">
+            <!-- try png -->
+            <path>./main/logos/${system.theme}.png</path>
+            <path>./main/logos/${system.theme}.svg</path>
+            <path>./main/logos/${system.theme}-${lang}.png</path>
+            <path>./main/logos/${system.theme}-${lang}.svg</path>
+            <!-- if system2 exists, take this version -->
+            <path>./main/logos/${system.theme}-w.svg</path>
+            <pos>0.5 0.074</pos>
+            <maxSize>0.45 0.120</maxSize>
+            <origin>0.5 0.5</origin>
+            <linearSmooth>true</linearSmooth>
+            <zIndex>30</zIndex>
+        </image>
+
+        <image name="logo" region="eu"/>
+
+        <image name="logo" region="us">
+            <path>./main/logos/us/${system.theme}.png</path>
+            <path>./main/logos/us/${system.theme}.svg</path>
+        </image>
+
+        <image name="logo" region="jp">
+            <path>./main/logos/jp/${system.theme}.png</path>
+            <path>./main/logos/jp/${system.theme}.svg</path>
+        </image>
+
+        <text name="folderpath">
+            <pos>0.05 0.132</pos>
+            <size>0.90 0.02</size>
+            <color>B0B0B0</color>
+            <alignment>center</alignment>
+            <fontSize>0.016</fontSize>
+            <fontPath>./main/fonts/Cabin-Bold.ttf</fontPath>
+            <forceUppercase>true</forceUppercase>
+            <zIndex>200</zIndex>
+        </text>
+
+        <image name="background" extra="static">
+            <tile>true</tile>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./main/midia/background.png</path>
+            <zIndex>0</zIndex>
+        </image>
+
+        <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+            <color>A0A0B000</color>
+        </text>
+
+        <text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+            <color>ffffff00</color>
+        </text>
+
+        <datetime name="md_releasedate, md_lastplayed">
+            <color>ffffff00</color>
+        </datetime>
+
+        <rating name="md_rating">
+            <pos>0.88 0.88</pos>
+            <size>0.05 0.03</size>
+            <filledPath>./main/rating_filled.svg</filledPath>
+            <unfilledPath>./main/rating_empty.svg</unfilledPath>
+            <color>${baseColor}</color>
+            <unfilledColor>808080</unfilledColor>
+        </rating>
+
+        <!--
+        <image name="md_fanmain">
+            <pos>0.5 0.08</pos>
+            <minSize>1 0.16</minSize>
+            <origin>0.5 0.5</origin>
+            <color>808080</color>
+            <zIndex>1</zIndex>
+            <linearSmooth>true</linearSmooth>
+        </image>
+        -->
+
+        <image name="md_manual">
+            <path>./main/midia/manual.svg</path>
+            <pos>0.023 0.896</pos>
+            <maxSize>0.02 0.03</maxSize>
+            <origin>0.5 0.5</origin>
+            <color>ff9900</color>
+            <zIndex>150</zIndex>
+        </image>
+
+        <imagegrid name="gamegrid">
+            <!--
+            <pos>0.025 0.16</pos>
+            <size>0.950 0.774</size>
+            <padding>0.03 0.05 0.03 0.04</padding>
+            -->
+            <margin>0.005 0.010</margin>
+            <pos>0.025 0.16</pos>
+            <size>0.950 0.84</size>
+            <padding>0.03 0.04 0.03 0.1</padding>
+            <zIndex>10</zIndex>
+            <autoLayout>5 2</autoLayout>
+            <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+            <animateSelection>false</animateSelection>
+            <centerSelection>false</centerSelection>
+            <scrollbarColor>${baseColor}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.005</scrollbarSize>
+        </imagegrid>
+
+        <gridtile name="default">
+            <backgroundColor>FFFFFF00</backgroundColor>
+            <backgroundCornerSize>9 9</backgroundCornerSize>
+            <selectionMode>image</selectionMode>
+            <padding>5 5</padding>
+            <imageColor>FFFFFFB0</imageColor>
+        </gridtile>
+
+        <gridtile name="selected">
+            <backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
+            <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
+            <imageColor>FFFFFFFF</imageColor>
+        </gridtile>
+
+        <text name="gridtile">
+            <color>D0D0D0</color>
+            <backgroundColor>00000000</backgroundColor>
+            <fontSize>0.022</fontSize>
+            <alignment>center</alignment>
+            <size>1 0.24</size>
+        </text>
+
+        <text name="gridtile:selected">
+            <color>${baseColor}</color>
+            <glowColor>${glowColor}</glowColor>
+            <glowSize>3</glowSize>
+        </text>
+
+        <ninepatch name="gridtile.background:selected">
+            <animateColor>${baseColor}</animateColor>
+            <animateColorTime>350</animateColorTime>
+        </ninepatch>
+    </view>
+
+    <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
+        <imagegrid name="gamegrid">
+            <autoLayout>6 2</autoLayout>
+            <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
+        </imagegrid>
+
+        <text name="gridtile">
+            <visible>false</visible>
+        </text>
+
+        <text name="gridtile:selected">
+            <visible>false</visible>
+        </text>
+
+        <image name="gridtile.favorite">
+            <path>:/star_filled.svg</path>
+            <pos>0.91 0.09</pos>
+            <maxSize>0.14 0.14</maxSize>
+            <origin>0.5 0.5</origin>
+            <horizontalAlignment>right</horizontalAlignment>
+            <color>FFFF00B0</color>
+        </image>
+    </customView>
+
+    <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+        <text name="md_name">
+            <color>${baseColor}</color>
+            <pos>0.04 0.76</pos>
+            <size>0.92 0.10</size>
+            <alignment>center</alignment>
+            <glowColor>00000016</glowColor>
+            <glowSize>4</glowSize>
+        </text>
+
+        <text name="md_developer">
+            <color>808080ff</color>
+            <pos>0.04 0.80</pos>
+            <size>0.92 0.10</size>
+            <alignment>center</alignment>
+            <fontSize>0.020</fontSize>
+            <glowColor>00000016</glowColor>
+            <glowSize>3</glowSize>
+        </text>
+
+        <imagegrid name="gamegrid">
+            <pos>0 0.16</pos>
+            <size>1 0.774</size>
+            <padding>0.05 0.14 0.05 0.30</padding>
+            <scrollDirection>horizontal</scrollDirection>
+            <autoLayout>5 1</autoLayout>
+            <autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
+            <margin>0.005 0.010</margin>
+            <centerSelection>true</centerSelection>
+            <scrollLoop>true</scrollLoop>
+        </imagegrid>
+
+        <gridtile name="default">
+            <padding>64 16</padding>
+            <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+            <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+            <imageSizeMode>maxSize</imageSizeMode>
+            <imageColor>FFFFFFAA</imageColor>
+            <reflexion>0.24 0.0</reflexion>
+        </gridtile>
+
+        <gridtile name="selected">
+            <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+            <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+            <padding>64 16</padding>
+        </gridtile>
+
+        <text name="gridtile">
+            <visible>false</visible>
+            <color>80808080</color>
+            <fontSize>0.016</fontSize>
+            <size>1 0</size>
+        </text>
+
+        <text name="gridtile:selected">
+            <color>FFFFFF00</color>
+            <fontSize>0.035</fontSize>
+            <size>1 0</size>
+        </text>
+
+        <ninepatch name="gridtile.background:selected">
+            <animateColorTime>0</animateColorTime>
+        </ninepatch>
+    </customView>
+
+    <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
+        <imagegrid name="gamegrid">
+            <autoLayout>3 2</autoLayout>
+            <autoLayoutSelectedZoom>1.03</autoLayoutSelectedZoom>
+            <imageSource>image</imageSource>
+            <margin>0.005 0.010</margin>
+            <showVideoAtDelay>800</showVideoAtDelay>
+            <zIndex>10</zIndex>
+        </imagegrid>
+
+        <gridtile name="default">
+            <backgroundImage/>
+            <backgroundCenterColor>40404080</backgroundCenterColor>
+            <backgroundEdgeColor>40404080</backgroundEdgeColor>
+            <padding>1 1</padding>
+            <imageSizeMode>minSize</imageSizeMode>
+            <imageColor>A0A0A0FF</imageColor>
+            <backgroundCornerSize>0 0</backgroundCornerSize>
+            <backgroundCornerSize>0.06</backgroundCornerSize>
+        </gridtile>
+
+        <gridtile name="selected">
+            <padding>5 5</padding>
+            <imageColor>FFFFFFFF</imageColor>
+            <backgroundCornerSize>0 0</backgroundCornerSize>
+            <backgroundCornerSize>0.06</backgroundCornerSize>
+        </gridtile>
+
+        <image name="gridtile.image">
+            <roundCorners>0.06</roundCorners>
+        </image>
+
+        <text name="gridtile">
+            <color>D0D0D0D0</color>
+            <backgroundColor>00000000</backgroundColor>
+            <fontPath>./main/fonts/Cabin-Bold.ttf</fontPath>
+            <fontSize>0.030</fontSize>
+            <alignment>center</alignment>
+            <singleLineScroll>false</singleLineScroll>
+            <padding>0.08 0</padding>
+            <size>0 0.23</size>
+            <glowColor>00000060</glowColor>
+            <glowSize>1</glowSize>
+        </text>
+
+        <text name="gridtile:selected">
+            <singleLineScroll>false</singleLineScroll>
+            <color>${baseColor}</color>
+            <glowColor>${glowColor}</glowColor>
+            <glowSize>2</glowSize>
+        </text>
+
+        <image name="gridtile.favorite">
+            <path>:/star_filled.svg</path>
+            <pos>0.93 0.07</pos>
+            <maxSize>0.10 0.10</maxSize>
+            <origin>0.5 0.5</origin>
+            <horizontalAlignment>right</horizontalAlignment>
+            <color>FFFF0080</color>
+        </image>
+
+        <image name="gridtile.favorite:selected">
+            <color>FFFF00D0</color>
+        </image>
+    </customView>
+
+    <customView name="arcade" inherits="detailed">
+        <image name="md_background" extra="static">
+            <path>./main/midia/fundo.png</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>ffffffff</color>
+            <zIndex>5</zIndex>
+        </image>
+
+        <image name="crt" extra="static">
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <path>./main/midia/scanlines.png</path>
+            <color>FFFFFF60</color>
+            <tile>true</tile>
+            <zIndex>07</zIndex>
+        </image>
+
+        <video name="md_video">
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <delay>0.05</delay>
+            <roundCorners>0.02</roundCorners>
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <zIndex>05</zIndex>
+        </video>
+
+        <textlist name="gamelist">
+            <pos>0.015 0.20</pos>
+            <size>0.34 0.710</size>
+            <selectorColor>ff9900</selectorColor> <!-- Selection bar -->
+            <selectorColorEnd>DD7700</selectorColorEnd>
+            <selectedColor>262626</selectedColor> <!-- Selection letters -->
+            <selectorGradientType>vertical</selectorGradientType>
+            <primaryColor>ffffff</primaryColor> <!-- Letters -->
+            <secondaryColor>9F9F9F</secondaryColor>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.025</fontSize>
+            <alignment>left</alignment>
+            <horizontalMargin>0.01</horizontalMargin>
+            <scrollSound>./main/sound/scroll.wav</scrollSound>
+            <scrollbarColor>${baseColor}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.005</scrollbarSize>
+            <scrollbarAlignment>outerright</scrollbarAlignment> <!-- innerleft -->
+            <lines>17</lines>
+            <horizontalMargin>0.005</horizontalMargin>
+        </textlist>
+
+        <image name="back-gamelist" extra="static">
+            <pos>0.01 0.19</pos>
+            <size>0.35 0.73</size>
+            <path>./main/midia/back.png</path>
+            <visible>false</visible>
+        </image>
+
+        <helpsystem name="help">
+            <fontSize>0.03</fontSize>
+            <pos>0.01 0.965</pos>
+            <textColor>ececec</textColor>
+            <iconColor>ff9900</iconColor>
+            <visible>false</visible>
+        </helpsystem>
+
+        <image name="footer" extra="static">
+            <size>1 0.065</size>
+            <pos>0 1</pos>
+            <origin>0 1</origin>
+            <path>./main/midia/footer.png</path>
+            <zIndex>7</zIndex>
+        </image>
+
+        <image name="md_marquee"> <!-- marquee do menu interno -->
+            <origin>0 0</origin>
+            <pos>0.65 0.15</pos>
+            <maxSize>0.18 0.19</maxSize>
+            <zIndex>10</zIndex>
+        </image>
+
+        <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite">
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <size>0.11 0.03</size>
+            <visible>false</visible>
+        </text>
+
+        <text name="md_releasedate, md_developer, md_publisher, md_genre, md_players, md_lastplayed, md_playcount, md_favorite">
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <size>0.12 0.02</size>
+            <visible>false</visible>
+        </text>
+
+        <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite, md_description">
+            <color>ececec</color>
+            <visible>false</visible>
+        </text>
+
+        <text name="md_releasedate, md_lastplayed, md_developer, md_publisher, md_genre, md_players, md_playcount, md_favorite">
+            <color>ff9900</color>
+            <visible>false</visible>
+        </text>
+
+        <image name="back-image" extra="static">
+            <pos>0.37 0.05</pos>
+            <size>0.36 0.55</size>
+            <path>./main/midia/back.png</path>
+            <visible>false</visible>
+        </image>
+
+        <text name="md_lbl_rating">
+            <pos>0.76 0.49</pos>
+            <forceUppercase>1</forceUppercase>
+            <fontPath>./main/fonts/ubuntu_medium.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <size>0.15 0.02</size>
+            <visible>false</visible>
+        </text>
+
+        <rating name="md_rating">
+            <pos>0.64 0.05</pos>
+            <size>0.05 0.06</size>
+            <filledPath>./main/midia/rating_filled.svg</filledPath>
+            <unfilledPath>./main/midia/rating_empty.svg</unfilledPath>
+            <visible>false</visible>
+        </rating>
+
+        <image name="back-information" extra="static">
+            <pos>0.74 0.05</pos>
+            <size>0.25 0.55</size>
+            <path>./main/midia/back.png</path>
+            <visible>false</visible>
+        </image>
+
+        <text name="md_favorite">
+            <pos>0.865 0.425</pos>
+            <visible>false</visible>
+        </text>
+
+        <image name="back-description" extra="static">
+            <pos>0.37 0.62</pos>
+            <size>0.62 0.280</size>
+            <path>./main/midia/back.png</path>
+            <visible>false</visible>
+        </image>
+
+        <text name="md_description">
+            <pos>0.39 0.652</pos>
+            <size>0.57 0.20</size>
+            <lineSpacing>1.5</lineSpacing>
+            <fontSize>0.023</fontSize>
+            <fontPath>./main/fonts/ubuntu_medium.ttf</fontPath>
+            <visible>false</visible>
+        </text>
+
+        <image name="md_image">
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <zIndex>02</zIndex>
+        </image>
+    </customView>
+
+    <!-- Subset options for help -->
+    <subset name="helpsystem" displayName="${helpSubsetName}">
+        <include name="colored" displayName="${colored}">./main/systemview/colorhelp.xml</include>
+        <include name="standard"/>
+        <include name="SNES ALT">./main/systemview/snesalt.xml</include>
+        <include name="SNES">./main/systemview/snes.xml</include>
+        <include name="XBox">./main/systemview/xbox.xml</include>
+        <include name="PSX">./main/systemview/psx.xml</include>
+        <include name="ARCADE">./main/systemview/arcade.xml</include>
+    </subset>
+
+    <!-- Subset options for screen -->
+    <subset name="shader" displayName="${subset.shader}">
+        <include name="None" displayName="${none}"/>
+        <include name="ScanLines">./main/shader/scanlines.xml</include>
+        <include name="Crt">./main/shader/crt.xml</include>
+        <include name="TV">./main/shader/tv.xml</include>
+        <include name="Phosphore">./main/shader/phosphore.xml</include>
+        <include name="Scanlines Alternative">./main/shader/scanliness.xml</include>
+        <include name="Phosphore +">./main/shader/phosplus.xml</include>
+        <include name="Vertical Scanlines">./main/shader/scanvert.xml</include>
+        <include name="Vertical Fine">./main/shader/verticalfine.xml</include>
+        <include name="VHS">./main/shader/vhs.xml</include>
+    </subset>
+
+  <!-- Specific layout for systems -->
+        <include subset="systemview" name="plus">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="plus2">./main/layoutsPLUS2/${system.theme}.xml</include>
+        <include subset="systemview" name="darkened">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="horizontal">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="legacy" tinyScreen="false">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="transparent" tinyScreen="false">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="simple">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="vertical">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="wheel">./main/layouts/${system.theme}.xml</include>
+        <include subset="systemview" name="arcade">./main/layouts/${system.theme}.xml</include>
+
+
+        <include subset="systemview" name="plus">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="plus2">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="darkened">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="horizontal">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="legacy" tinyScreen="false">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="transparent" tinyScreen="false">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="simple">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="vertical">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="wheel">./main/systemsbk/avatar&nickname.xml</include>
+        <include subset="systemview" name="arcade">./main/systemsbk/avatar&nicknamearcade.xml</include>
+
+  <!-- Layout when help is disabled -->
+  <include ifHelpPrompts="false">./main/layouts/nohelp.xml</include>
+
+
+  <!-- add game info bar -->
+  <subset name="gameBar" displayName="${gameBar}" appliesTo="detailed,grid,Tiles,Icons,Carousel,Boxes">
+    <include name="yes" displayName="${yes}">./subsets/gameinfobar.xml</include>
+    <include name="no" displayName="${no}"/>
+	</subset>
+
+  <!-- Layout for small screens -->
+  <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
+    <include name="yes" displayName="${yes}">./main/layouts/gpicase.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+
+  <!-- Subset options for grid views -->
+  <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
+    <include name="no" displayName="${no}"/>
+    <include name="yes" displayName="${yes}">./main/grid/videoboxes.xml</include>
+  </subset>
+  <subset name="zoomboxes" displayName="${zoomboxesSubsetName}" appliesTo="Boxes,grid">
+    <include name="no" displayName="${no}"/>
+    <include name="yes" displayName="${yes}">./main/grid/zoomboxes.xml</include>
+  </subset>
+  <subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Boxes,grid">
+    <include name="vertical"/>
+    <include name="horizontal">./main/grid/scrollhorz.xml</include>
+  </subset>
+  <subset name="hideselection" displayName="${hideselectionSubsetName}" appliesTo="Boxes,grid">
+    <include name="no" displayName="${no}"/>
+    <include name="yes" displayName="${yes}">./main/grid/hidesel.xml</include>
+  </subset>
+  <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
+    <include name="no" displayName="${no}"/>
+    <include name="yes" displayName="${yes}">./main/grid/previewbar.xml</include>
+  </subset>
+  <!-- Subset options for Tiles view -->
+  <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no" displayName="${no}">./main/tiles/squareborders.xml</include>
+  </subset>
+  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no" displayName="${no}">./main/grid/blinkbordersoff.xml</include>
+  </subset>
+  <subset name="videotiles" displayName="Videos" appliesTo="Tiles">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no" displayName="${no}">./main/tiles/novideo.xml</include>
+  </subset>
+  <subset name="marqueetiles" displayName="Logos" appliesTo="Tiles">
+    <include name="yes" displayName="${yes}">./main/tiles/marquee.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+  <subset name="storyboards" displayName="${animationsSubsetName}">
+    <include name="yes" displayName="${yes}">./main/midia/storyboards.xml</include>
+    <include name="no" displayName="${no}"/>
+  </subset>
+</theme>

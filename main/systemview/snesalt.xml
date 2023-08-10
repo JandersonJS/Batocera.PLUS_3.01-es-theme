@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <view name="menu, system, basic, detailed, Carousel, Boxes, Tiles, grid">
+        <helpsystem name="help">
+            <iconColor>FFFFFFFF</iconColor>
+            <iconUpDown>./main/iconset/snesalt/updown.png</iconUpDown>
+            <iconLeftRight>./main/iconset/snesalt/leftright.png</iconLeftRight>
+            <iconUpDownLeftRight>./main/iconset/snesalt/all.png</iconUpDownLeftRight>
+            <iconA>./main/iconset/snesalt/a.png</iconA>
+            <iconB>./main/iconset/snesalt/b.png</iconB>
+            <iconX>./main/iconset/snesalt/x.png</iconX>
+            <iconY>./main/iconset/snesalt/y.png</iconY>
+            <iconL>./main/iconset/snesalt/l.png</iconL>
+            <iconR>./main/iconset/snesalt/r.png</iconR>
+            <iconStart>./main/iconset/snesalt/start.png</iconStart>
+            <iconSelect>./main/iconset/snesalt/select.png</iconSelect>
+        </helpsystem>
+    </view>
+</theme>

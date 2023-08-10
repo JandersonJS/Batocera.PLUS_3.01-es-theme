@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.13 0.40</pos>
+            <maxSize>0.25 0.25</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.41 0.40</pos>
+            <maxSize>0.15 0.15</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="controller" extra="true">
+            <path>./art/controller.svg</path>
+            <pos>0.78 0.40</pos>
+            <maxSize>0.15 0.25</maxSize>
+            <origin>1 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>CBCBCB</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>165193</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>E60000</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>1A1A1A</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Sega</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 1985</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : 13 million</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Third generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : 8-Bit Zilog Z80 @ 3.58 MHz</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 8kB / VRAM : 16kB</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>Cart Size : 32kB - 1MB</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Video : Sega VDP (custom Texas Instruments TMS9918)</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound : TI SN76489 PSG / add-on module YM2413 FM</text>
+            <pos>0.38 0.86</pos>
+        </text>
+        <text name="info10" extra="true">
+            <text>Resolution : 256 × 192 pixels, 32 colors (64 colors palette)</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

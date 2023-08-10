@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.13 0.40</pos>
+            <maxSize>0.20 0.25</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.36 0.40</pos>
+            <maxSize>0.10 0.10</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>E6F0EF</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>3B62A6</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>2C2D2c</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>F0C73B</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Thomson</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 1986</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : 60 Thousand</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Fourth generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : Motorola 6809E @ 1 MHz</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 256kB</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>ROM : 80kB</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Graphics : Thomson EF9369</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound : generator + 1 bit D/A converter 6 bits</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution :  160 × 200 to 640 × 200 (16, 4, 3 or 2 colors)</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

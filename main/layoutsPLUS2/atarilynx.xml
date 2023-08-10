@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.13 0.40</pos>
+            <maxSize>0.25 0.25</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.40 0.40</pos>
+            <maxSize>0.15 0.15</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>FD6420</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>404040</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>F38900</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>262626</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Epyx / Atari</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 1989</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : 1 million</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : 	Fourth generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : 8-bit with 16-bit address space</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 64K 120 ns DRAM</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>ROM : 512 bytes</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Grafic Co-Processors : Mikey and Suzy 2 x 16-bit</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound :  4 channels, 8-bit DAC</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution : 160 x 102 pixels</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+
+        <image name="background" extra="true">
+            <color>000000FF</color>
+        </image>
+
+        <video name="backgroundStaticVideo" extra="true">
+            <path>{random}</path>
+            <pos>0.5 0.475</pos>
+            <origin>0.5 0.5</origin>
+            <minSize>1 1</minSize>
+            <linearSmooth>true</linearSmooth>
+            <delay>0</delay>
+            <color>FFFFFF</color>
+            <effect>none</effect>
+            <zIndex>30</zIndex>
+        </video>
+
+        <video name="backgroundStaticVideo" extra="true" ifHelpPrompts="false">
+            <pos>0.5 0.5</pos>
+            <minSize>1 1</minSize>
+        </video>
+
+        <image name="ControllerOverlay" extra="true">
+            <visible>false</visible>
+        </image>
+
+        <image name="CenterFade" extra="true">
+            <color>000000A0</color>
+        </image>
+    </view>
+</theme>

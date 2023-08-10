@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <path>./art/console.svg</path>
+            <pos>0.02 0.30</pos>
+            <maxSize>0.30 0.15</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="controller" extra="true">
+            <path>./art/controller.svg</path>
+            <pos>0.78 0.30</pos>
+            <maxSize>0.15 0.25</maxSize>
+            <origin>1 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>ff004d</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>29adff</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>fff1e8</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>00e436</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Developer : Lexaloffle Games</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 2015</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : Freeware</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Seventh generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : Hardware</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 1 GB</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>Cartridge Size : 32 kB</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Graphics : Sprites 128 8x8 sprites, Map 128x32 cels</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound : 4 channel (8 waveforms)</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution : 128x128 (16 colour palette)</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

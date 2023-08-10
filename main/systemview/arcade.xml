@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+      <image name="avatar" extra="static">
+         <path>./main/avatars/${image.avatar}</path>
+         <path ifSubset="system-avatar:custom">./custom-avatar.png</path>
+         <pos>0.027 0.035</pos>
+         <maxSize>0.063 0.063</maxSize>
+         <zIndex>85</zIndex>
+         <linearSmooth>true</linearSmooth>
+      </image>
+
+      <text name="username" extra="static">
+         <text>${theme.nick}</text>
+         <text ifSubset="system-username:custom">${custom.nick}</text>
+         <pos>0.067 0.045</pos>
+         <size>0.175 0.035</size>
+         <color>ffffff</color>
+         <fontPath>./fonts/SST Light.ttf</fontPath>
+         <fontSize>0.028</fontSize>
+         <alignment>left</alignment>
+         <glowColor>00000035</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <zIndex>99</zIndex>
+         <backgroundColor>ff000000</backgroundColor>
+      </text>
+
+        <image name="staticBackground" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.0795 0.066</pos>
+            <size>0.119 0.075</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>45</zIndex>
+        </image>
+
+        <image name="staticBackground2" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.0795 0.066</pos>
+            <size>0.119 0.075</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>85</zIndex>
+        </image>
+
+        <image name="image" extra="static">
+            <path>./main/logos/${system.theme}.svg</path>
+            <path>./main/logos/${system.theme}.png</path>
+            <pos>0.66 0.175</pos>
+            <maxSize>0.15 0.16</maxSize>
+            <zIndex>75</zIndex>
+            <origin>0 0</origin>
+        </image>
+
+        <image name="crt" extra="static">
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <path>./main/midia/scanlines.png</path>
+            <color>FFFFFF60</color>
+            <tile>true</tile>
+            <zIndex>999</zIndex>
+        </image>
+
+        <!-- When random box -->
+        <image name="box" extra="static">
+            <default>./main/midia/novideo.png</default>
+            <pos>0.74 0.60</pos>
+            <maxSize>0.30 0.30</maxSize>
+        </image>
+
+        <video name="video" extra="true">
+            <default>./main/midia/novideo.png</default>
+            <path>{random}</path>
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <zIndex>99</zIndex>
+        </video>
+
+        <video name="videobox" extra="static">
+            <default>./main/midia/novideo.png</default>
+            <path>{random:image}</path>
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <size>0.24 0.24</size>
+            <zIndex>99</zIndex>
+        </video>
+
+        <image name="staticBackground3" extra="static">
+            <path>./main/midia/fundos.png</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>ffffffff</color>
+            <zIndex>55</zIndex>
+        </image>
+
+        <image name="logo">
+            <!-- if system2 exists, take this version -->
+            <path>./../../${system.theme}/main/system2.svg</path>
+        </image>
+
+        <carousel name="systemcarousel" extra="static">
+            <type>vertical</type> <!-- vertical_wheel -->
+            <pos>0.24 -0.265</pos> <!-- direito up- ou down+ !!!! esquerdo left- ou right+ -->
+            <size>1 1</size>
+            <origin>0 0</origin>
+            <color>FFFFFF00</color>
+            <colorEnd>FFFFFF00</colorEnd>
+            <defaultTransition>slide</defaultTransition>
+            <logoScale>1.1</logoScale>
+            <logoSize>0.15 0.16</logoSize><!-- 0.2 0.2 só aumentar o tamanho que as logos no carrossel aparecem -->
+            <logoRotation>-7.6</logoRotation>
+            <logoRotationOrigin>3.5 0.3</logoRotationOrigin>
+            <logoAlignment>center</logoAlignment>
+            <maxLogoCount>1</maxLogoCount>
+            <zIndex>0</zIndex>
+        </carousel>
+
+        <image name="band1" extra="static">
+            <size>0.03 1</size>
+            <pos>0.020 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>40</zIndex>
+        </image>
+
+        <image name="band2" extra="static">
+            <size>0.03 1</size>
+            <pos>0.050 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>40</zIndex>
+        </image>
+
+        <image name="band3" extra="static">
+            <size>0.03 1</size>
+            <pos>0.08 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>40</zIndex>
+        </image>
+
+        <image name="band4" extra="static">
+            <size>0.03 1</size>
+            <pos>0.109 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/band.png</path>
+            <zIndex>40</zIndex>
+        </image>
+
+
+        <image name="ControllerOverlay" extra="static">
+            <visible>true</visible>
+        </image>
+
+        <text name="info1, info2, info3, info4, info5, info6, info7, info8, info9, info10, info11, info12" extra="true">
+            <color>ff9900</color>
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <pos>0.30 0.347</pos>
+            <forceUppercase>1</forceUppercase>
+            <size>0.5 0.04</size>
+            <visible>false</visible>
+        </text>
+
+        <text name="systemInfo">
+            <pos>-0.175 0.647</pos>
+            <size>1 0.00</size>
+            <backgroundColor>0000FF00</backgroundColor>
+            <color>${baseColor}</color>
+            <glowColor>${glowColor}</glowColor>
+            <glowSize>2</glowSize>
+            <reflexion>0.0 0.0</reflexion>
+        </text>
+
+        <!--
+        <image name="CenterFade" extra="static"  tinyScreen="false">
+            <tile>false</tile>
+            <size>0.40 1</size>
+            <pos>0.2 1</pos>
+            <origin>1 1</origin>
+            <path>./main/midia/centerfade_v.png</path>
+            <color></color>
+            <zIndex>11</zIndex>
+        </image>
+        -->
+
+        <image name="colorplus" extra="static" tinyScreen="false">
+            <tile>false</tile>
+      	    <color>${baseColor}</color>
+            <pos>0 0</pos>
+            <size>1 0.5</size>
+            <origin>0 0</origin>
+            <path>./main/midia/colorplus.png</path>
+            <zIndex>10</zIndex>
+       </image>
+
+        <image name="ControllerOverlay" extra="static">
+            <tile>true</tile>
+            <pos>0.675 0.40</pos>
+            <size>0.4 0</size>
+        </image>
+    <text name="systemInfo" visible="false"/>
+    <text name="systemInfoEx" extra="true">
+      <!-- possible bindings are :
+{binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
+{binding:mostPlayed}, {binding:lastPlayedDate}
+-->
+      <text>Games : {binding:total} 
+Playing : {binding:played}
+Favorites : {binding:favorites} 
+Games played : {binding:gamesPlayed} 
+Most played : {binding:mostPlayed} 
+Hidden : {binding:hidden}
+Last played : {binding:lastPlayedDate}</text>
+      <text lang="fr">Nombre de jeux : {binding:total}
+Favoris : {binding:favorites}
+Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed}
+Dernière partie : {binding:lastPlayedDate}</text>
+      <text lang="es">Número de juegos : {binding:total}
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+      <alignment>left</alignment>
+      <verticalAlignment>left</verticalAlignment>
+      <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+      <fontSize>0.024</fontSize>
+      <pos>0.15 0.66</pos>
+      <size>0.94 0.28</size>
+      <zIndex>100</zIndex>
+      <color>ff9900</color>
+      <glowColor>000000A0</glowColor>
+      <glowSize>1</glowSize>
+    </text>
+    <text name="systemInfoEx" extra="true" if="{system.name} == 'collections'">
+      <text>Collections : {binding:subSystems}</text>
+      <text lang="fr">Nombre de collections : {binding:subSystems}</text>
+    </text>
+    <text name="systemInfoEx" extra="true" if="{system.name} == 'library' || {system.name} == 'screenshots'">
+      <text>Items : {binding:total}</text>
+      <text lang="fr">Nombre d'élements : {binding:total}</text>
+      <text lang="es">Número de elementos: {binding:total}</text>
+    </text>
+  </view>
+</theme>

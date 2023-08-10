@@ -1,0 +1,12 @@
+-Para customizar seu proprio avatar, basta renomear sua imagem favorita por "custom-avatar" e excluir a custom-avatar.png que esta na raiz do tema.
+
+-Per personalizzare il tuo avatar, basta rinominare la tua immagine preferita in "custom-avatar" ed eliminare il custom-avatar.png che si trova nella radice del tema.
+
+-To customize your own avatar, just rename your favorite image to "custom-avatar" and delete the custom-avatar.png that is in the root of the theme.
+
+-Para personalizar su propio avatar, simplemente cambie el nombre de su imagen favorita a "custom-avatar" y elimine el archivo custom-avatar.png que se encuentra en la raíz del tema.
+
+-Pour personnaliser votre propre avatar, renommez simplement votre image préférée en "custom-avatar" et supprimez le custom-avatar.png qui se trouve à la racine du thème.
+
+enjoy;)
+

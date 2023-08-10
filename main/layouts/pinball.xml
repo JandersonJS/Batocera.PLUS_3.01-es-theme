@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.020 0.38</pos>
+            <maxSize>0.30 0.35</maxSize>
+            <origin>0 1</origin>
+        </image>
+ 
+        <image name="game" extra="true">
+            <pos>0.210 0.41</pos>
+            <maxSize>0.21 0.21</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="controller" extra="true">
+            <pos>0.78 0.30</pos>
+            <maxSize>0.12 0.22</maxSize>
+            <origin>1 1</origin>
+        </image>
+
+        <image name="ControllerOverlay" extra="true">
+            <tile>false</tile>
+            <size>0.2 0.3</size>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>FFA500</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>FF0000</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>0000FF</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>000000</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Developer : Montegue Redgrave</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 1869</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : Uncountable</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : All of it</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : Mechanic</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : Mechanic</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>ROM : Mechanic</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>GPU : Mechanic</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound : Mechanic</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution : What See</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="Deteiled">
+  <formatVersion>7</formatVersion>
+	<include subset="systemview" name="plus" displayName="${plus}">./system1.xml</include>
+	<include subset="systemview" name="plus2" displayName="${plus2}">./system1.xml</include>
+	<include subset="systemview" name="darkened" displayName="${darkened}">./system2.xml</include>
+	<include subset="systemview" name="horizontal" displayName="${horizontal}">./system2.xml</include>
+	<include subset="systemview" name="legacy" displayName="${legacy}">./system2.xml</include>
+	<include subset="systemview" name="transparent" displayName="${transparent}">./system2.xml</include>
+	<include subset="systemview" name="simple" displayName="${simple}">./system1.xml</include>
+	<include subset="systemview" name="vertical" displayName="${vertical}">./system1.xml</include>
+	<include subset="systemview" name="wheel" displayName="${wheel}">./system1.xml</include>
+	<include subset="systemview" name="arcade" displayName="${arcade}">./system3.xml</include>
+</theme>

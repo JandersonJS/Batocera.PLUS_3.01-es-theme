@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.02 0.32</pos>
+            <maxSize>0.29 0.29</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.16 0.30</pos>
+            <maxSize>0.14 0.14</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="controller" extra="true">
+            <pos>0.78 0.30</pos>
+            <maxSize>0.15 0.25</maxSize>
+            <origin>1 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>313131</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>0F1012</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>97A9BA</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>F9F7F7</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Sony Computer Entertainment</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 2006</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : 87.4 million</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Seventh generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : 3.2 GHz Cell Broadband Engine with 1 PPE and 8 SPEs</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM: 256 MB GDDR3</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>Media/ Storage : Blu-ray Disc/ Removable 2.5-inch SATA</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Graphics : 550 MHz Nvidia/SCEI RSX Reality Synthesizer</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound : Audio output formats</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution : 480i/576i SD up to 1080p HD</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

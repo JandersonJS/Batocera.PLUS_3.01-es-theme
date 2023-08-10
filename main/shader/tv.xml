@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+  <view name="screen">
+        <image name="TV" extra="true">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./main/midia/crt.png</path>
+            <color>FFFFFF90</color>
+            <tile>true</tile>
+        </image>
+
+        <ninepatch name="TV" extra="true" tinyScreen="false">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./main/midia/tv.png</path>
+            <color>FFFFFF80</color>
+            <cornerSize>32 32</cornerSize>
+        </ninepatch>
+    </view>
+</theme>

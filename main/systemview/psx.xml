@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <view name="menu, system, basic, detailed, Carousel, Boxes, Tiles, grid">
+        <helpsystem name="help">
+            <iconColor>FFFFFFFF</iconColor>
+            <iconUpDown>./main/iconset/psx/updown.png</iconUpDown>
+            <iconLeftRight>./main/iconset/psx/leftright.png</iconLeftRight>
+            <iconUpDownLeftRight>./psx/all.png</iconUpDownLeftRight>
+            <iconA>./main/iconset/psx/a.png</iconA>
+            <iconB>./main/iconset/psx/b.png</iconB>
+            <iconX>./main/iconset/psx/x.png</iconX>
+            <iconY>./main/iconset/psx/y.png</iconY>
+            <iconL>./main/iconset/psx/l.png</iconL>
+            <iconR>./main/iconset/psx/r.png</iconR>
+            <iconStart>./main/iconset/psx/start.png</iconStart>
+            <iconSelect>./main/iconset/psx/select.png</iconSelect>
+        </helpsystem>
+    </view>
+</theme>

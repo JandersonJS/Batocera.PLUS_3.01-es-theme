@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="system">
+
+      <image name="avatar" extra="static">
+         <path>./main/avatars/${image.avatar}</path>
+         <path ifSubset="system-avatar:custom">./custom-avatar.png</path>
+         <pos>0.807 0.035</pos>
+         <maxSize>0.063 0.063</maxSize>
+         <zIndex>85</zIndex>
+         <linearSmooth>true</linearSmooth>
+      </image>
+
+      <text name="username" extra="static">
+         <text>${theme.nick}</text>
+         <text ifSubset="system-username:custom">${custom.nick}</text>
+         <pos>0.845 0.045</pos>
+         <size>0.165 0.035</size>
+         <color>ffffff</color>
+         <fontPath>./fonts/SST Light.ttf</fontPath>
+         <fontSize>0.028</fontSize>
+         <alignment>left</alignment>
+         <glowColor>00000035</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <zIndex>99</zIndex>
+         <backgroundColor>ff000000</backgroundColor>
+      </text>
+
+        <image name="staticBackground" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.8585 0.066</pos>
+            <size>0.117 0.075</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>75</zIndex>
+        </image>
+
+        <image name="staticBackground2" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.8585 0.066</pos>
+            <size>0.117 0.075</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>85</zIndex>
+        </image>
+
+        <image name="band1" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+
+        <image name="band2" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+
+        <image name="band3" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+
+        <image name="band4" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+    <carousel name="systemcarousel">
+      <color>${baseColor}</color>
+      <colorEnd>${baseColor}</colorEnd>
+      <systemInfoDelay>0</systemInfoDelay>
+      <systemInfoCountOnly>false</systemInfoCountOnly>
+      <pos>0 0.3837</pos>
+      <size>1 0.2325</size>
+      <zIndex>100</zIndex>
+      <logoSize>0.17 0.1</logoSize>
+      <logoScale>1.6</logoScale>
+      <transitionSpeed>650</transitionSpeed>
+      <minLogoOpacity>0.6</minLogoOpacity>
+      <logoSize verticalScreen="true">0.35 0.1</logoSize>
+      <maxLogoCount verticalScreen="true">1</maxLogoCount>
+    </carousel>
+    <image name="logo">
+      <path>./../../main/logos/${system.theme}-w.svg</path>
+    </image>
+    <image name="logo" region="us">
+      <path>./../../main/logos/us/${system.theme}.svg</path>
+      <path>./../../main/logos/us/${system.theme}-w.svg</path>
+    </image>
+    <image name="logo" region="jp">
+      <path>./../../main/logos/jp/${system.theme}.svg</path>
+      <path>./../../main/logos/jp/${system.theme}-w.svg</path>
+    </image>
+    <image name="carousel-topline" extra="true" tinyScreen="false">
+      <path>./../../main/midia/white.png</path>
+      <color>${baseColor}</color>
+      <origin>0 0</origin>
+      <pos>0 0.3817</pos>
+      <size>1 0.005</size>
+      <zIndex>100</zIndex>
+    </image>
+    <image name="carousel-bottomline" extra="true" tinyScreen="false">
+      <path>./../../main/midia/white.png</path>
+      <color>${baseColor}</color>
+      <origin>0 0</origin>
+      <pos>0 0.6101</pos>
+      <size>1 0.005</size>
+      <zIndex>100</zIndex>
+    </image>
+    <carousel name="systemcarousel" tinyScreen="true">
+      <pos>0 0.35</pos>
+      <size>1 0.60</size>
+      <maxLogoCount>1</maxLogoCount>
+      <logoSize>0.25 0.15</logoSize>
+      <logoScale>2.6</logoScale>
+      <logoPos>-1 0.1</logoPos>
+    </carousel>
+    
+    <!--
+    <image name="carousel-inner" extra="true">
+      <path>./../../main/midia/carousel.png</path>
+      <color>FFFFFFFF</color>
+      <origin>0 0</origin>
+      <pos>0 0.3837</pos>
+      <size>1 0.2325</size>
+      <zIndex>40</zIndex>
+    </image>
+    -->
+    <text name="systemInfo">
+      <pos>0 0.64</pos>
+      <size>1 0.25</size>
+      <backgroundColor>00000000</backgroundColor>
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+      <glowSize>1</glowSize>
+      <reflexion>0.20 0.0</reflexion>
+      <fontPath>./../../main/fonts/Cabin-Bold.ttf</fontPath>
+      <fontSize>0.027</fontSize>
+    </text>
+    <image name="carousel-shadow" extra="true">
+      <path>./../../main/shadow.png</path>
+      <color>FFFFFF40</color>
+      <pos>0 0.6161</pos>
+      <origin>0 0</origin>
+      <size>1 0.025</size>
+      <zIndex>13</zIndex>
+    </image>
+    <image name="CenterFade" extra="true">
+      <tile>false</tile>
+      <size>1 0.5</size>
+      <pos>0.5 0.5</pos>
+      <origin>0.5 0.5</origin>
+      <path>./../../main/midia/centerfade.png</path>
+      <color>${centerFadeColor}</color>
+      <zIndex>12</zIndex>
+    </image>
+
+    <text name="systemInfo" visible="false"/>
+    <text name="systemInfoEx" extra="true">
+      <!-- possible bindings are :
+{binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
+{binding:mostPlayed}, {binding:lastPlayedDate}
+-->
+      <text>Games : {binding:total} 
+Playing : {binding:played}
+Favorites : {binding:favorites} 
+Games played : {binding:gamesPlayed} 
+Most played : {binding:mostPlayed} 
+Hidden : {binding:hidden}
+Last played : {binding:lastPlayedDate}</text>
+      <text lang="fr">Nombre de jeux : {binding:total}
+Favoris : {binding:favorites}
+Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed}
+Dernière partie : {binding:lastPlayedDate}</text>
+      <text lang="es">Número de juegos : {binding:total}
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+      <alignment>center</alignment>
+      <verticalAlignment>left</verticalAlignment>
+      <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+      <fontSize>0.024</fontSize>
+      <pos>0.03 0.66</pos>
+      <size>0.94 0.28</size>
+      <zIndex>100</zIndex>
+      <color>ff9900</color>
+      <glowColor>000000A0</glowColor>
+      <glowSize>1</glowSize>
+    </text>
+    <text name="systemInfoEx" extra="true" if="{system.name} == 'collections'">
+      <text>Collections : {binding:subSystems}</text>
+      <text lang="fr">Nombre de collections : {binding:subSystems}</text>
+    </text>
+    <text name="systemInfoEx" extra="true" if="{system.name} == 'library' || {system.name} == 'screenshots'">
+      <text>Items : {binding:total}</text>
+      <text lang="fr">Nombre d'élements : {binding:total}</text>
+      <text lang="es">Número de elementos: {binding:total}</text>
+    </text>
+
+  </view>
+</theme>

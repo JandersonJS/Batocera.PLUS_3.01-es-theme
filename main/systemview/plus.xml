@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+
+      <image name="avatar" extra="static">
+         <path>./main/avatars/${image.avatar}</path>
+         <path ifSubset="system-avatar:custom">./custom-avatar.png</path>
+         <pos>0.807 0.035</pos>
+         <maxSize>0.063 0.063</maxSize>
+         <zIndex>85</zIndex>
+         <linearSmooth>true</linearSmooth>
+      </image>
+
+      <text name="username" extra="static">
+         <text>${theme.nick}</text>
+         <text ifSubset="system-username:custom">${custom.nick}</text>
+         <pos>0.845 0.045</pos>
+         <size>0.165 0.035</size>
+         <color>ffffff</color>
+         <fontPath>./fonts/SST Light.ttf</fontPath>
+         <fontSize>0.028</fontSize>
+         <alignment>left</alignment>
+         <glowColor>00000035</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <zIndex>99</zIndex>
+         <backgroundColor>ff000000</backgroundColor>
+      </text>
+
+        <image name="staticBackground" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.8585 0.066</pos>
+            <size>0.117 0.075</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>75</zIndex>
+        </image>
+
+        <image name="staticBackground2" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.8585 0.066</pos>
+            <size>0.117 0.075</size>
+            <origin>0.5 0.5</origin>
+            <zIndex>85</zIndex>
+        </image>
+
+        <image name="band1" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+
+        <image name="band2" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+
+        <image name="band3" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+
+        <image name="band4" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>50</zIndex>
+            <path>./main/midia/band.png</path>
+        </image>
+    <include>./main/layouts/${system.theme}.xml</include>
+
+        <image name="console" extra="true">
+            <pos>0.02 0.35</pos>
+            <maxSize>0.25 0.25</maxSize>
+            <origin>0 1</origin>
+            <path>./main/plus/console/${system.theme}.svg</path>
+            <path>./main/plus/console/${system.theme}.png</path>
+            <zIndex>99</zIndex>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.25 0.35</pos>
+            <maxSize>0.15 0.15</maxSize>
+            <origin>0 1</origin>
+            <path>./main/plus/game/${system.theme}.svg</path>
+            <path>./main/plus/game/${system.theme}.png</path>
+            <zIndex>99</zIndex>
+        </image>
+
+        <image name="controller" extra="true">
+            <pos>0.69 0.35</pos>
+            <maxSize>0.25 0.25</maxSize>
+            <origin>0 1</origin>
+            <path>./main/plus/controller/${system.theme}.svg</path>
+            <path>./main/plus/controller/${system.theme}.png</path>
+            <zIndex>99</zIndex>
+        </image>
+
+        <carousel name="systemcarousel">
+            <color>${centerFadeColor}</color>
+            <zIndex>60</zIndex>
+        </carousel>
+
+
+        <image name="ControllerOverlay" extra="true">
+            <visible>false</visible>
+        </image>
+        <image name="colorplus" extra="static" tinyScreen="false">
+            <tile>false</tile>
+      	    <color>${baseColor}</color>
+            <pos>0 0</pos>
+            <size>1 0.67</size>
+            <origin>0 0</origin>
+            <path>./main/midia/colorplus.png</path>
+            <zIndex>10</zIndex>
+       </image>
+
+        <image name="colorplus2" extra="static" tinyScreen="false">
+            <tile>false</tile>
+      	    <color>${baseColor}</color>
+            <pos>0 0.385</pos>
+            <size>1 0.285</size>
+            <origin>0 0</origin>
+            <path>./main/midia/colorplus.png</path>
+            <zIndex>55</zIndex>
+       </image>
+
+
+    <text name="systemInfo" visible="true"/>
+
+        <text name="systemInfo">
+            <pos>0 0.623</pos>
+            <size>1 0.045</size>
+            <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <backgroundColor>00000000</backgroundColor>
+            <color>ff9900</color>
+            <glowColor>000000A0</glowColor>
+            <systemInfoDelay>0</systemInfoDelay>
+            <glowSize>1</glowSize>
+            <zIndex>999</zIndex>
+        </text>
+
+    <text name="systemInfoEx" extra="true">
+      <!-- possible bindings are :
+{binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
+{binding:mostPlayed}, {binding:lastPlayedDate}
+-->
+      <text> 
+Playing : {binding:played}
+Favorites : {binding:favorites} 
+Games played : {binding:gamesPlayed} 
+Most played : {binding:mostPlayed} 
+Hidden : {binding:hidden}
+Last played : {binding:lastPlayedDate}</text>
+      <text lang="fr">Nombre de jeux : {binding:total}
+Favoris : {binding:favorites}
+Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed}
+Dernière partie : {binding:lastPlayedDate}</text>
+      <text lang="es">Número de juegos : {binding:total}
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+      <alignment>center</alignment>
+      <verticalAlignment>left</verticalAlignment>
+      <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+      <fontSize>0.024</fontSize>
+      <pos>0.03 0.65</pos>
+      <size>0.94 0.28</size>
+      <zIndex>100</zIndex>
+      <color>ff9900</color>
+      <glowColor>000000A0</glowColor>
+      <glowSize>1</glowSize>
+    </text>
+    <text name="systemInfoEx" extra="true" if="{system.name} == 'collections'">
+      <text>Collections : {binding:subSystems}</text>
+      <text lang="fr">Nombre de collections : {binding:subSystems}</text>
+    </text>
+    <text name="systemInfoEx" extra="true" if="{system.name} == 'library' || {system.name} == 'screenshots'">
+      <text>Items : {binding:total}</text>
+      <text lang="fr">Nombre d'élements : {binding:total}</text>
+      <text lang="es">Número de elementos: {binding:total}</text>
+    </text>
+    </view>
+</theme>

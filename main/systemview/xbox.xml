@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <view name="menu, system, basic, detailed, Carousel, Boxes, Tiles, grid">
+        <helpsystem name="help">
+            <iconColor>FFFFFFFF</iconColor>
+            <iconUpDown>./main/iconset/xbox/updown.png</iconUpDown>
+            <iconLeftRight>./main/iconset/xbox/leftright.png</iconLeftRight>
+            <iconUpDownLeftRight>./main/iconset/xbox/all.png</iconUpDownLeftRight>
+            <iconA>./main/iconset/xbox/a.png</iconA>
+            <iconB>./main/iconset/xbox/b.png</iconB>
+            <iconX>./main/iconset/xbox/x.png</iconX>
+            <iconY>./main/iconset/xbox/y.png</iconY>
+            <iconL>./main/iconset/xbox/l.png</iconL>
+            <iconR>./main/iconset/xbox/r.png</iconR>
+            <iconStart>./main/iconset/xbox/start.png</iconStart>
+            <iconSelect>./main/iconset/xbox/select.png</iconSelect>
+        </helpsystem>
+    </view>
+</theme>

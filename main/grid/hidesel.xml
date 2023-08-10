@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <customView name="Boxes,grid">
+        <gridtile name="default">
+            <backgroundCenterColor>${BaseColor}</backgroundCenterColor>
+        <backgroundEdgeColor>${BaseColor}</backgroundEdgeColor>
+
+        </gridtile>
+            <gridtile name="selected">
+                <backgroundCenterColor>${BaseColor}</backgroundCenterColor>
+            <backgroundEdgeColor>${BaseColor}</backgroundEdgeColor>
+        </gridtile>
+
+        <ninepatch name="gridtile.background">
+            <visible>false</visible>
+        </ninepatch>
+    </customView>
+</theme>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 3</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.02 0.30</pos>
+            <maxSize>0.45 0.25</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>C4353D</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>C2904A</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>853641</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>4C301C</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Nintendo</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 1980</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : 43.4 million</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Second generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : Sharp SM5xx family</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 2 MB</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>ROM : 2 MB</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Video Display : 1000 mAh Li-Ion</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound chip : Monoral</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution : Black & White Simple Screen</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

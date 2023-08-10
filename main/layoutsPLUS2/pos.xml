@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="console" extra="true">
+            <pos>0.13 0.40</pos>
+            <maxSize>0.27 0.22</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.29 0.40</pos>
+            <maxSize>0.11 0.11</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="controller" extra="true">
+            <pos>0.78 0.40</pos>
+            <maxSize>0.12 0.22</maxSize>
+            <origin>1 0.85</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>B2AFAC</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>242443</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>345A89</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>363636</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Palm, Inc.</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 2002</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : uninformed</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Fourth generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : Motorola DragonBall VZ MC68VZ328 @ 33 MHz</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 16 MB RAM</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>ROM : 4 MB Flash</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Graphics : LCD</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound hardware : Internal (uninformed)</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Display : 160×160 pixel (65,000+ colors)</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

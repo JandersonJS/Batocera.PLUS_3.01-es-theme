@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+	<view name="splash">
+		<image name="background">
+			<pos>0.3 0.05</pos>
+			<origin>0 0</origin>
+			<maxSize>0.35 0.35</maxSize>
+			<roundCorners>0</roundCorners>
+			<linearSmooth>true</linearSmooth>
+			<color>ffffff</color>
+			<colorEnd>404040</colorEnd>
+			<gradientType>vertical</gradientType>
+      			<horizontalAlignment>right</horizontalAlignment>
+			<zIndex>3</zIndex>
+		</image>
+
+		<image name="backgroundalt" extra="true">
+	    	<path>./main/background/loadscreen.jpg</path>
+			<linearSmooth>true</linearSmooth>
+			<minSize>1 1</minSize>
+			<zIndex>1</zIndex>
+		</image>
+
+		<text name="label">
+			<pos> 0.75</pos>
+			<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+			<color>ff9900</color>
+			<fontSize>0.065</fontSize>
+			<alignment>center</alignment>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+		</text>
+
+
+       		<image name="hotkey-tips" extra="true">
+			<origin>1 0.5</origin>
+			<pos>1 0.443</pos>
+			<maxSize>0.35</maxSize>
+			<maxSize tinyScreen="true">0.45</maxSize>			
+			<path>./main/hotkey-tips/en.png</path>
+			<path>./main/hotkey-tips/${lang}.png</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>9</zIndex>
+		</image>
+
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+
+	</view>
+
+</theme>
