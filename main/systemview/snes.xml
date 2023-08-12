@@ -16,6 +16,7 @@
             <iconR>./main/iconset/snes/r.png</iconR>
             <iconStart>./main/iconset/snes/start.png</iconStart>
             <iconSelect>./main/iconset/snes/select.png</iconSelect>
+	    <iconF1>./main/iconset/snes/f1.png</iconF1>
         </helpsystem>        
     </view>
 </theme>

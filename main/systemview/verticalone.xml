@@ -48,28 +48,28 @@
         <image name="band1" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
         <!-- When random box -->
@@ -116,7 +116,7 @@
             <size>1 0.2</size>
             <origin>0.5 0.5</origin>
             <path>./main/midia/centerfade.png</path>
-            <color>04082a</color>
+      	    <color>${baseColor}</color>
             <visible>true</visible>
         </image>
 
@@ -126,7 +126,7 @@
             <size>1 0.25</size>
             <origin>0.5 0.5</origin>
             <path>./main/midia/centerfade.png</path>
-            <color>0764a1</color>
+      	    <color>${baseColor}</color>
             <visible>true</visible>
         </image>
 

@@ -102,7 +102,7 @@
         </image>
 
         <carousel name="systemcarousel">
-            <color>${centerFadeColor}</color>
+            <color>ffffff</color>
             <zIndex>60</zIndex>
         </carousel>
 
