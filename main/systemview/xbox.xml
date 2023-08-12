@@ -16,6 +16,7 @@
             <iconR>./main/iconset/xbox/r.png</iconR>
             <iconStart>./main/iconset/xbox/start.png</iconStart>
             <iconSelect>./main/iconset/xbox/select.png</iconSelect>
+	    <iconF1>./main/iconset/xbox/f1.png</iconF1>
         </helpsystem>
     </view>
 </theme>

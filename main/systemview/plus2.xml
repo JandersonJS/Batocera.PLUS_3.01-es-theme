@@ -115,7 +115,7 @@
        </image>
 
         <carousel name="systemcarousel">
-            <color>coc1c3</color>
+            <color>ffffff</color>
             <pos>0 0.665</pos>
             <zIndex>60</zIndex>
         </carousel>
@@ -276,7 +276,7 @@ El más jugado : {binding:mostPlayed}
 Última partida : {binding:lastPlayedDate}</text>
       <alignment>right</alignment>
       <verticalAlignment>right</verticalAlignment>
-      <fontPath>./art/fonts/ubuntu_bold.ttf</fontPath>
+      <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
       <fontSize>0.024</fontSize>
       <pos>-0.16 0.42</pos>
       <size>0.94 0.28</size>

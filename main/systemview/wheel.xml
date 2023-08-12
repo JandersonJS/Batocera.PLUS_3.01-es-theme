@@ -79,28 +79,28 @@
         <image name="band1" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
-            <zIndex>50</zIndex>
+            <zIndex>35</zIndex>
             <path>./main/midia/band.png</path>
         </image>
 
