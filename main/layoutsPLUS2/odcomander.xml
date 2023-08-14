@@ -30,19 +30,19 @@
         </image>
 
         <image name="band1" extra="true">
-            <color>07dc1a</color>
+            <color>f78602</color>
         </image>
 
         <image name="band2" extra="true">
-            <color>69ee28</color>
+            <color>bef3fe</color>
         </image>
 
         <image name="band3" extra="true">
-            <color>c1fc20</color>
+            <color>ffffff</color>
         </image>
 
         <image name="band4" extra="true">
-            <color>ddbb01</color>
+            <color>ffce65</color>
         </image>
 
         <text name="info1" extra="true">
