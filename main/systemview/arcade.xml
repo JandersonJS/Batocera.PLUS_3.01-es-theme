@@ -6,16 +6,16 @@
       <image name="avatar" extra="static">
          <path>./main/avatars/${image.avatar}</path>
          <path ifSubset="system-avatar:custom">./custom-avatar.png</path>
-         <pos>0.027 0.035</pos>
+         <pos>0.023 0.035</pos>
          <maxSize>0.063 0.063</maxSize>
-         <zIndex>85</zIndex>
+         <zIndex>87</zIndex>
          <linearSmooth>true</linearSmooth>
       </image>
 
       <text name="username" extra="static">
          <text>${theme.nick}</text>
          <text ifSubset="system-username:custom">${custom.nick}</text>
-         <pos>0.067 0.045</pos>
+         <pos>0.063 0.045</pos>
          <size>0.175 0.035</size>
          <color>ffffff</color>
          <fontPath>./fonts/SST Light.ttf</fontPath>
@@ -30,16 +30,14 @@
 
         <image name="staticBackground" extra="static" tinyScreen="false">
             <tile>false</tile>
-            <pos>0.0795 0.066</pos>
-            <size>0.119 0.075</size>
+            <pos>0.0405 0.0665</pos>
             <origin>0.5 0.5</origin>
-            <zIndex>45</zIndex>
+            <zIndex>85</zIndex>
         </image>
 
         <image name="staticBackground2" extra="static" tinyScreen="false">
             <tile>false</tile>
             <pos>0.0795 0.066</pos>
-            <size>0.119 0.075</size>
             <origin>0.5 0.5</origin>
             <zIndex>85</zIndex>
         </image>

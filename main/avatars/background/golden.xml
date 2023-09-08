@@ -6,19 +6,19 @@
         <image name="staticBackground" extra="static" tinyScreen="false">
             <tile>false</tile>
             <color>ff9900</color>
-            <size>0.119 0.075</size>
+            <size>0 0.061</size>
             <origin>0.5 0.5</origin>
-            <path>./main/midia/logowheel.svg</path>
-            <zIndex>45</zIndex>
+            <path>./main/avatars/background/circle.png</path>
+            <zIndex>85</zIndex>
         </image>
 
         <image name="staticBackground2" extra="static" tinyScreen="false">
             <tile>false</tile>
             <color>ff9900</color>
-            <size>0.119 0.075</size>
+            <size>0.11645 0.075</size>
             <origin>0.5 0.5</origin>
             <path>./main/avatars/background/avatar-background.png</path>
-            <zIndex>85</zIndex>
+            <zIndex>45</zIndex>
         </image>
 
 </view> 
