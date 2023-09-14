@@ -360,7 +360,8 @@ Année de sortie : ${system.releaseYear}</text>
 <subset name="system-avatar" displayName="${theme.Avatar}" extra="true, static">
 	<include name="custom" displayName="${custom}">./main/avatars/custom.xml</include>
 	<include name="1-Up" displayName="1-Up">./main/avatars/1-Up.xml</include>
-	<include name="mario" displayName="Mario Bros.">./main/avatars/mario.xml</include> 
+	<include name="mario" displayName="Mario">./main/avatars/mario.xml</include> 
+	<include name="luigi" displayName="Luigi">./main/avatars/luigi.xml</include> 
 	<include name="mario racoon" displayName="Mario Racoon.">./main/avatars/racoon.xml</include>
 	<include name="goomba" displayName="Goomba">./main/avatars/goomba.xml</include>
 	<include name="donkey" displayName="Donkey Kong">./main/avatars/donkey.xml</include> 
