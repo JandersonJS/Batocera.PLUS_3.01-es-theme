@@ -5,8 +5,7 @@ version: 2.1
 author:  Caetano Ramos, Marcio Renato Boufleuer
 atualização e manutenção: Janderson "LordOgro" Siqueira
 license: creative commons CC-BY-NC-SA
-
-------------------------------------------------------------------
+___________________________________________________________
 
 Tema Carbon baseado no tema "simples" por Nils Bonenberger...Adaptado como tema principal para o batocera.Plus por Caetano Ramos e continuado por Marcio Renato Boufleuer.
 Atualmente mantido por Janderson "LordOgro" Siqueira.
@@ -14,6 +13,7 @@ Todos os créditos da criação do tema se devem ao autor Eric Hettervik (Rooker
 Deixamos aqui o nosso agradecimento!...
 
 Carbon theme based on the "simple" theme by Nils Bonenberger ... Adapted as the main theme for batocera.Plus by Marcio Renato Boufleuer.
+Currently maintained by Janderson "LordOgro" Siqueira.
 All credits for the creation of the theme are due to the author Eric Hettervik (Rookervik)
 We leave here our thanks! ...
 -->
@@ -21,6 +21,7 @@ We leave here our thanks! ...
 <theme defaultView="detailed">
     <formatVersion>7</formatVersion>
     <include>./main/midia/system.xml</include>
+    <include>./main/systemsbk/logoanimationsubset.xml</include>
 
     <variables>
         <baseColor>8b0000</baseColor>
@@ -186,7 +187,7 @@ We leave here our thanks! ...
             <size>0.03 1</size>
             <pos>0.80 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
             <zIndex>12</zIndex>
         </image>
 
@@ -194,7 +195,7 @@ We leave here our thanks! ...
             <size>0.03 1</size>
             <pos>0.829 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
             <zIndex>12</zIndex>
         </image>
 
@@ -202,7 +203,7 @@ We leave here our thanks! ...
             <size>0.03 1</size>
             <pos>0.858 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
             <zIndex>12</zIndex>
         </image>
 
@@ -210,7 +211,7 @@ We leave here our thanks! ...
             <size>0.03 1</size>
             <pos>0.887 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
             <zIndex>12</zIndex>
         </image>
 
@@ -498,7 +499,7 @@ Année de sortie : ${system.releaseYear}</text>
             <color>ff9900</color>
         </menuTextSmall>
 
-        <!---
+        <!--
         <menuGroup name="menugroup">
             <fontPath>./main/Cabin-Bold.ttf</fontPath>
             <fontSize>0.025</fontSize>
@@ -507,7 +508,7 @@ Année de sortie : ${system.releaseYear}</text>
             <backgroundColor>00000000</backgroundColor>
             <lineSpacing>2.5</lineSpacing>
         </menuGroup>
-        --->
+        -->
 
         <menuBackground name="menubg">
       	    <color>${baseColor}</color>
@@ -603,12 +604,13 @@ Année de sortie : ${system.releaseYear}</text>
         <video name="md_video">
             <origin>0.5 0.5</origin>
             <pos>0.55 0.33</pos>
-            <maxSize>0.33 0.454</maxSize>
-            <delay>1.2</delay>
+            <minSize>0.33 0.454</minSize>
+            <delay>0.2</delay>
             <default></default>
+            <effect>none</effect>
             <showSnapshotNoVideo>true</showSnapshotNoVideo>
             <showSnapshotDelay>false</showSnapshotDelay>
-            <roundCorners>0.02</roundCorners>
+            <roundCorners>0</roundCorners>
             <alignment>left</alignment>
             <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
             <fontSize>0.02</fontSize>
@@ -761,7 +763,7 @@ Année de sortie : ${system.releaseYear}</text>
 
         <image name="back-description" extra="static">
             <pos>0.37 0.62</pos>
-            <size>0.62 0.280</size>
+            <size>0.62 0.300</size>
             <path>./main/midia/back.png</path>
         </image>
 
@@ -1034,6 +1036,11 @@ Année de sortie : ${system.releaseYear}</text>
         </text>
 
         <image name="logo">
+ 
+            <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+            </storyboard>
+
             <!-- try png -->
             <path>./main/logos/${system.theme}.png</path>
             <path>./main/logos/${system.theme}.svg</path>
@@ -1332,7 +1339,7 @@ Année de sortie : ${system.releaseYear}</text>
 
     <customView name="arcade" inherits="detailed">
         <image name="md_background" extra="static">
-            <path>./main/midia/fundo.png</path>
+            <path>./main/midia/fundos.png</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
@@ -1343,23 +1350,31 @@ Année de sortie : ${system.releaseYear}</text>
         <image name="crt" extra="static">
             <pos>0.74 0.60</pos>
             <origin>0.5 0.5</origin>
-            <size>0.24 0.24</size>
+            <maxSize>0.30 0.30</maxSize>
             <path>./main/midia/scanlines.png</path>
             <color>FFFFFF60</color>
             <tile>true</tile>
-            <zIndex>07</zIndex>
+            <zIndex>999</zIndex>
+        </image>
+
+        <image name="novideo" extra="static">
+            <default>./main/midia/novideo.png</default>
+            <origin>0.5 0.5</origin>
+            <pos>0.74 0.60</pos>
+            <maxSize>0.30 0.30</maxSize>
+            <zIndex>95</zIndex>
         </image>
 
         <video name="md_video">
             <pos>0.74 0.60</pos>
             <origin>0.5 0.5</origin>
-            <size>0.24 0.24</size>
-            <delay>0.05</delay>
-            <roundCorners>0.02</roundCorners>
+            <minSize>0.30 0.30</minSize>
+            <zIndex>99</zIndex>
+            <delay>0</delay>
+            <roundCorners>0</roundCorners>
             <alignment>left</alignment>
             <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
             <fontSize>0.02</fontSize>
-            <zIndex>05</zIndex>
         </video>
 
         <textlist name="gamelist">
@@ -1408,9 +1423,9 @@ Année de sortie : ${system.releaseYear}</text>
         </image>
 
         <image name="md_marquee"> <!-- marquee do menu interno -->
-            <origin>0 0</origin>
-            <pos>0.65 0.15</pos>
-            <maxSize>0.18 0.19</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.74 0.24</pos>
+            <maxSize>0.28 0.17</maxSize>
             <zIndex>10</zIndex>
         </image>
 
@@ -1496,7 +1511,7 @@ Année de sortie : ${system.releaseYear}</text>
             <pos>0.74 0.60</pos>
             <origin>0.5 0.5</origin>
             <size>0.24 0.24</size>
-            <zIndex>02</zIndex>
+            <zIndex>96</zIndex>
         </image>
     </customView>
 

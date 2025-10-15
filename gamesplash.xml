@@ -1,7 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 <formatVersion>7</formatVersion>
+
+    <subset name="colorset" displayName="${subset.colorset}">
+        <include name="blue" displayName="${blue}">./main/colorsets/blue.xml</include>
+        <include name="red" displayName="${red}">./main/colorsets/red.xml</include>
+        <include name="green" displayName="${green}">./main/colorsets/green.xml</include>
+        <include name="yellow" displayName="${yellow}">./main/colorsets/yellow.xml</include>
+        <include name="violet">./main/colorsets/violet.xml</include>
+        <include name="cyan">./main/colorsets/cyan.xml</include>
+        <include name="orange">./main/colorsets/orange.xml</include>
+        <include name="gray">./main/colorsets/gray.xml</include>
+    </subset>
+
 	<view name="splash">
+
+		<image name="backgroundalt" extra="true">
+	    	<path>./main/background/loadscreen.jpg</path>
+			<linearSmooth>true</linearSmooth>
+			<minSize>1 1</minSize>
+			<zIndex>1</zIndex>
+		</image>
+
 		<image name="background">
 			<pos>0.3 0.05</pos>
 			<origin>0 0</origin>
@@ -15,13 +35,6 @@
 			<zIndex>3</zIndex>
 		</image>
 
-		<image name="backgroundalt" extra="true">
-	    	<path>./main/background/loadscreen.jpg</path>
-			<linearSmooth>true</linearSmooth>
-			<minSize>1 1</minSize>
-			<zIndex>1</zIndex>
-		</image>
-
 		<text name="label">
 			<pos> 0.75</pos>
 			<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
@@ -31,23 +44,303 @@
 			<glowColor>00000035</glowColor>
 			<glowSize>1</glowSize>
 			<glowOffset>3 2</glowOffset>
+			<visible>empty({game:rom})</visible>
 		</text>
 
+		<image name="logo-splash" extra="true">
+			<path>{game:marquee}</path>
+			<pos>0.5 0.76</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.50 0.20</maxSize>
+			<zIndex>05</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<text name="name-splash" extra="true">
+			<text>{game:name}</text>
+			<pos>0.023 0.175</pos>
+			<size>0.9 0.08</size>
+			<color>ff9900</color>
+			<backgroundColor>FF000000</backgroundColor>
+			<fontSize>0.028</fontSize>
+			<alignment>left</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+			<origin>0 0</origin>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>05</zIndex>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScrollDelay>0</autoScrollDelay>
+		</text>
 
-       		<image name="hotkey-tips" extra="true">
+       	<image name="hotkey-tips" extra="true">
+			<color>ff9900</color>
 			<origin>1 0.5</origin>
-			<pos>1 0.443</pos>
-			<maxSize>0.35</maxSize>
+			<pos>1 0.35</pos>
+			<maxSize>0.60</maxSize>
 			<maxSize tinyScreen="true">0.45</maxSize>			
-			<path>./main/hotkey-tips/en.png</path>
-			<path>./main/hotkey-tips/${lang}.png</path>
+			<path>./main/hotkey-tips/gamesplash.png</path>
+			<path>./main/hotkey-tips/gamesplash-${lang}.png</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>9</zIndex>
+		</image>
+
+       	<image name="hotkeyBack" extra="true">
+			<path>./main/midia/band.svg</path>
+			<origin>1 0.5</origin>
+			<pos>1 0.35</pos>
+			<size>0.27 0.65</size>
+            <color>${baseColor}bb</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>8</zIndex>
+		</image>
+
+       	<image name="infoBack" extra="true">
+			<path>./main/midia/band.svg</path>
+			<origin>0 0</origin>
+			<pos>0 0.17</pos>
+			<size>0.37 0.25</size>
+            <color>${baseColor}bb</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
 		</image>
 
 		<splash name="splash">
 			<backgroundColor>000000FF</backgroundColor>
 		</splash>
+
+		<stackpanel name="container-gamedata" extra="true">
+			<separator>0.015</separator>
+			<pos>0.025 0.26</pos>
+			<size>0.5 0.032</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>05</zIndex>
+	
+			<image name="icons-releaseyear">
+				<path>./main/midia/game_info_releasedate.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>ff9900</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>!empty({game:releaseyear})</visible>
+			</image>
+			<text name="gamedata-releaseyear">
+				<fontSize>0.025</fontSize>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text>{game:releaseyear}</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>!empty({game:releaseyear})</visible>
+			</text>
+	
+			<image name="icons-publisher">
+				<path>./main/midia/game_info_publisher.svg</path>
+				<linearSmooth>true</linearSmooth>
+			<color>ff9900</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
+			</image>
+			<text name="gamedata-publisher">
+				<fontSize>0.025</fontSize>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text>{game:publisher}</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:publisher})</visible>
+			</text>
+	
+			<image name="icons-developer">
+				<path>./main/midia/game_info_developer.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>ff9900</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<text name="gamedata-developer">
+				<fontSize>0.025</fontSize>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text>{game:developer}</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:publisher} != {game:developer} &amp;&amp; !empty({game:developer})</visible>
+			</text>
+	
+			<image name="icons-developer-publisher">
+				<path>./main/midia/game_info_publisher.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>ff9900</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<image name="icons-developer-publisher2">
+				<path>./main/midia/game_info_developer.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>ff9900</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</image>
+			<text name="gamedata-developer-publisher">
+				<fontSize>0.025</fontSize>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text>{game:developer}</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>{game:publisher} == {game:developer} &amp;&amp; !empty({game:publisher}) &amp;&amp; !empty({game:developer})</visible>
+			</text>
+		</stackpanel>
+
+		<stackpanel name="container-gamedata2" extra="true">
+			<separator>0.018</separator>
+			<pos>0.025 0.31</pos>
+			<size>0.5 0.032</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>05</zIndex>
+
+			<text name="gamedata-stars">
+				<fontSize>0.025</fontSize>
+				<text>{game:stars}</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<visible>!empty({game:stars})</visible>
+			</text>
+	
+			<image name="icons-genre">
+				<path>./main/midia/game_info_genre.svg</path>
+				<linearSmooth>true</linearSmooth>
+				<color>EEEEEE</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+				<visible>!empty({game:genre})</visible>
+			</image>
+			<text name="gamedata-genre">
+				<fontSize>0.025</fontSize>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text> {game:genre}</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<visible>!empty({game:genre})</visible>
+			</text>
+		</stackpanel>
+
+		<stackpanel name="container-icons" extra="true">
+			<separator>0.015</separator>
+			<pos>0.024 0.36</pos>
+			<size>0.7 0.032</size>
+			<orientation>horizontal</orientation>
+			<backgroundColor>FF000000</backgroundColor>
+			<zIndex>05</zIndex>
+
+			<image name="flag-region">
+				<path>./main/midia/flags/{game:region}.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>{game:region} != {game:lang} &amp;&amp; !contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+	
+			<image name="flag-force-world">
+				<path>./main/midia/flags/wr.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>contains(lower({game:region}), ',') &amp;&amp; !empty({game:region})</visible>
+			</image>
+	
+			<image name="flag-lang">
+				<path>./main/midia/flags/{game:lang}.png</path>
+				<maxSize>1</maxSize>
+				<linearSmooth>true</linearSmooth>
+				<opacity>0.8</opacity>
+				<visible>!contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</image>
+	
+			<text name="gamedata-lang">
+				<fontSize>0.02</fontSize>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text>{game:lang}.upper()</text>
+				<color>ff9900</color>
+				<glowColor>00000035</glowColor>
+				<glowSize>1</glowSize>
+				<glowOffset>3 2</glowOffset>
+				<singleLineScroll>true</singleLineScroll>
+				<autoScrollDelay>0</autoScrollDelay>
+				<y>0.02</y>
+				<visible>contains(lower({game:lang}), ',') &amp;&amp; !empty({game:lang})</visible>
+			</text>
+
+			<text name="container-separator">
+				<text> |</text>
+				<fontSize>0.03</fontSize>
+				<color>ff9900</color>
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<visible>!empty({game:lang}) || !empty({game:region}) </visible>
+			  </text>
+
+			<text name="icons-players">
+				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+				<text>{game:playerCount}</text>
+				<alignment>center</alignment>
+				<fontSize>0.03</fontSize>
+				<color>ff9900</color>
+			</text>
+	
+			<image name="icons-cheevos">
+				<visible>{game:cheevos}</visible>
+				<path>./main/icons/Contest.png</path>
+				<linearSmooth>true</linearSmooth>
+				<color>ff9900</color>
+				<padding>0 0</padding>
+				<maxSize>1 1</maxSize>
+			</image>
+	
+			<image name="icons-wheel">
+				<visible>{game:wheelGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>./main/midia/wheel.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>ff9900</color>
+			</image>
+	
+			<image name="icons-gun">
+				<visible>{game:gunGame}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>./main/midia/gun.svg</path>
+				<maxSize>1 1</maxSize>
+				<color>ff9900</color>
+			</image>
+
+			<image name="icons-padtokey">
+				<visible>{game:hasKeyboardMapping}</visible>
+				<linearSmooth>true</linearSmooth>
+				<padding>0 0</padding>
+				<path>./main/midia/padtokey.png</path>
+				<maxSize>1 1</maxSize>
+				<color>ff9900</color>
+			</image> 
+		</stackpanel>
 
 	</view>
 

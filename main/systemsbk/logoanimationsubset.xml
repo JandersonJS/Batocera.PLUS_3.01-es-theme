@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <variables>
+        <logoAnimation>Animated logo</logoAnimation>
+    </variables>
+
+    <variables lang="fr">
+        <logoAnimation>Animation du logo</logoAnimation>
+    </variables>
+
+    <variables lang="pt">
+        <logoAnimation>Animação de logo</logoAnimation>
+    </variables>
+    
+    <subset tinyScreen="false" name="logoAnimation" displayName="${logoAnimation}">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./logoanimation.xml</include>
+    </subset>
+</theme>

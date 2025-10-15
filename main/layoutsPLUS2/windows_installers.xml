@@ -22,19 +22,19 @@
         </image>
 
         <image name="band1" extra="true">
-            <color>C33800</color>
+            <color>00BFFF</color>
         </image>
 
         <image name="band2" extra="true">
-            <color>1F8B00</color>
+            <color>00FF00</color>
         </image>
 
         <image name="band3" extra="true">
-            <color>0A2889</color>
+            <color>FFFF00</color>
         </image>
 
         <image name="band4" extra="true">
-            <color>F9D600</color>
+            <color>FF0000</color>
         </image>
 
         <text name="info1" extra="true">

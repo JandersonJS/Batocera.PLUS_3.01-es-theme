@@ -29,6 +29,30 @@
          <backgroundColor>ff000000</backgroundColor>
       </text>
 
+        <image name="Console" extra="true">
+            <tile>false</tile>
+            <maxSize>0.3 0.3</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.18</pos>
+            <zIndex>999</zIndex>
+        </image>
+
+        <image name="box" extra="true">
+            <tile>false</tile>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.18</pos>
+            <maxSize>0.3 0.3</maxSize>
+            <zIndex>999</zIndex>
+        </image>
+        
+        <video name="videobox" extra="true">
+            <tile>false</tile>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.18</pos>
+            <maxSize>0.3 0.3</maxSize>
+            <zIndex>999</zIndex>
+        </video>
+
         <image name="staticBackground" extra="static" tinyScreen="false">
             <tile>false</tile>
             <pos>0.820 0.066</pos>
@@ -47,29 +71,30 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
+        
         <image name="staticBackground3"  extra="true" tinyScreen="false">
             <tile>false</tile>
             <size>1 0.9</size>
@@ -78,6 +103,14 @@
             <path>./main/midia/centerfade.png</path>
             <color>${baseColor}</color>
             <zIndex>12</zIndex>
+        </image>
+
+        <image name="BackgroundSys" extra= "static">
+            <path>./main/midia/background.svg</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <minSize>1 1</minSize>
+            <zIndex>0</zIndex>
         </image>
 
         <carousel name="systemcarousel">

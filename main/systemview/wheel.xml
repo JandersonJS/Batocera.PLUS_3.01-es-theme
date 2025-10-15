@@ -42,15 +42,18 @@
             <zIndex>45</zIndex>
         </image>
 
-    <!-- When random box -->
-    <image name="box" extra="true">
-      <pos>0.675 0.40</pos>
-      <maxSize>0.40 0.55</maxSize>
-    </image>
-    <video name="videobox" extra="true">
-      <pos>0.675 0.40</pos>
-      <maxSize>0.40 0.55</maxSize>
-    </video>
+        <!-- When random box -->
+        <image name="box" extra="true">
+            <origin>0.5 0.5</origin>
+            <pos>0.55 0.45</pos>
+            <maxSize>0.30 0.40</maxSize>
+        </image>
+        <video name="videobox" extra="true">
+            <origin>0.5 0.5</origin>
+            <pos>0.55 0.45</pos>
+            <maxSize>0.30 0.40</maxSize>
+        </video>
+
     <image name="logo">
       <!-- if system2 exists, take this version -->
       <path>./../../${system.theme}/main/system2.svg</path>
@@ -78,30 +81,29 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
-
 
         <image name="staticBackground3" extra="static" tinyScreen="false">
             <tile>false</tile>
@@ -115,13 +117,21 @@
 
         <image name="staticBackground4" extra= "true">
             <tile>false</tile>
-            <path>./main/midia/backgroundwhell.png</path>
+            <path>./main/midia/backgroundwhell.svg</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
             <effect>none</effect>
-            <color>${baseColor}</color>
+            <color>${baseColor}ee</color>
             <zIndex>10</zIndex>
+        </image>
+
+        <image name="BackgroundSys" extra= "static">
+            <path>./main/midia/background.svg</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <minSize>1 1</minSize>
+            <zIndex>0</zIndex>
         </image>
 
         <text name="systemInfo">

@@ -19,7 +19,7 @@
         </image>
 
         <image name="game" extra="true">
-            <pos>0.16 0.30</pos>
+            <pos>0.18 0.31</pos>
             <maxSize>0.14 0.14</maxSize>
             <origin>0 1</origin>
         </image>
@@ -31,21 +31,20 @@
         </image>
 
         <image name="band1" extra="true">
-            <color>313131</color>
+            <color>F69DC8</color>
         </image>
 
         <image name="band2" extra="true">
-            <color>0F1012</color>
+            <color>6BE4DF</color>
         </image>
-
         <image name="band3" extra="true">
-            <color>97A9BA</color>
+            <color>767EE1</color>
         </image>
 
         <image name="band4" extra="true">
-            <color>F9F7F7</color>
+            <color>F75F66</color>
         </image>
-
+		
         <text name="info1" extra="true">
             <text>Manufacturer : Sony Computer Entertainment</text>
             <pos>0.38 0.70</pos>

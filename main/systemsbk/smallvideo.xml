@@ -10,7 +10,6 @@
             <color>FFFFFFFF</color>
             <effect>none</effect>
             <roundCorners>0.05</roundCorners>
-            <zIndex>100</zIndex>
             <visible>true</visible>
         </video>
 

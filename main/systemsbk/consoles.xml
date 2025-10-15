@@ -4,24 +4,22 @@
     <include>./animatedbackgroundsubset.xml</include>
 
     <view name="system">
-        <image name="ControllerOverlay" extra="true">
+        <image name="Console" extra="true">
             <path>./main/consoles/default.png</path>
             <path>./main/consoles/${system.theme}.png</path>
-            <size>0.2 0</size>
             <color>FFFFFFF0</color>
-            <minSize>1 1</minSize>
             <linearSmooth>true</linearSmooth>
             <zIndex>21</zIndex>
         </image>
 
-        <image name="ControllerOverlay" extra="true" region="eu">
+        <image name="Console" extra="true" region="eu">
         </image>
 
-        <image name="ControllerOverlay" extra="true" region="us">
+        <image name="Console" extra="true" region="us">
             <path>./main/consoles/us/${system.theme}.png</path>
         </image>
 
-        <image name="ControllerOverlay" extra="true" region="jp">
+        <image name="Console" extra="true" region="jp">
             <path>./main/consoles/jp/${system.theme}.png</path>
         </image>
   </view>

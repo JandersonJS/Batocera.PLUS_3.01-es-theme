@@ -13,8 +13,8 @@
         </image>
 
         <image name="console" extra="true">
-            <pos>0.02 0.30</pos>
-            <maxSize>0.12 0.25</maxSize>
+            <pos>0.02 0.31</pos>
+            <maxSize>0.30 0.30</maxSize>
             <origin>0 1</origin>
         </image>
 

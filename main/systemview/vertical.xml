@@ -47,41 +47,57 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
+
         <!-- When random box -->
         <image name="box" extra="true">
-            <pos>0.535 0.30</pos>
-            <maxSize>0.40 0.55</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.45</pos>
+            <maxSize>0.30 0.40</maxSize>
         </image>
 
         <video name="videobox" extra="true">
-            <pos>0.535 0.30</pos>
-            <maxSize>0.40 0.55</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.45</pos>
+            <maxSize>0.30 0.40</maxSize>
         </video>
 
+        <image name="BackgroundSys" extra= "static">
+            <path>./main/midia/background.svg</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <minSize>1 1</minSize>
+            <zIndex>0</zIndex>
+        </image>
+
         <image name="logo">
+ 
+            <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+            </storyboard>
+
             <!-- if system2 exists, take this version -->
             <path>./../../${system.theme}/main/system2.svg</path>
         </image>
@@ -123,12 +139,6 @@
         </image>
         -->
 
-        <image name="ControllerOverlay" extra="true">
-            <tile>false</tile>
-            <pos>0.675 0.40</pos>
-            <size>0.4 0</size>
-        </image>
-
         <image name="staticBackground3" extra="static">
             <tile>false</tile>
             <origin>0 0</origin>
@@ -141,12 +151,12 @@
 
         <image name="staticBackground4" extra="true">
             <tile>false</tile>
-            <path>./main/midia/background1.png</path>
+            <path>./main/midia/band.svg</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
-            <size>1 1</size>
+            <size>0.25 1</size>
             <effect>none</effect>
-            <color>${baseColor}</color>
+            <color>${baseColor}66</color>
             <zIndex>36</zIndex>
         </image>
 

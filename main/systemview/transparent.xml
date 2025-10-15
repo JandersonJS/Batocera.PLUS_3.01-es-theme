@@ -29,6 +29,30 @@
          <backgroundColor>ff000000</backgroundColor>
       </text>
 
+        <image name="Console" extra="true">
+            <tile>false</tile>
+            <maxSize>0.3 0.3</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.18</pos>
+            <zIndex>999</zIndex>
+        </image>
+
+        <image name="box" extra="true">
+            <tile>false</tile>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.18</pos>
+            <maxSize>0.3 0.3</maxSize>
+            <zIndex>999</zIndex>
+        </image>
+        
+        <video name="videobox" extra="true">
+            <tile>false</tile>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.18</pos>
+            <maxSize>0.3 0.3</maxSize>
+            <zIndex>999</zIndex>
+        </video>
+        
         <image name="staticBackground" extra="static" tinyScreen="false">
             <tile>false</tile>
             <pos>0.820 0.066</pos>
@@ -42,34 +66,7 @@
             <origin>0.5 0.5</origin>
             <zIndex>45</zIndex>
         </image>
-
-        <image name="band1" extra="static">
-            <size>0.03 1</size>
-            <origin>0 0</origin>
-            <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
-        </image>
-
-        <image name="band2" extra="static">
-            <size>0.03 1</size>
-            <origin>0 0</origin>
-            <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
-        </image>
-
-        <image name="band3" extra="static">
-            <size>0.03 1</size>
-            <origin>0 0</origin>
-            <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
-        </image>
-
-        <image name="band4" extra="static">
-            <size>0.03 1</size>
-            <origin>0 0</origin>
-            <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
-        </image>
+        
         <carousel name="systemcarousel">
             <color>FAFAFF00</color>
             <colorEnd>FAFAFF00</colorEnd>
@@ -81,7 +78,48 @@
             <logoPos>-1 0.02</logoPos>
         </carousel>
 
+        <image name="band1" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>35</zIndex>
+            <path>./main/midia/band.svg</path>
+        </image>
+
+        <image name="band2" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>35</zIndex>
+            <path>./main/midia/band.svg</path>
+        </image>
+
+        <image name="band3" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>35</zIndex>
+            <path>./main/midia/band.svg</path>
+        </image>
+
+        <image name="band4" extra="static">
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>35</zIndex>
+            <path>./main/midia/band.svg</path>
+        </image>
+
+        <image name="BackgroundAlt" extra= "static">
+            <path>./main/midia/background.svg</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <minSize>1 1</minSize>
+            <zIndex>0</zIndex>
+        </image>
+
         <image name="logo">
+ 
+            <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+            </storyboard>
+
             <!-- if system2 exists, take this version -->
             <path>./main/logos/${system.theme}2.svg</path>
             <reflexion>0.16 0.0</reflexion>

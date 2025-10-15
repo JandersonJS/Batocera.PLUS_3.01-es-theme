@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <customView name="Boxes">
+        <imagegrid name="gamegrid">
+            <autoLayout>4 2</autoLayout>
+        </imagegrid>
+    </customView>
+
+    <view name="system">
+        <image name="background" extra="true">
+        </image>
+
+        <image name="console" extra="true">
+            <pos>0.02 0.35</pos>
+            <maxSize>0.3 0.3</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="game" extra="true">
+            <pos>0.3 0.35</pos>
+            <maxSize>0.08 0.08</maxSize>
+            <origin>0 1</origin>
+        </image>
+
+        <image name="controller" extra="true">
+            <pos>0.78 0.30</pos>
+            <maxSize>0.15 0.25</maxSize>
+            <origin>1 1</origin>
+        </image>
+
+        <image name="band1" extra="true">
+            <color>c91017</color>
+        </image>
+
+        <image name="band2" extra="true">
+            <color>ffbe0f</color>
+        </image>
+
+        <image name="band3" extra="true">
+            <color>000000</color>
+        </image>
+
+        <image name="band4" extra="true">
+            <color>f38220</color>
+        </image>
+
+        <text name="info1" extra="true">
+            <text>Manufacturer : Microsoft</text>
+            <pos>0.38 0.70</pos>
+        </text>
+
+        <text name="info2" extra="true">
+            <text>Year of Release : 2001</text>
+            <pos>0.38 0.72</pos>
+        </text>
+
+        <text name="info3" extra="true">
+            <text>Units sold : 24 million</text>
+            <pos>0.38 0.74</pos>
+        </text>
+
+        <text name="info4" extra="true">
+            <text>Generation : Sixth generation</text>
+            <pos>0.38 0.76</pos>
+        </text>
+
+        <text name="info5" extra="true">
+            <text>CPU : 64-bit clock 733 MHz</text>
+            <pos>0.38 0.78</pos>
+        </text>
+
+        <text name="info6" extra="true">
+            <text>RAM : 64 MB</text>
+            <pos>0.38 0.80</pos>
+        </text>
+
+        <text name="info7" extra="true">
+            <text>Media : 8.5 GB DVD</text>
+            <pos>0.38 0.82</pos>
+        </text>
+
+        <text name="info8" extra="true">
+            <text>Video : GPU is Nvidia's 233 MHz NV2A</text>
+            <pos>0.38 0.84</pos>
+        </text>
+
+        <text name="info9" extra="true">
+            <text>Sound : Stereo standard audio CD</text>
+            <pos>0.38 0.86</pos>
+        </text>
+
+        <text name="info10" extra="true">
+            <text>Resolution : 480i, 480p, 576i, 576p, 720p 1080i</text>
+            <pos>0.38 0.88</pos>
+        </text>
+    </view>
+</theme>

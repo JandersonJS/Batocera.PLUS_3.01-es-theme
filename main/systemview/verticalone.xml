@@ -47,42 +47,53 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.png</path>
+            <path>./main/midia/band.svg</path>
         </image>
+        
         <!-- When random box -->
         <image name="box" extra="true">
-            <pos>0.675 0.40</pos>
-            <maxSize>0.40 0.55</maxSize>
+            <origin>0.5 0.5</origin>
+            <pos>0.575 0.40</pos>
+            <maxSize>0.3 0.4</maxSize>
         </image>
 
         <video name="videobox" extra="true">
             <pos>0.59 0.28</pos>
             <origin>0.5 0.5</origin>
-            <size>0.39 0.39</size>
+            <pos>0.575 0.40</pos>
+            <maxSize>0.3 0.4</maxSize>
             <visible>false</visible>
             <zIndex>12</zIndex>
         </video>
+
+        <image name="BackgroundSys" extra= "static">
+            <path>./main/midia/background.svg</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <minSize>1 1</minSize>
+            <zIndex>0</zIndex>
+        </image>
 
         <image name="logo">
             <!-- if system2 exists, take this version -->

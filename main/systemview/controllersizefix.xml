@@ -3,10 +3,10 @@
     <formatVersion>7</formatVersion>
 
     <view name="system">
-        <image name="ControllerOverlay" extra="true">
+        <image name="Console" extra="true">
             <tile>false</tile>
-            <pos>0.587 0.30</pos>
-            <size>0.3 0</size>
+            <pos>0.487 0.27</pos>
+            <maxSize>0.3 0.4</maxSize>
             <zIndex>999</zIndex>
         </image>
     </view>

@@ -19,7 +19,7 @@
         </image>
 
         <image name="game" extra="true">
-            <pos>0.22 0.30</pos>
+            <pos>0.25 0.30</pos>
             <maxSize>0.14 0.14</maxSize>
             <origin>0 1</origin>
         </image>
