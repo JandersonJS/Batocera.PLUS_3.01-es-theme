@@ -3,8 +3,7 @@
     <formatVersion>4</formatVersion>
 
     <view name="system">
-
-        <image name="randomImage" extra="true">
+        <image name="randomImage" extra="true" ifSubset="systemview:plus|darkened|horizontal|legacy|transparent|simple|vertical|wheel|arcade">
             <path>{random:thumbnail}</path>
             <color>FFFFFF</color>
             <pos>0.5 0.475</pos>
@@ -12,6 +11,16 @@
             <linearSmooth>true</linearSmooth>
             <minSize>1 1</minSize>
             <zIndex>11</zIndex>
+        </image>
+
+        <image name="image" extra="true" ifSubset="systemview:plus2">
+            <path>{random:thumbnail}</path>
+            <color>FFFFFF</color>
+            <pos>0 0.025</pos>
+            <minSize>0.85 0.45</minSize>
+            <origin>0 0</origin>
+            <linearSmooth>true</linearSmooth>
+            <zIndex>34</zIndex>
         </image>
 
         <image name="randomImage" extra="true" ifHelpPrompts="false">

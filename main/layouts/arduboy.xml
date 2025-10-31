@@ -13,15 +13,9 @@
         </image>
 
         <image name="console" extra="true">
-            <pos>0.02 0.32</pos>
-            <maxSize>0.30 0.30</maxSize>
-            <origin>0 1</origin>
         </image>
 
         <image name="game" extra="true">
-            <pos>0.18 0.32</pos>
-            <maxSize>0.08 0.08</maxSize>
-            <origin>0 1</origin>
         </image>
 
         <image name="band1" extra="true">
@@ -33,11 +27,11 @@
         </image>
 
         <image name="band3" extra="true">
-            <color>D9D9D9</color>
+            <color>4a6c9f</color>
         </image>
 
         <image name="band4" extra="true">
-            <color>A3A3A3</color>
+            <color>e63737</color>
         </image>
 
         <text name="info1" extra="true">

@@ -12,6 +12,15 @@
          <linearSmooth>true</linearSmooth>
       </image>
 
+       <webimage name="cheevos_avatar"  extra="static" if="{global.cheevos} == true" ifSubset="system-avatar:cheevos">
+             <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+             <roundCorners>0.5</roundCorners>
+             <pos>0.8025 0.041</pos>
+             <maxSize>0.048 0.048</maxSize>
+             <zIndex>99</zIndex>
+             <linearSmooth>true</linearSmooth>
+       </webimage>
+
       <text name="username" extra="static">
          <text>${theme.nick}</text>
          <text ifSubset="system-username:custom">${custom.nick}</text>
@@ -30,7 +39,7 @@
 
         <image name="staticBackground" extra="static" tinyScreen="false">
             <tile>false</tile>
-            <pos>0.820 0.066</pos>
+            <pos>0.816 0.066</pos>
             <origin>0.5 0.5</origin>
             <zIndex>85</zIndex>
         </image>
@@ -48,10 +57,24 @@
             <pos>0.55 0.45</pos>
             <maxSize>0.30 0.40</maxSize>
         </image>
-        <video name="videobox" extra="true">
+        <video name="videobox" extra="true" ifSubset="randomVideosAudio:on">
             <origin>0.5 0.5</origin>
             <pos>0.55 0.45</pos>
             <maxSize>0.30 0.40</maxSize>
+        </video>
+
+        <video name="videobox" extra="true" ifSubset="randomVideosAudio:off">
+            <origin>0.5 0.5</origin>
+            <pos>0.55 0.45</pos>
+            <maxSize>0.30 0.40</maxSize>
+            <audio>false</audio>
+        </video>
+
+        <video name="backgroundStaticVideo" extra="true" ifSubset="randomVideosAudio:on">
+        </video>
+
+        <video name="backgroundStaticVideo" extra="true" ifSubset="randomVideosAudio:off">
+            <audio>false</audio>
         </video>
 
     <image name="logo">

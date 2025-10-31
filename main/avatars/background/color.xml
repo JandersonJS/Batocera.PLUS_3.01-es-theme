@@ -6,7 +6,7 @@
         <image name="staticBackground" extra="static" tinyScreen="false">
             <tile>false</tile>
             <color>ff9900</color>
-            <size>0 0.061</size>
+            <size>0 0.05</size>
             <origin>0.5 0.5</origin>
             <path>./main/avatars/background/circle.svg</path>
             <zIndex>85</zIndex>
@@ -15,7 +15,7 @@
         <image name="staticBackground2" extra="static" tinyScreen="false">
             <tile>false</tile>
             <color>${baseColor}</color>
-            <size>0.11645 0.075</size>
+            <size>0.11645 0</size>
             <origin>0.5 0.5</origin>
             <path>./main/avatars/background/avatar-background.svg</path>
             <zIndex>45</zIndex>

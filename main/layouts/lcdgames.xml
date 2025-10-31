@@ -13,9 +13,6 @@
         </image>
 
         <image name="console" extra="true">
-            <pos>0.02 0.30</pos>
-            <maxSize>0.45 0.25</maxSize>
-            <origin>0 1</origin>
         </image>
 
         <image name="band1" extra="true">

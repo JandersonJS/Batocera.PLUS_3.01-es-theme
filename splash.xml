@@ -11,7 +11,7 @@
 
     <subset name="colorset" displayName="${subset.colorset}">
         <include name="blue" displayName="${blue}">./main/colorsets/blue.xml</include>
-        <include name="red" displayName="${red}"/>
+        <include name="red" displayName="${red}">./main/colorsets/red.xml</include>
         <include name="green" displayName="${green}">./main/colorsets/green.xml</include>
         <include name="yellow" displayName="${yellow}">./main/colorsets/yellow.xml</include>
         <include name="violet">./main/colorsets/violet.xml</include>
@@ -44,10 +44,19 @@
         </image>
 
         <image name="background">
+            <path>./main/midia/background2.png</path>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <minSize>1 1</minSize>
-            <path>:/logo.png</path>
+            <color>${baseColor}</color>
+        </image>
+
+        <image name="logo" extra="true">
+            <path>./main/midia/splash_plus.svg</path>
+            <pos>0.5 0.455</pos>
+            <origin>0.5 0.5</origin>
+            <maxSize>0.8 0.8</maxSize>
+            <zIndex>13</zIndex>
         </image>
 
         <text name="label">

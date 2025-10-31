@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <view name="system">
+
+      <image name="avatar" extra="static">
+         <path>./main/avatars/${theme.Avatar}.xml</path>
+         <pos>0.03625 0.0624</pos>
+         <origin>0.5 0.5</origin>
+         <size>0.03 0</size>
+         <zIndex>99</zIndex>
+         <linearSmooth>true</linearSmooth>
+      </image>
+
+      <text name="username" extra="static">
+         <include name="custom" displayName="${custom}">./custom-username.xml</include>
+         <include name="cheevos" displayName="Retroachievements ID">./main/usernames/cheevos.xml</include>
+         <include name="netplay" displayName="Netplay ID">./main/usernames/netplay.xml</include>
+         <include name="no" displayName="${no}"/>
+         <pos>0.053 0.045</pos>
+         <size>0.165 0.035</size>
+         <color>ffffff</color>
+         <fontPath>./fonts/SST Light.ttf</fontPath>
+         <fontSize>0.028</fontSize>
+         <alignment>left</alignment>
+         <glowColor>00000035</glowColor>
+         <glowSize>1</glowSize>
+         <glowOffset>3 2</glowOffset>
+         <zIndex>99</zIndex>
+         <backgroundColor>ff000000</backgroundColor>
+      </text>
+    </view>
+</theme>

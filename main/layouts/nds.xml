@@ -13,23 +13,12 @@
         </image>
 
         <image name="console" extra="true">
-            <path>./art/console.svg</path>
-            <pos>0.02 0.30</pos>
-            <maxSize>0.25 0.25</maxSize>
-            <origin>0 1</origin>
         </image>
 
         <image name="game" extra="true">
-            <path>./art/game.svg</path>
-            <pos>0.19 0.30</pos>
-            <maxSize>0.15 0.15</maxSize>
-            <origin>0 1</origin>
         </image>
 
         <image name="controller" extra="true">
-            <pos>0.78 0.30</pos>
-            <maxSize>0.15 0.25</maxSize>
-            <origin>1 1</origin>
         </image>
 
         <image name="band1" extra="true">
@@ -45,7 +34,7 @@
         </image>
 
         <image name="band4" extra="true">
-            <color>FFFFFF</color>
+            <color>c91818</color>
         </image>
 
         <text name="info1" extra="true">

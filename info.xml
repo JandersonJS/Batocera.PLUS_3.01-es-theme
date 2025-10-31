@@ -1,0 +1,38 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+  <!-- Subset options for color  -->
+  <subset name="colorset" displayName="${subset.colorset}">
+    <include name="gray" displayName="${gray}">./main/colors/gray.xml</include>
+    <include name="blue" displayName="${blue}">./main/colors/blue.xml</include>
+    <include name="red" displayName="${red}">./main/colors/red.xml</include>
+    <include name="green" displayName="${green}">./main/colors/green.xml</include>
+    <include name="yellow" displayName="${yellow}">./main/colors/yellow.xml</include>
+    <include name="violet">./main/colors/violet.xml</include>
+    <include name="cyan">./main/colors/cyan.xml</include>
+    <include name="orange">./main/colors/orange.xml</include>
+    <include name="brawn">./main/colors/brawn.xml</include>
+    <include name="silver">./main/colors/silver.xml</include>
+  </subset>
+
+
+   <!--BARRA DE INFORMACION SUPERIOR-->
+
+  <view name="system">
+
+      <image name="avatar" extra="static">
+         <path>./main/avatars/${image.avatar}.png</path>
+         <path ifSubset="system-avatar:custom">./custom-avatar.png</path>
+      </image>
+
+      <webimage name="avatar"  extra="static" if="{global.cheevos} == true" ifSubset="system-avatar:cheevos">
+         <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+      </webimage>
+
+      <text name="username" extra="static">
+         <text>${theme.nick}</text>
+         <text ifSubset="system-username:custom">${custom.nick}</text>
+      </text>
+
+   </view>
+</theme>

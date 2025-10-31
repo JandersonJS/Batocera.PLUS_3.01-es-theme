@@ -16,22 +16,152 @@
 	<view name="splash">
 
 		<image name="backgroundalt" extra="true">
-	    	<path>./main/background/loadscreen.jpg</path>
+	    	<backgroundColor>000000</backgroundColor>
 			<linearSmooth>true</linearSmooth>
-			<minSize>1 1</minSize>
-			<zIndex>1</zIndex>
+			<size>1 1</size>
+			<zIndex>-99</zIndex>
 		</image>
 
+        <image name="fundoplus" extra="static">
+            <tile>false</tile>
+            <color>${baseColor}</color>
+            <pos>0 0.025</pos>
+            <size>0.825 0.45</size>
+            <origin>0 0</origin>
+            <path>./main/midia/squared.svg</path>
+            <zIndex>-34</zIndex>
+       </image>
+
+        <image name="colorplus" extra="static" tinyScreen="false">
+            <tile>false</tile>
+      	    <color>${baseColor}</color>
+            <pos>0 0</pos>
+            <size>1 0.5</size>
+            <origin>0 0</origin>
+            <path>./main/midia/colorplus.png</path>
+            <zIndex>-55</zIndex>
+       </image>
+
+        <image name="colorplus2" extra="static" tinyScreen="false">
+            <tile>false</tile>
+      	    <color>ffffff</color>
+            <pos>0 0.665</pos>
+            <size>1 0.20</size>
+            <origin>0 0</origin>
+            <path>./main/midia/colorplus.png</path>
+            <zIndex>-20</zIndex>
+       </image>
+
+        <image name="plus-logo" extra="static" tinyScreen="false">
+            <tile>false</tile>
+            <pos>0.62 0.85</pos>
+            <maxSize>0.28 0.20</maxSize>
+            <origin>0 0</origin>
+            <path>./main/logos/plus-logo.svg</path>
+            <zIndex>0</zIndex>
+       </image>
+	
+		<text name="loading" extra="true">
+			<text>Wait for a moment...</text>
+			<text lang="es">Espera un momento...</text>
+			<text lang="fr">Attendez un instant...</text>
+			<text lang="pt">Aguarde um instante...</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.58</pos>
+			<color>ff9900</color>
+			<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+			<fontSize>0.040</fontSize>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+            <forceUppercase>1</forceUppercase>
+			<zIndex>05</zIndex>
+		</text>
+
+        <image name="backgroundband1" extra="static">
+            <pos>0.829 0</pos>
+            <size>0.03 1.5</size>
+            <origin>0 0</origin>
+            <zIndex>-10</zIndex>
+            <color>${baseColor}</color>
+            <path>./main/midia/squared.svg</path>
+        </image>
+
+        <image name="backgroundband2" extra="static">
+            <pos>0.858 0</pos>
+            <size>0.03 1.5</size>
+            <origin>0 0</origin>
+            <zIndex>-10</zIndex>
+            <color>${baseColor}</color>
+            <path>./main/midia/square.svg</path>
+        </image>
+
+        <image name="backgroundband3" extra="static">
+            <pos>0.887 0</pos>
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>-10</zIndex>
+			<color>${baseColor}</color>
+            <path>./main/midia/darkest.svg</path>
+        </image>
+
+        <image name="backgroundband4" extra="static">
+            <pos>0.916 0</pos>
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <zIndex>-10</zIndex>
+            <color>ff9900</color>
+            <path>./main/midia/band.svg</path>
+        </image>
+
+        <include>./main/layouts/${system.theme}.xml</include>
+
+        <image name="backgroundband5" extra="static">
+            <pos>0 0</pos>
+            <size>0.03 1.5</size>
+            <origin>0 0</origin>
+            <color>${baseColor}</color>
+            <zIndex>-10</zIndex>
+            <path>./main/midia/square.svg</path>
+        </image>
+
+        <image name="backgroundband6" extra="static">
+            <pos>0.029 0</pos>
+            <size>0.03 1.5</size>
+            <origin>0 0</origin>
+            <color>${baseColor}</color>
+            <zIndex>-10</zIndex>
+            <path>./main/midia/squared.svg</path>
+        </image>
+
+        <image name="backgroundband7" extra="static">
+            <pos>0.058 0</pos>
+            <size>0.03 1</size>
+            <origin>0 0</origin>
+            <color>${baseColor}</color>
+            <zIndex>-10</zIndex>
+            <path>./main/midia/band.svg</path>
+        </image>
+
+        <image name="backgroundband8" extra="static">
+            <size>0.03 1</size>
+            <pos>0.087 0</pos>
+            <origin>0 0</origin>
+            <zIndex>-10</zIndex>
+            <color>ffffff</color>
+            <path>./main/midia/band.svg</path>
+        </image>
+
 		<image name="background">
-			<pos>0.3 0.05</pos>
-			<origin>0 0</origin>
-			<maxSize>0.35 0.35</maxSize>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.25</pos>
+			<minSize>0.3 0.3</minSize>
 			<roundCorners>0</roundCorners>
 			<linearSmooth>true</linearSmooth>
 			<color>ffffff</color>
 			<colorEnd>404040</colorEnd>
 			<gradientType>vertical</gradientType>
-      			<horizontalAlignment>right</horizontalAlignment>
+      		<horizontalAlignment>right</horizontalAlignment>
 			<zIndex>3</zIndex>
 		</image>
 
@@ -53,12 +183,15 @@
 			<origin>0.5 0.5</origin>
 			<maxSize>0.50 0.20</maxSize>
 			<zIndex>05</zIndex>
+			<visible>!empty({game:name})</visible>
 			<linearSmooth>true</linearSmooth>
 		</image>
-		<text name="name-splash" extra="true">
+
+		<text name="name-splash" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
 			<text>{game:name}</text>
 			<pos>0.023 0.175</pos>
-			<size>0.9 0.08</size>
+			<size>0.25 0.08</size>
 			<color>ff9900</color>
 			<backgroundColor>FF000000</backgroundColor>
 			<fontSize>0.028</fontSize>
@@ -70,23 +203,25 @@
 			<glowSize>1</glowSize>
 			<glowOffset>3 2</glowOffset>
 			<zIndex>05</zIndex>
+			<autoScroll>horizontal</autoScroll>
 			<singleLineScroll>true</singleLineScroll>
 			<autoScrollDelay>0</autoScrollDelay>
 		</text>
 
-       	<image name="hotkey-tips" extra="true">
+       	<image name="hotkey-tips" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
 			<color>ff9900</color>
 			<origin>1 0.5</origin>
 			<pos>1 0.35</pos>
-			<maxSize>0.60</maxSize>
-			<maxSize tinyScreen="true">0.45</maxSize>			
+			<maxSize>0.55</maxSize>		
 			<path>./main/hotkey-tips/gamesplash.png</path>
 			<path>./main/hotkey-tips/gamesplash-${lang}.png</path>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>9</zIndex>
 		</image>
 
-       	<image name="hotkeyBack" extra="true">
+       	<image name="hotkeyBack" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
 			<path>./main/midia/band.svg</path>
 			<origin>1 0.5</origin>
 			<pos>1 0.35</pos>
@@ -96,29 +231,49 @@
 			<zIndex>8</zIndex>
 		</image>
 
-       	<image name="infoBack" extra="true">
+       	<image name="infoBack" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
 			<path>./main/midia/band.svg</path>
 			<origin>0 0</origin>
 			<pos>0 0.17</pos>
 			<size>0.37 0.25</size>
             <color>${baseColor}bb</color>
 			<linearSmooth>true</linearSmooth>
-			<zIndex>4</zIndex>
+			<zIndex>-8</zIndex>
 		</image>
+
+
+		<text name="name-splash" extra="true" ifSubset="hotkeytips:no">
+       		<visible>false</visible>
+		</text>
+
+       	<image name="hotkey-tips" extra="true" ifSubset="hotkeytips:no">
+       		<visible>false</visible>
+		</image>
+
+       	<image name="hotkeyBack" extra="true" ifSubset="hotkeytips:no">
+       		<visible>false</visible>
+		</image>
+
+       	<image name="infoBack" extra="true" ifSubset="hotkeytips:no">
+       		<visible>false</visible>
+		</image>
+
 
 		<splash name="splash">
 			<backgroundColor>000000FF</backgroundColor>
 		</splash>
 
-		<stackpanel name="container-gamedata" extra="true">
+		<stackpanel name="container-gamedata" extra="static" ifSubset="hotkeytips:yes">
 			<separator>0.015</separator>
 			<pos>0.025 0.26</pos>
 			<size>0.5 0.032</size>
 			<orientation>horizontal</orientation>
 			<backgroundColor>FF000000</backgroundColor>
-			<zIndex>05</zIndex>
+			<zIndex>09</zIndex>
 	
 			<image name="icons-releaseyear">
+			<visible>true</visible>
 				<path>./main/midia/game_info_releasedate.svg</path>
 				<linearSmooth>true</linearSmooth>
 				<color>ff9900</color>
@@ -127,6 +282,7 @@
 				<visible>!empty({game:releaseyear})</visible>
 			</image>
 			<text name="gamedata-releaseyear">
+			<visible>true</visible>
 				<fontSize>0.025</fontSize>
 				<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
 				<text>{game:releaseyear}</text>
@@ -203,7 +359,7 @@
 			</text>
 		</stackpanel>
 
-		<stackpanel name="container-gamedata2" extra="true">
+		<stackpanel name="container-gamedata2" extra="true" ifSubset="hotkeytips:yes">
 			<separator>0.018</separator>
 			<pos>0.025 0.31</pos>
 			<size>0.5 0.032</size>
@@ -224,7 +380,7 @@
 			<image name="icons-genre">
 				<path>./main/midia/game_info_genre.svg</path>
 				<linearSmooth>true</linearSmooth>
-				<color>EEEEEE</color>
+				<color>ff9900</color>
 				<padding>0 0</padding>
 				<maxSize>1 1</maxSize>
 				<visible>!empty({game:genre})</visible>
@@ -243,13 +399,13 @@
 			</text>
 		</stackpanel>
 
-		<stackpanel name="container-icons" extra="true">
+		<stackpanel name="container-icons" extra="true" ifSubset="hotkeytips:yes">
 			<separator>0.015</separator>
 			<pos>0.024 0.36</pos>
 			<size>0.7 0.032</size>
 			<orientation>horizontal</orientation>
 			<backgroundColor>FF000000</backgroundColor>
-			<zIndex>05</zIndex>
+			<zIndex>09</zIndex>
 
 			<image name="flag-region">
 				<path>./main/midia/flags/{game:region}.png</path>
@@ -341,6 +497,79 @@
 				<color>ff9900</color>
 			</image> 
 		</stackpanel>
+
+		<text name="name-splash" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
+			<text>{game:name}</text>
+			<pos>0.023 0.175</pos>
+			<size>0.25 0.08</size>
+			<color>ff9900</color>
+			<backgroundColor>FF000000</backgroundColor>
+			<fontSize>0.028</fontSize>
+			<alignment>left</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
+			<origin>0 0</origin>
+			<glowColor>00000035</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>3 2</glowOffset>
+			<zIndex>05</zIndex>
+			<autoScroll>horizontal</autoScroll>
+			<singleLineScroll>true</singleLineScroll>
+			<autoScrollDelay>0</autoScrollDelay>
+		</text>
+
+       	<image name="hotkey-tips" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
+			<color>ff9900</color>
+			<origin>1 0.5</origin>
+			<pos>1 0.35</pos>
+			<maxSize>0.60</maxSize>
+			<maxSize tinyScreen="true">0.45</maxSize>			
+			<path>./main/hotkey-tips/gamesplash.png</path>
+			<path>./main/hotkey-tips/gamesplash-${lang}.png</path>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>9</zIndex>
+		</image>
+
+       	<image name="hotkeyBack" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
+			<path>./main/midia/band.svg</path>
+			<origin>1 0.5</origin>
+			<pos>1 0.35</pos>
+			<size>0.27 0.65</size>
+            <color>${baseColor}bb</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>8</zIndex>
+		</image>
+
+       	<image name="infoBack" extra="true" ifSubset="hotkeytips:yes">
+			<visible>true</visible>
+			<path>./main/midia/band.svg</path>
+			<origin>0 0</origin>
+			<pos>0 0.17</pos>
+			<size>0.29 0.25</size>
+            <color>${baseColor}bb</color>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+		</image>
+
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+
+		<stackpanel name="container-gamedata" extra="false" ifSubset="hotkeytips:no">
+
+		</stackpanel>
+
+		<stackpanel name="container-gamedata2" extra="false" ifSubset="hotkeytips:no">
+
+		</stackpanel>
+
+		<stackpanel name="container-icons" extra="false" ifSubset="hotkeytips:no">
+			
+		</stackpanel>
+
 
 	</view>
 

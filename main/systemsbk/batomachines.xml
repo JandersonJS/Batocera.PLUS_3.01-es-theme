@@ -4,7 +4,7 @@
 
     <view name="system">
 
-        <image name="background" extra="true">
+        <image name="background" extra="true" ifSubset="systemview:plus|darkened|horizontal|legacy|transparent|simple|vertical|wheel|arcade">
             <tile>false</tile>
             <linearSmooth>true</linearSmooth>
             <path>./main/background/${system.theme}.jpg</path>
@@ -13,6 +13,16 @@
             <origin>0.5 0.5</origin>
             <minSize>1 1</minSize>
             <zIndex>11</zIndex>
+        </image>
+
+        <image name="backgroundAlt" extra="true" ifSubset="systemview:plus2">
+            <linearSmooth>true</linearSmooth>
+            <path>./main/background/${system.theme}.jpg</path>
+            <color>FFFFFFFF</color>
+            <pos>0 0.025</pos>
+            <minSize>0.85 0.45</minSize>
+            <origin>0 0</origin>
+            <zIndex>34</zIndex>
         </image>
 
         <image name="background" extra="true" region="eu">

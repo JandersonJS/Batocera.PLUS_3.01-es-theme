@@ -13,21 +13,12 @@
         </image>
 
         <image name="console" extra="true">
-            <pos>0.020 0.38</pos>
-            <maxSize>0.30 0.35</maxSize>
-            <origin>0 1</origin>
         </image>
  
         <image name="game" extra="true">
-            <pos>0.210 0.41</pos>
-            <maxSize>0.21 0.21</maxSize>
-            <origin>0 1</origin>
         </image>
 
         <image name="controller" extra="true">
-            <pos>0.78 0.30</pos>
-            <maxSize>0.12 0.22</maxSize>
-            <origin>1 1</origin>
         </image>
 
         <image name="ControllerOverlay" extra="true">

@@ -4,13 +4,25 @@
     <include>./animatedbackgroundsubset.xml</include>
 
     <view name="system">
-        <video name="videobox" extra="true">
+        <video name="videobox" extra="true" ifSubset="systemview:plus|darkened|horizontal|legacy|transparent|simple|vertical|wheel|arcade">
             <path>{random}</path>
             <delay>0.8</delay>
             <color>FFFFFFFF</color>
             <effect>none</effect>
             <roundCorners>0.05</roundCorners>
             <visible>true</visible>
+        </video>
+
+        <video name="video" extra="static" ifSubset="systemview:plus2">
+            <path>{random}</path>
+            <pos>0 0.025</pos>
+            <minSize>0.85 0.45</minSize>
+            <origin>0 0</origin>
+            <linearSmooth>true</linearSmooth>
+            <delay>0</delay>
+            <color>FFFFFF</color>
+            <effect>none</effect>
+            <zIndex>35</zIndex>
         </video>
 
         <image name="ControllerOverlay" extra="true">

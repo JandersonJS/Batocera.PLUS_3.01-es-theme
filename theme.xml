@@ -359,6 +359,7 @@ Année de sortie : ${system.releaseYear}</text>
 
   <!--AVATARES-->
 <subset name="system-avatar" displayName="${theme.Avatar}" extra="true, static">
+    <include if="{global.cheevos} == true" name="cheevos" displayName="Retroachievements Avatar" />
 	<include name="custom" displayName="${custom}">./main/avatars/custom.xml</include>
 	<include name="1-Up" displayName="1-Up">./main/avatars/1-Up.xml</include>
 	<include name="mario" displayName="Mario">./main/avatars/mario.xml</include> 
@@ -374,7 +375,7 @@ Année de sortie : ${system.releaseYear}</text>
 	<include name="roll" displayName="Roll">./main/avatars/roll.xml</include>
 	<include name="rush" displayName="Rush">./main/avatars/rush.xml</include>
 	<include name="bass" displayName="Bass">./main/avatars/bass.xml</include>
-	<include name="treble" displayName="Treble">./main/avatars/treble.xml</include>
+	<include name="treeble" displayName="Treeble">./main/avatars/treeble.xml</include>
 	<include name="metalslug" displayName="Metal Slug">./main/avatars/metalslug.xml</include>
 	<include name="monkeyisland" displayName="Monkey Island">./main/avatars/monkeyisland.xml</include>
 	<include name="ninja gaiden" displayName="Ryu Hayabusa (Ninja Gaiden)">./main/avatars/ninja gaiden.xml</include>
@@ -400,7 +401,7 @@ Année de sortie : ${system.releaseYear}</text>
 	<include name="maria" displayName="Maria Renard">./main/avatars/maria.xml</include>
 	<include name="richter" displayName="Richter Belmont">./main/avatars/richter.xml</include>
 	<include name="dracula" displayName="Dracula">./main/avatars/dracula.xml</include>
-        <include name="no" displayName="${no}"/>
+    <include name="no" displayName="${no}"/>
 	</subset>  
 
   <view name="screen">
@@ -547,13 +548,24 @@ Année de sortie : ${system.releaseYear}</text>
     </view>
 
     <view name="basic">
+
         <image name="background" extra="static">
             <tile>true</tile>
             <pos>0 0</pos>
             <origin>0 0</origin>
             <size>1 1</size>
-            <path>./main/midia/background.png</path>
+            <path>./main/midia/background2.png</path>
             <zIndex>0</zIndex>
+        </image>
+
+        <image name="colorBackground" extra="static">
+            <tile>true</tile>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./main/midia/band.svg</path>
+            <color>${baseColor}99</color>
+            <zIndex>1</zIndex>
         </image>
 
         <image name="back-gamelist" extra="static">
@@ -601,7 +613,7 @@ Année de sortie : ${system.releaseYear}</text>
     </view>
 
     <view name="detailed">
-        <video name="md_video">
+        <video name="md_video" ifSubset="gameVideosAudio:on">
             <origin>0.5 0.5</origin>
             <pos>0.55 0.33</pos>
             <minSize>0.33 0.454</minSize>
@@ -616,18 +628,44 @@ Année de sortie : ${system.releaseYear}</text>
             <fontSize>0.02</fontSize>
         </video>
 
+        <video name="md_video" ifSubset="gameVideosAudio:off">
+            <origin>0.5 0.5</origin>
+            <pos>0.55 0.33</pos>
+            <minSize>0.33 0.454</minSize>
+            <delay>0.2</delay>
+            <default></default>
+            <effect>none</effect>
+            <showSnapshotNoVideo>true</showSnapshotNoVideo>
+            <showSnapshotDelay>false</showSnapshotDelay>
+            <roundCorners>0</roundCorners>
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <audio>false</audio>
+        </video>
+
         <image name="background" extra="static">
             <tile>true</tile>
             <pos>0 0</pos>
             <origin>0 0</origin>
             <size>1 1</size>
-            <path>./main/midia/background.png</path>
+            <path>./main/midia/background2.png</path>
             <zIndex>0</zIndex>
+        </image>
+
+        <image name="colorBackground" extra="static">
+            <tile>true</tile>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./main/midia/band.svg</path>
+            <color>${baseColor}99</color>
+            <zIndex>1</zIndex>
         </image>
 
         <image name="back-gamelist" extra="static">
             <pos>0.01 0.19</pos>
-            <size>0.35 0.73</size>
+            <size>0.35 0.69</size>
             <path>./main/midia/back.png</path>
         </image>
 
@@ -763,7 +801,14 @@ Année de sortie : ${system.releaseYear}</text>
 
         <image name="back-description" extra="static">
             <pos>0.37 0.62</pos>
-            <size>0.62 0.300</size>
+            <size>0.62 0.26</size>
+            <path>./main/midia/back.png</path>
+        </image>
+
+        <image name="back-name" extra="static">
+            <pos>0.01 0.89</pos>
+            <size>0.98 0.04</size>
+            <color>ff9900</color>
             <path>./main/midia/back.png</path>
         </image>
 
@@ -774,6 +819,17 @@ Année de sortie : ${system.releaseYear}</text>
             <fontSize>0.023</fontSize>
             <fontPath>./main/fonts/ubuntu_medium.ttf</fontPath>
         </text>
+
+        <text name="game-path" extra="true">
+            <pos>0.01 0.89</pos>
+            <size>0.98 0.04</size>
+            <text>{game:rom}</text>
+            <color>ffffff</color>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.028</fontSize>
+            <padding>0.007 0</padding>
+            <autoScroll>horizontal</autoScroll>
+            </text>
     </view>
 
     <view name="detailed">
@@ -785,7 +841,7 @@ Année de sortie : ${system.releaseYear}</text>
 
         <textlist name="gamelist">
             <pos>0.015 0.20</pos>
-            <size>0.34 0.710</size>
+            <size>0.34 0.65</size>
             <selectorColor>ff9900</selectorColor> <!-- Selection bar -->
             <selectorColorEnd>DD7700</selectorColorEnd>
             <selectedColor>262626</selectedColor> <!-- Selection letters -->
@@ -1083,8 +1139,18 @@ Année de sortie : ${system.releaseYear}</text>
             <pos>0 0</pos>
             <origin>0 0</origin>
             <size>1 1</size>
-            <path>./main/midia/background.png</path>
+            <path>./main/midia/background2.png</path>
             <zIndex>0</zIndex>
+        </image>
+
+        <image name="colorBackground" extra="static">
+            <tile>true</tile>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <size>1 1</size>
+            <path>./main/midia/band.svg</path>
+            <color>${baseColor}99</color>
+            <zIndex>1</zIndex>
         </image>
 
         <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
@@ -1365,7 +1431,7 @@ Année de sortie : ${system.releaseYear}</text>
             <zIndex>95</zIndex>
         </image>
 
-        <video name="md_video">
+        <video name="md_video" ifSubset="gameVideosAudio:on">
             <pos>0.74 0.60</pos>
             <origin>0.5 0.5</origin>
             <minSize>0.30 0.30</minSize>
@@ -1377,9 +1443,22 @@ Année de sortie : ${system.releaseYear}</text>
             <fontSize>0.02</fontSize>
         </video>
 
+        <video name="md_video" ifSubset="gameVideosAudio:off">
+            <pos>0.74 0.60</pos>
+            <origin>0.5 0.5</origin>
+            <minSize>0.30 0.30</minSize>
+            <zIndex>99</zIndex>
+            <delay>0</delay>
+            <roundCorners>0</roundCorners>
+            <alignment>left</alignment>
+            <fontPath>./main/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+            <fontSize>0.02</fontSize>
+            <audio>false</audio>
+        </video>
+
         <textlist name="gamelist">
             <pos>0.015 0.20</pos>
-            <size>0.34 0.710</size>
+            <size>0.34 0.68</size>
             <selectorColor>ff9900</selectorColor> <!-- Selection bar -->
             <selectorColorEnd>DD7700</selectorColorEnd>
             <selectedColor>262626</selectedColor> <!-- Selection letters -->
@@ -1542,7 +1621,7 @@ Année de sortie : ${system.releaseYear}</text>
 
   <!-- Specific layout for systems -->
         <include subset="systemview" name="plus">./main/layouts/${system.theme}.xml</include>
-        <include subset="systemview" name="plus2">./main/layoutsPLUS2/${system.theme}.xml</include>
+        <include subset="systemview" name="plus2">./main/layouts/${system.theme}.xml</include>
         <include subset="systemview" name="darkened">./main/layouts/${system.theme}.xml</include>
         <include subset="systemview" name="horizontal">./main/layouts/${system.theme}.xml</include>
         <include subset="systemview" name="legacy" tinyScreen="false">./main/layouts/${system.theme}.xml</include>
@@ -1622,4 +1701,16 @@ Année de sortie : ${system.releaseYear}</text>
     <include name="yes" displayName="${yes}">./main/midia/storyboards.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
+    <subset name="hotkeytips" displayName="${hotkeytips}">
+        <include name="off" displayName="${yes}"/>
+        <include name="on" displayName="${no}"/>
+   </subset>
+    <subset name="gameVideosAudio" displayName="${gameVideosAudio}">
+        <include name="off" displayName="${off}"/>
+        <include name="on" displayName="${on}"/>
+   </subset>
+    <subset name="randomVideosAudio" displayName="${randomVideosAudio}">
+        <include name="off" displayName="${off}"/>
+        <include name="on" displayName="${on}"/>
+   </subset>
 </theme>
