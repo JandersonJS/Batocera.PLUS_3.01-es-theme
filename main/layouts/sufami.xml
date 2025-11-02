@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <theme>
     <formatVersion>4</formatVersion>
-    
+
     <customView name="Boxes">
         <imagegrid name="gamegrid">
             <autoLayout>4 2</autoLayout>
@@ -13,12 +13,17 @@
         </image>
 
         <image name="console" extra="true">
+            <maxSize>0.425 0.35</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.10 0.10</maxSize>
+            <pos>0.45 0.325</pos>
         </image>
 
-        <image name="controller" extra="true">
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.10 0.10</maxSize>
+            <pos>0.58 0.425</pos>
         </image>
 
         <image name="band1" extra="true">
@@ -38,17 +43,17 @@
         </image>
 
         <text name="info1" extra="true">
-            <text>Manufacturer : Bandai</text>
+            <text>Manufacturer : Nintendo</text>
             <pos>0.38 0.70</pos>
         </text>
 
         <text name="info2" extra="true">
-            <text>Year of Release : 1996</text>
+            <text>Year of Release : 1990</text>
             <pos>0.38 0.72</pos>
         </text>
 
         <text name="info3" extra="true">
-            <text>Units sold :</text>
+            <text>Units sold : 49.10 million</text>
             <pos>0.38 0.74</pos>
         </text>
 

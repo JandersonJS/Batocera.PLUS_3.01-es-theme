@@ -19,7 +19,9 @@
          <include name="netplay" displayName="Netplay ID">./main/usernames/netplay.xml</include>
          <include name="no" displayName="${no}"/>
          <pos>0.832 0.0455</pos>
-         <size>0.165 0.035</size>
+         <size>0.075 0.035</size>
+         <autoScroll>horizontal</autoScroll>
+         <autoScrollDelay>0</autoScrollDelay>
          <color>ffffff</color>
          <fontPath>./fonts/SST Light.ttf</fontPath>
          <fontSize>0.028</fontSize>

@@ -25,7 +25,8 @@
          <text>${theme.nick}</text>
          <text ifSubset="system-username:custom">${custom.nick}</text>
          <pos>0.063 0.045</pos>
-         <size>0.175 0.035</size>
+         <size>0.005 0.005</size>
+         <autoScroll>horizontal</autoScroll>
          <color>ffffff</color>
          <fontPath>./fonts/SST Light.ttf</fontPath>
          <fontSize>0.028</fontSize>

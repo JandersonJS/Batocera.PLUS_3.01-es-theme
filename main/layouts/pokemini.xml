@@ -12,10 +12,22 @@
         <image name="background" extra="true">
         </image>
 
-        <image name="console" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.30 0.30</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.35 0.35</maxSize>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.15 0.15</maxSize>
+            <pos>0.20 0.325</pos>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.15 0.15</maxSize>
+            <pos>0.33 0.425</pos>
         </image>
 
         <image name="band1" extra="true">

@@ -16,6 +16,7 @@
         </image>
 
         <image name="game" extra="true">
+            <maxSize>0.25 0.25</maxSize>
         </image>
 
         <image name="controller" extra="true">

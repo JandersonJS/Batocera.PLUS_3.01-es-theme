@@ -1,21 +1,36 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <theme>
-    <formatVersion>7</formatVersion>
+    <formatVersion>4</formatVersion>
 
     <customView name="Boxes">
         <imagegrid name="gamegrid">
             <autoLayout>4 2</autoLayout>
         </imagegrid>
     </customView>
-  
+
     <view name="system">
         <image name="background" extra="true">
         </image>
 
-        <image name="console" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.30 0.30</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.35 0.35</maxSize>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.28 0.28</maxSize>
+            <pos>0.15 0.325</pos>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.33 0.33</maxSize>
+            <pos>0.30 0.425</pos>
+        </image>
+
+        <image name="controller" extra="true">
         </image>
 
         <image name="band1" extra="true">
@@ -33,54 +48,54 @@
         <image name="band4" extra="true">
             <color>A3A3A3</color>
         </image>
-
+        
         <text name="info1" extra="true">
-            <text>Manufacturer : Nintendo</text>
+            <text>Manufacturer : Fairchild Semiconductor</text>
             <pos>0.38 0.70</pos>
         </text>
 
         <text name="info2" extra="true">
-            <text>Year of Release : 1989</text>
+            <text>Year of Release : 1976</text>
             <pos>0.38 0.72</pos>
         </text>
 
         <text name="info3" extra="true">
-            <text>Units sold : 118.69 million</text>
+            <text>Units sold : 25 Thousand</text>
             <pos>0.38 0.74</pos>
         </text>
 
         <text name="info4" extra="true">
-            <text>Generation : 	Fourth generation</text>
+            <text>Generation : 	Second generation</text>
             <pos>0.38 0.76</pos>
         </text>
 
         <text name="info5" extra="true">
-            <text>CPU : 8-bit Zilog Z80 @ 4.194304MHz</text>
+            <text>CPU : Fairchild F8 @ 1.79 MHz (PAL 2.22 MHz)</text>
             <pos>0.38 0.78</pos>
         </text>
 
         <text name="info6" extra="true">
-            <text>RAM : 8kB / VRAM : 8kB</text>
+            <text>RAM : 64 bytes</text>
             <pos>0.38 0.80</pos>
         </text>
 
         <text name="info7" extra="true">
-            <text>Cart Size : 32kB - 1MB</text>
+            <text>ROM Cartridge : 4 KB</text>
             <pos>0.38 0.82</pos>
         </text>
 
         <text name="info8" extra="true">
-            <text>Video : PPU (embedded in CPU)</text>
+            <text>VRAM : 2 kB</text>
             <pos>0.38 0.84</pos>
         </text>
 
         <text name="info9" extra="true">
-            <text>Sound : 4 channels stereo sound</text>
+            <text>Audio : 500 Hz, 1 kHz and 1.5 kHz tones (can be modulated)</text>
             <pos>0.38 0.86</pos>
         </text>
 
         <text name="info10" extra="true">
-            <text>Resolution : 160x144 pixels, 4 shades of "gray"</text>
+            <text>Resolution : 128x64, 8 colors</text>
             <pos>0.38 0.88</pos>
         </text>
     </view>

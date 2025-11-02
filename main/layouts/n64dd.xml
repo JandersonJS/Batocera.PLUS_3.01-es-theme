@@ -13,12 +13,15 @@
         </image>
 
         <image name="console" extra="true">
+            <maxSize>0.40 0.40</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <pos>0.45 0.325</pos>
         </image>
 
-        <image name="controller" extra="true">
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <pos>0.55 0.425</pos>
         </image>
 
         <image name="band1" extra="true">
@@ -38,52 +41,52 @@
         </image>
 
         <text name="info1" extra="true">
-            <text>Manufacturer : Nintendo, Alps Electric</text>
+            <text>Manufacturer : Nintendo</text>
             <pos>0.38 0.70</pos>
         </text>
 
         <text name="info2" extra="true">
-            <text>Year of Release : 1999</text>
+            <text>Year of Release : 1990</text>
             <pos>0.38 0.72</pos>
         </text>
 
         <text name="info3" extra="true">
-            <text>Units sold : 15.000</text>
+            <text>Units sold : 49.10 million</text>
             <pos>0.38 0.74</pos>
         </text>
 
         <text name="info4" extra="true">
-            <text>Generation : 	Fifth generation</text>
+            <text>Generation : Fourth generation</text>
             <pos>0.38 0.76</pos>
         </text>
 
         <text name="info5" extra="true">
-            <text>CPU/ Co-CPU : MIPS 64Bit RISC CPU @ 93.75MHz/ RCP - SP/DP @ 62.5MHz</text>
+            <text>CPU : 16-bit Custom 65C816 @ 3.58 MHz</text>
             <pos>0.38 0.78</pos>
         </text>
 
         <text name="info6" extra="true">
-            <text>RAM : RAMBUS D-RAM 36Mbit</text>
+            <text>RAM : 128kB / VRAM : 64kB</text>
             <pos>0.38 0.80</pos>
         </text>
 
         <text name="info7" extra="true">
-            <text>Cartridge size : 4 to 64 MB</text>
+            <text>Cart Size : 256kB - 6MB</text>
             <pos>0.38 0.82</pos>
         </text>
 
         <text name="info8" extra="true">
-            <text>GPU : 64-bit Reality Coprocessor, running at 62.5 MHz</text>
+            <text>Video : 16-bit PPU (Picture Processor Unit)</text>
             <pos>0.38 0.84</pos>
         </text>
 
         <text name="info9" extra="true">
-            <text>Sound  : Stereo 16Bit 48 kHz</text>
+            <text>Sound : 8-bit Sony SPC700, 8 channels</text>
             <pos>0.38 0.86</pos>
         </text>
 
         <text name="info10" extra="true">
-            <text>Resolution : 320×240 up to 640×480 pixels</text>
+            <text>Resolution : 256x224, 256 colors (32768 colors palette)</text>
             <pos>0.38 0.88</pos>
         </text>
     </view>

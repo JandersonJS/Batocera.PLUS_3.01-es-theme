@@ -13,9 +13,15 @@
         </image>
 
         <image name="console" extra="true">
+            <maxSize>0.30 0.30</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <pos>0.35 0.325</pos>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <pos>0.45 0.425</pos>
         </image>
 
         <image name="band1" extra="true">

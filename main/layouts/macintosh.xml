@@ -12,10 +12,22 @@
         <image name="background" extra="true">
         </image>
 
-        <image name="console" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.30 0.30</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.35 0.35</maxSize>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.10 0.10</maxSize>
+            <pos>0.25 0.325</pos>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.10 0.10</maxSize>
+            <pos>0.40 0.425</pos>
         </image>
 
         <image name="controller" extra="true">
@@ -38,17 +50,17 @@
         </image>
 
         <text name="info1" extra="true">
-            <text>Manufacturer : Apple Computer, Inc.</text>
+            <text>Manufacturer : Fairchild Semiconductor</text>
             <pos>0.38 0.70</pos>
         </text>
 
         <text name="info2" extra="true">
-            <text>Year of Release : 1977</text>
+            <text>Year of Release : 1976</text>
             <pos>0.38 0.72</pos>
         </text>
 
         <text name="info3" extra="true">
-            <text>Units sold : 4,8 million</text>
+            <text>Units sold : 25 Thousand</text>
             <pos>0.38 0.74</pos>
         </text>
 
@@ -58,32 +70,32 @@
         </text>
 
         <text name="info5" extra="true">
-            <text>CPU : MOS Technology 6502 @ 1 Mhz</text>
+            <text>CPU : Fairchild F8 @ 1.79 MHz (PAL 2.22 MHz)</text>
             <pos>0.38 0.78</pos>
         </text>
 
         <text name="info6" extra="true">
-            <text>RAM : 4KB to 64KB</text>
+            <text>RAM : 64 bytes</text>
             <pos>0.38 0.80</pos>
         </text>
 
         <text name="info7" extra="true">
-            <text>ROM : 8KB (Basic Integer)</text>
+            <text>ROM Cartridge : 4 KB</text>
             <pos>0.38 0.82</pos>
         </text>
 
         <text name="info8" extra="true">
-            <text>Audio/Video Processor : TIA</text>
+            <text>VRAM : 2 kB</text>
             <pos>0.38 0.84</pos>
         </text>
 
         <text name="info9" extra="true">
-            <text>Sound : 1-bit speaker (built-in)</text>
+            <text>Audio : 500 Hz, 1 kHz and 1.5 kHz tones (can be modulated)</text>
             <pos>0.38 0.86</pos>
         </text>
 
         <text name="info10" extra="true">
-            <text>Display : Lo-res (40×48, 16-color) Hi-res (280×192, 6 color)</text>
+            <text>Resolution : 128x64, 8 colors</text>
             <pos>0.38 0.88</pos>
         </text>
     </view>

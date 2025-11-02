@@ -26,7 +26,8 @@
          <text>${theme.nick}</text>
          <text ifSubset="system-username:custom">${custom.nick}</text>
          <pos>0.840 0.045</pos>
-         <size>0.165 0.035</size>
+         <size>0.0001 0.005</size>
+         <autoScroll>horizontal</autoScroll>
          <color>ffffff</color>
          <fontPath>./fonts/SST Light.ttf</fontPath>
          <fontSize>0.028</fontSize>
@@ -106,7 +107,7 @@
         </image>
 
         <image name="game" extra="true">
-            <pos>0.37 0.325</pos>
+            <pos>0.30 0.325</pos>
             <maxSize>0.15 0.15</maxSize>
             <origin>0 1</origin>
             <path>./main/plus/game/${system.theme}.svg</path>

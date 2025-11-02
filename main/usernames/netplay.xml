@@ -3,7 +3,6 @@
   <view name="system">
      <text name="username" extra="static">
       <text>${global.netplay.username}</text>
-         <size>0.165 0.035</size>
          <color>ffffff</color>
          <fontPath>./../../_theme_inc/fonts/SST Light.ttf</fontPath>
          <fontSize>0.028</fontSize>

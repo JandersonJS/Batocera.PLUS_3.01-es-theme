@@ -1,89 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <theme>
-    <formatVersion>7</formatVersion>
+    <formatVersion>4</formatVersion>
 
     <customView name="Boxes">
         <imagegrid name="gamegrid">
             <autoLayout>4 2</autoLayout>
         </imagegrid>
     </customView>
-  
+
     <view name="system">
         <image name="background" extra="true">
         </image>
 
-        <image name="console" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.30 0.30</maxSize>
         </image>
 
-        <image name="game" extra="true">
+        <image name="console" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.35 0.35</maxSize>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus">
+            <maxSize>0.15 0.15</maxSize>
+            <pos>0.20 0.325</pos>
+        </image>
+
+        <image name="game" extra="true" ifSubset="systemview:plus2">
+            <maxSize>0.15 0.15</maxSize>
+            <pos>0.35 0.425</pos>
         </image>
 
         <image name="controller" extra="true">
         </image>
 
         <image name="band1" extra="true">
-            <color>f2e825</color>
+            <color>BA2025</color>
         </image>
 
         <image name="band2" extra="true">
-            <color>e23434</color>
+            <color>D6A400</color>
         </image>
 
         <image name="band3" extra="true">
-            <color>3e649f</color>
+            <color>3E3F3F</color>
         </image>
 
         <image name="band4" extra="true">
-            <color>02aa46</color>
+            <color>1C1E21</color>
         </image>
 
         <text name="info1" extra="true">
-            <text>Manufacturer : Sega</text>
+            <text>Manufacturer : Fairchild Semiconductor</text>
             <pos>0.38 0.70</pos>
         </text>
 
         <text name="info2" extra="true">
-            <text>Year of Release : 1998</text>
+            <text>Year of Release : 1976</text>
             <pos>0.38 0.72</pos>
         </text>
 
         <text name="info3" extra="true">
-            <text>Units sold : 9.13 million</text>
+            <text>Units sold : 25 Thousand</text>
             <pos>0.38 0.74</pos>
         </text>
 
         <text name="info4" extra="true">
-            <text>Generation : 	Sixth generation</text>
+            <text>Generation : 	Second generation</text>
             <pos>0.38 0.76</pos>
         </text>
 
         <text name="info5" extra="true">
-            <text>CPU : Hitachi SH-4 32-bit RISC clocked @ 200 MHz</text>
+            <text>CPU : Fairchild F8 @ 1.79 MHz (PAL 2.22 MHz)</text>
             <pos>0.38 0.78</pos>
         </text>
 
         <text name="info6" extra="true">
-            <text>RAM : 16MB / VRAM : 8MB</text>
+            <text>RAM : 64 bytes</text>
             <pos>0.38 0.80</pos>
         </text>
 
         <text name="info7" extra="true">
-            <text>VMU size : 128kB</text>
+            <text>ROM Cartridge : 4 KB</text>
             <pos>0.38 0.82</pos>
         </text>
 
         <text name="info8" extra="true">
-            <text>Video : 100 MHz PowerVR2 (integrated with the system's ASIC)</text>
+            <text>VRAM : 2 kB</text>
             <pos>0.38 0.84</pos>
         </text>
 
         <text name="info9" extra="true">
-            <text>Sound : Yamaha AICA[139] sound processor @ 67 MHz</text>
+            <text>Audio : 500 Hz, 1 kHz and 1.5 kHz tones (can be modulated)</text>
             <pos>0.38 0.86</pos>
         </text>
 
         <text name="info10" extra="true">
-            <text>Resolution : 640×480 pixels</text>
+            <text>Resolution : 128x64, 8 colors</text>
             <pos>0.38 0.88</pos>
         </text>
     </view>
