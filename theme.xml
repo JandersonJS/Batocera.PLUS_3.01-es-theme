@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!--
 Theme:   Batocera.PLUS
-version: 2.1
+version: 3.1
 author:  Caetano Ramos, Marcio Renato Boufleuer
 atualização e manutenção: Janderson "LordOgro" Siqueira
 license: creative commons CC-BY-NC-SA
@@ -871,8 +871,8 @@ Année de sortie : ${system.releaseYear}</text>
 
         <image name="md_manual">
             <path>./main/midia/manual.svg</path>
-            <pos>0.882 0.9</pos>
-            <maxSize>0.02 0.03</maxSize>
+            <pos>0.97 0.55</pos>
+            <maxSize>0.03 0.03</maxSize>
             <origin>0.5 0.5</origin>
             <color>969696</color>
             <zIndex>150</zIndex>
@@ -1582,6 +1582,10 @@ Année de sortie : ${system.releaseYear}</text>
             <size>0.24 0.24</size>
             <zIndex>96</zIndex>
         </image>
+
+        <image name="md_manual">
+            <visible>false</visible>
+        </image>
     </customView>
 
     <!-- Subset options for help -->
@@ -1692,8 +1696,8 @@ Année de sortie : ${system.releaseYear}</text>
     <include name="no" displayName="${no}"/>
   </subset>
     <subset name="hotkeytips" displayName="${hotkeytips}">
-        <include name="off" displayName="${yes}"/>
-        <include name="on" displayName="${no}"/>
+        <include name="on" displayName="${yes}"/>
+        <include name="off" displayName="${no}"/>
    </subset>
     <subset name="gameVideosAudio" displayName="${gameVideosAudio}">
         <include name="off" displayName="${off}"/>

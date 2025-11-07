@@ -26,7 +26,7 @@
             <tile>false</tile>
             <color>${baseColor}</color>
             <pos>0 0.025</pos>
-            <size>0.825 0.45</size>
+            <size>0.815 0.45</size>
             <origin>0 0</origin>
             <path>./main/midia/squared.svg</path>
             <zIndex>-34</zIndex>
@@ -54,8 +54,8 @@
 
         <image name="plus-logo" extra="static" tinyScreen="false">
             <tile>false</tile>
-            <pos>0.62 0.85</pos>
-            <maxSize>0.28 0.20</maxSize>
+            <pos>0.61 0.85</pos>
+            <maxSize>0.25 0.20</maxSize>
             <origin>0 0</origin>
             <path>./main/logos/plus-logo.svg</path>
             <zIndex>0</zIndex>

@@ -139,6 +139,7 @@
     </carousel>
     <image name="logo">
       <path>./../../main/logos/${system.theme}-w.svg</path>
+      <path>./../../main/logos/${system.theme}-w.png</path>
     </image>
     <image name="logo" region="us">
       <path>./../../main/logos/us/${system.theme}.svg</path>
