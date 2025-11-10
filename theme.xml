@@ -236,6 +236,10 @@ We leave here our thanks! ...
         </text>
 
         <image name="logo">
+ 
+            <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+            </storyboard>
             <!-- try png -->
             <path>./main/logos/${system.theme}.png</path>
 
@@ -897,6 +901,11 @@ Année de sortie : ${system.releaseYear}</text>
         </image>
 
         <image name="logo">
+ 
+            <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+            </storyboard>
+
             <!-- try png -->
             <path>./main/logos/${system.theme}.png</path>
             <path>./main/logos/${system.theme}.svg</path>
@@ -988,6 +997,10 @@ Année de sortie : ${system.releaseYear}</text>
         </image>
 
         <image name="logo">
+ 
+            <storyboard event="scroll" repeatAt="1" ifSubset="staticTiles:yes">
+                <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
+            </storyboard>
             <!-- try png -->
             <path>./main/logos/${system.theme}.png</path>
             <path>./main/logos/${system.theme}.svg</path>
@@ -1489,6 +1502,15 @@ Année de sortie : ${system.releaseYear}</text>
             <origin>0 1</origin>
             <path>./main/midia/footer.png</path>
             <zIndex>7</zIndex>
+        </image>
+
+        <image name="footerAlt" extra="static">
+            <size>1 0.065</size>
+            <pos>0.01 0.965</pos>
+            <origin>0 1</origin>
+            <path>./main/midia/band.svg</path>
+            <color>000000</color>
+            <zIndex>99</zIndex>
         </image>
 
         <image name="md_marquee"> <!-- marquee do menu interno -->

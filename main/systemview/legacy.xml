@@ -150,23 +150,38 @@
 {binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
 {binding:mostPlayed}, {binding:lastPlayedDate}
 -->
-      <text>Games : {binding:total} 
+      <text> 
 Playing : {binding:played}
 Favorites : {binding:favorites} 
 Games played : {binding:gamesPlayed} 
 Most played : {binding:mostPlayed} 
 Hidden : {binding:hidden}
-Last played : {binding:lastPlayedDate}</text>
-      <text lang="fr">Nombre de jeux : {binding:total}
+Last played : {binding:lastPlayedDate}
+      </text>
+      <text lang="pt">
+Jogando : {binding:played}
+Favoritos : {binding:favorites} 
+Games Jogados : {binding:gamesPlayed} 
+Mais jogados : {binding:mostPlayed} 
+Escondidos : {binding:hidden}
+Última partida : {binding:lastPlayedDate}
+      </text>
+      <text lang="fr">
+Jouant : {binding:played}
 Favoris : {binding:favorites}
 Jeux joués : {binding:gamesPlayed}
 Le plus joué : {binding:mostPlayed}
-Dernière partie : {binding:lastPlayedDate}</text>
-      <text lang="es">Número de juegos : {binding:total}
+Caché : {binding:hidden}
+Dernière partie : {binding:lastPlayedDate}
+      </text>
+      <text lang="es">
+Jugando : {binding:played}
 Favoritos : {binding:favorites}
 Jugados : {binding:gamesPlayed}
 El más jugado : {binding:mostPlayed}
-Última partida : {binding:lastPlayedDate}</text>
+oculto : {binding:hidden}
+Última partida : {binding:lastPlayedDate}
+      </text>
       <alignment>center</alignment>
       <verticalAlignment>left</verticalAlignment>
       <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>

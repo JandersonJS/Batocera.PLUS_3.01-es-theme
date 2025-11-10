@@ -21,12 +21,12 @@
         </image>
 
         <image name="game" extra="true" ifSubset="systemview:plus">
-            <maxSize>0.28 0.28</maxSize>
+            <maxSize>0.12 0.12</maxSize>
             <pos>0.15 0.325</pos>
         </image>
 
         <image name="game" extra="true" ifSubset="systemview:plus2">
-            <maxSize>0.28 0.28</maxSize>
+            <maxSize>0.15 0.15</maxSize>
             <pos>0.27 0.425</pos>
         </image>
 

@@ -36,7 +36,7 @@
     <image name="logo">
       <storyboard>
         <animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
-        <animation property="opacity" from="0" to="1" duration="350" mode="easeIn"/>
+        <animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
         <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
       </storyboard>
     </image>
@@ -46,10 +46,8 @@
     <view name="system">
       <text name="systemInfoEx" extra="true">      
         <storyboard>
-          <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        
-          <animation property="opacity" from="0" to="1" begin="750" duration="250" mode="easeIn"/>
-          <animation property="scale" from="0" to="1" begin="750" duration="250" mode="easeOut"/> 
+          <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>        
+          <animation property="opacity" from="1" to="1" begin="0" duration="250" mode="linear"/>
           
        <!--   <animation property="y" from="0.75" begin="750" duration="250" mode="easeOut"/> -->
         </storyboard>

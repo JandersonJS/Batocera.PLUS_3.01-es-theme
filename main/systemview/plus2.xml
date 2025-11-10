@@ -37,7 +37,16 @@
          <glowOffset>3 2</glowOffset>
          <zIndex>99</zIndex>
          <backgroundColor>ff000000</backgroundColor>
-      </text>      
+      </text>  
+       
+        <image name="background" extra="true">
+            <tile>true</tile>
+            <size>1 1</size>
+            <pos>0 0</pos>
+            <origin>0 0</origin>
+            <path>./main/midia/carbon_fiber.png</path>
+            <color>FFFFFF</color>
+        </image>   
 
         <video name="videobox" extra="true" ifSubset="randomVideosAudio:on">
         </video>
@@ -281,23 +290,29 @@
       <text>
 Playing : {binding:played}
 Favorites : {binding:favorites} 
-Games played : {binding:gamesPlayed} </text>
-      <text lang="fr">Nombre de jeux : {binding:total}
+Games played : {binding:gamesPlayed} 
+      </text>
+      <text lang="pt">
+Jogando : {binding:played}
+Favoritos : {binding:favorites} 
+Games Jogados : {binding:gamesPlayed} 
+      </text>
+      <text lang="fr">
+Jouant : {binding:played}
 Favoris : {binding:favorites}
 Jeux joués : {binding:gamesPlayed}
-Le plus joué : {binding:mostPlayed}
-Dernière partie : {binding:lastPlayedDate}</text>
-      <text lang="es">Número de juegos : {binding:total}
+      </text>
+      <text lang="es">
+Jugando : {binding:played}
 Favoritos : {binding:favorites}
 Jugados : {binding:gamesPlayed}
-El más jugado : {binding:mostPlayed}
-Última partida : {binding:lastPlayedDate}</text>
+      </text>
       <alignment>left</alignment>
       <verticalAlignment>left</verticalAlignment>
       <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
-      <fontSize>0.024</fontSize>
+      <fontSize>0.022</fontSize>
       <pos>0.13 0.43</pos>
-      <size>0.94 0.28</size>
+      <size>0.15 0.28</size>
       <zIndex>100</zIndex>
       <color>ff9900</color>
       <glowColor>000000A0</glowColor>
@@ -323,23 +338,30 @@ El más jugado : {binding:mostPlayed}
       <text>
 Most played : {binding:mostPlayed} 
 Hidden : {binding:hidden}
-Last played : {binding:lastPlayedDate}</text>
-      <text lang="fr">Nombre de jeux : {binding:total}
-Favoris : {binding:favorites}
-Jeux joués : {binding:gamesPlayed}
+Last played : {binding:lastPlayedDate}
+      </text>
+      <text lang="pt">
+Mais jogados : {binding:mostPlayed} 
+Escondidos : {binding:hidden}
+Última partida : {binding:lastPlayedDate}
+      </text>
+      <text lang="fr">
 Le plus joué : {binding:mostPlayed}
-Dernière partie : {binding:lastPlayedDate}</text>
-      <text lang="es">Número de juegos : {binding:total}
-Favoritos : {binding:favorites}
-Jugados : {binding:gamesPlayed}
+Caché : {binding:hidden}
+Dernière partie : {binding:lastPlayedDate}
+      </text>
+      <text lang="es">
 El más jugado : {binding:mostPlayed}
-Última partida : {binding:lastPlayedDate}</text>
+oculto : {binding:hidden}
+Última partida : {binding:lastPlayedDate}
+      </text>
       <alignment>right</alignment>
       <verticalAlignment>right</verticalAlignment>
       <fontPath>./main/fonts/ubuntu_bold.ttf</fontPath>
-      <fontSize>0.024</fontSize>
-      <pos>-0.16 0.43</pos>
-      <size>0.94 0.28</size>
+      <fontSize>0.022</fontSize>
+      <origin>1 0</origin>
+      <pos>0.78 0.43</pos>
+      <size>0.50 0.28</size>
       <zIndex>100</zIndex>
       <color>ff9900</color>
       <glowColor>000000A0</glowColor>
