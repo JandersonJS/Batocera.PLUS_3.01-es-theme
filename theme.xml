@@ -857,17 +857,8 @@ Année de sortie : ${system.releaseYear}</text>
 
         <image name="md_hidden">
             <path>./main/media/hidden.svg</path>
-            <pos>0.91 0.86</pos>
-            <maxSize>0.02 0.02</maxSize>
-            <origin>0.5 0.5</origin>
-            <color>969696</color>
-            <zIndex>150</zIndex>
-        </image>
-
-        <image name="md_favorite">
-            <path>./main/media/favorite.svg</path>
             <pos>0.93 0.86</pos>
-            <size>0.013 0.02</size>
+            <maxSize>0.02 0.02</maxSize>
             <origin>0.5 0.5</origin>
             <color>969696</color>
             <zIndex>150</zIndex>
