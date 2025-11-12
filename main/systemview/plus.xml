@@ -43,7 +43,7 @@
             <size>1 1</size>
             <pos>0 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/carbon_fiber.png</path>
+            <path>./main/media/carbon_fiber.png</path>
             <color>FFFFFF</color>
         </image>
 
@@ -79,28 +79,28 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <include>./main/layouts/${system.theme}.xml</include>
@@ -147,7 +147,7 @@
             <pos>0 0</pos>
             <size>1 0.67</size>
             <origin>0 0</origin>
-            <path>./main/midia/colorplus.png</path>
+            <path>./main/media/colorplus.png</path>
             <zIndex>10</zIndex>
        </image>
 
@@ -157,7 +157,7 @@
             <pos>0 0.385</pos>
             <size>1 0.285</size>
             <origin>0 0</origin>
-            <path>./main/midia/colorplus.png</path>
+            <path>./main/media/colorplus.png</path>
             <zIndex>55</zIndex>
        </image>
 

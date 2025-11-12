@@ -96,32 +96,32 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="BackgroundSys" extra= "static">
-            <path>./main/midia/background.svg</path>
+            <path>./main/media/background.svg</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <minSize>1 1</minSize>
@@ -155,7 +155,7 @@
       <path>./../../main/logos/jp/${system.theme}-w.svg</path>
     </image>
     <image name="carousel-topline" extra="true" tinyScreen="false">
-      <path>./../../main/midia/white.png</path>
+      <path>./../../main/media/white.png</path>
       <color>${baseColor}</color>
       <origin>0 0</origin>
       <pos>0 0.3817</pos>
@@ -163,7 +163,7 @@
       <zIndex>100</zIndex>
     </image>
     <image name="carousel-bottomline" extra="true" tinyScreen="false">
-      <path>./../../main/midia/white.png</path>
+      <path>./../../main/media/white.png</path>
       <color>${baseColor}</color>
       <origin>0 0</origin>
       <pos>0 0.6101</pos>
@@ -184,7 +184,7 @@
             <pos>0 0</pos>
             <size>1 0.5</size>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>10</zIndex>
        </image>
 
@@ -195,13 +195,13 @@
             <pos>0 0.5</pos>
             <size>1 0.12</size>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>10</zIndex>
        </image>
     
     <!--
     <image name="carousel-inner" extra="true">
-      <path>./../../main/midia/carousel.png</path>
+      <path>./../../main/media/carousel.png</path>
       <color>FFFFFFFF</color>
       <origin>0 0</origin>
       <pos>0 0.3837</pos>
@@ -234,7 +234,7 @@
       <size>1 0.5</size>
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <path>./../../main/midia/centerfade.png</path>
+      <path>./../../main/media/centerfade.png</path>
       <color>${centerFadeColor}</color>
       <zIndex>12</zIndex>
     </image>

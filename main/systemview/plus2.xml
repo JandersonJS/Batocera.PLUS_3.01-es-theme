@@ -44,7 +44,7 @@
             <size>1 1</size>
             <pos>0 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/carbon_fiber.png</path>
+            <path>./main/media/carbon_fiber.png</path>
             <color>FFFFFF</color>
         </image>   
 
@@ -80,28 +80,28 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>50</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <include>./main/layouts/${system.theme}.xml</include>
@@ -111,7 +111,7 @@
             <pos>0 0</pos>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band6" extra="static">
@@ -120,7 +120,7 @@
             <origin>0 0</origin>
             <color>${baseColor}</color>
             <zIndex>35</zIndex>
-            <path>./main/midia/square.svg</path>
+            <path>./main/media/square.svg</path>
         </image>
 
         <image name="band7" extra="static">
@@ -129,7 +129,7 @@
             <origin>0 0</origin>
             <color>${baseColor}</color>
             <zIndex>35</zIndex>
-            <path>./main/midia/squared.svg</path>
+            <path>./main/media/squared.svg</path>
         </image>
 
         <image name="band8" extra="static">
@@ -138,7 +138,7 @@
             <origin>0 0</origin>
             <color>${baseColor}</color>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="console" extra="true">
@@ -178,7 +178,7 @@
             <pos>0 0.025</pos>
             <size>0.85 0.45</size>
             <origin>0 0</origin>
-            <path>./main/midia/squared.svg</path>
+            <path>./main/media/squared.svg</path>
             <zIndex>34</zIndex>
        </image>
 
@@ -194,7 +194,7 @@
             <pos>0 0</pos>
             <size>1 0.5</size>
             <origin>0 0</origin>
-            <path>./main/midia/colorplus.png</path>
+            <path>./main/media/colorplus.png</path>
             <zIndex>10</zIndex>
        </image>
 
@@ -204,7 +204,7 @@
             <pos>0 0.665</pos>
             <size>1 0.28</size>
             <origin>0 0</origin>
-            <path>./main/midia/colorplus.png</path>
+            <path>./main/media/colorplus.png</path>
             <zIndex>55</zIndex>
        </image>
 

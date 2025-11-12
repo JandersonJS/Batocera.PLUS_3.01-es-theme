@@ -10,7 +10,7 @@
 
     <customView name="Boxes,grid">
         <image name="gamelistBackground" extra="true">
-            <path>./main/midia/filter.png</path>
+            <path>./main/media/filter.png</path>
             <color>606060FF</color>
             <origin>0 0</origin>
             <pos>0.66 0.16</pos>
@@ -29,34 +29,34 @@
             <pos>0 1</pos>
             <origin>0 1</origin>
             <size>1 0.05</size>
-            <path>./main/midia/footer.png</path>
+            <path>./main/media/footer.png</path>
             <zIndex>10</zIndex>
         </image>
 
         <image name="back-gamelist" extra="true">
             <pos>0.01 0.17</pos>
             <size>0.655 0.382</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
             <zIndex>1</zIndex>
         </image>
 
         <image name="back-gamelist2" extra="true">
             <pos>0.01 0.563</pos>
             <size>0.655 0.372</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
             <zIndex>1</zIndex>
         </image>
 
         <image name="back-tv_overlay" extra="true">
             <pos>0.67 0.17</pos>
             <size>0.32 0.765</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
         </image>
 
         <image name="back-logo" extra="true">
             <pos>0.67 0.01</pos>
             <size>0.32 0.15</size>
-            <path>./main/midia/header.png</path>
+            <path>./main/media/header.png</path>
         </image>
 
         <image name="logo">
@@ -108,7 +108,7 @@
         <image name="tv_overlay" extra="true">
             <pos>0.68 0.25</pos>
             <size>0.30 0.40</size>
-            <path>./main/midia/tv.png</path>
+            <path>./main/media/tv.png</path>
             <zIndex>140</zIndex>
         </image>
 
@@ -126,14 +126,14 @@
         </text>
 
         <rating name="md_rating">
-            <filledPath>./main/midia/rating_filled.svg</filledPath>
-            <unfilledPath>./main/midia/rating_empty.svg</unfilledPath>
+            <filledPath>./main/media/rating_filled.svg</filledPath>
+            <unfilledPath>./main/media/rating_empty.svg</unfilledPath>
             <color>${baseColor}</color>
             <unfilledColor>808080</unfilledColor>
         </rating>
 
         <image name="md_kidgame">
-            <path>./main/midia/kid.svg</path>
+            <path>./main/media/kid.svg</path>
             <pos>0.882 0.901</pos>
             <maxSize>0.02 0.03</maxSize>
             <origin>0.5 0.5</origin>
@@ -142,7 +142,7 @@
         </image>
 
         <image name="md_hidden">
-            <path>./main/midia/hidden.svg</path>
+            <path>./main/media/hidden.svg</path>
             <pos>0.975 0.205</pos>
             <maxSize>0.02 0.03</maxSize>
             <origin>0.5 0.5</origin>
@@ -153,7 +153,7 @@
   
     <customView name="Carousel">
         <image name="gamelistBackground" extra="true">
-            <path>./main/midia/filter.png</path>
+            <path>./main/media/filter.png</path>
             <color>606060FF</color>
             <origin>0 0</origin>
             <pos>0.66 0.16</pos>
@@ -172,14 +172,14 @@
             <pos>0 1</pos>
             <origin>0 1</origin>
             <size>1 0.05</size>
-            <path>./main/midia/footer.png</path>
+            <path>./main/media/footer.png</path>
             <zIndex>1</zIndex>
         </image>
 
         <image name="back-gamelist" extra="true">
             <pos>0.37 0.17</pos>
             <size>0.600 0.700</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
             <zIndex>10</zIndex>
         </image>
 
@@ -193,14 +193,14 @@
         <image name="back-tv_overlay" extra="true">
             <pos>0.01 0.17</pos>
             <size>0.32 0.765</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
             <zIndex>10</zIndex>
         </image>
 
         <image name="back-logo" extra="true">
             <pos>0.01 0.01</pos>
             <size>0.32 0.15</size>
-            <path>./main/midia/header.png</path>
+            <path>./main/media/header.png</path>
         </image>
 
         <image name="logo">
@@ -252,7 +252,7 @@
         <image name="tv_overlay" extra="true">
             <pos>0.020 0.25</pos>
             <size>0.30 0.40</size>
-            <path>./main/midia/tv.png</path>
+            <path>./main/media/tv.png</path>
             <zIndex>140</zIndex>
         </image>
 
@@ -270,14 +270,14 @@
         </text>
 
         <rating name="md_rating">
-            <filledPath>./main/midia/rating_filled.svg</filledPath>
-            <unfilledPath>./main/midia/rating_empty.svg</unfilledPath>
+            <filledPath>./main/media/rating_filled.svg</filledPath>
+            <unfilledPath>./main/media/rating_empty.svg</unfilledPath>
             <color>${baseColor}</color>
             <unfilledColor>808080</unfilledColor>
         </rating>
 
         <image name="md_kidgame">
-            <path>./main/midia/kid.svg</path>
+            <path>./main/media/kid.svg</path>
             <pos>0.882 0.901</pos>
             <maxSize>0.02 0.03</maxSize>
             <origin>0.5 0.5</origin>
@@ -286,7 +286,7 @@
         </image>
 
         <image name="md_hidden">
-            <path>./main/midia/hidden.svg</path>
+            <path>./main/media/hidden.svg</path>
             <pos>0.975 0.205</pos>
             <maxSize>0.02 0.03</maxSize>
             <origin>0.5 0.5</origin>
@@ -305,7 +305,7 @@
 
     <customView name="Tiles">
         <image name="gamelistBackground" extra="true">
-            <path>./main/midia/filter.png</path>
+            <path>./main/media/filter.png</path>
             <color>606060FF</color>
             <origin>0 0</origin>
             <pos>0.66 0.16</pos>
@@ -324,27 +324,27 @@
             <pos>0 1</pos>
             <origin>0 1</origin>
             <size>1 0.05</size>
-            <path>./main/midia/footer.png</path>
+            <path>./main/media/footer.png</path>
             <zIndex>10</zIndex>
         </image>
 
         <image name="back-gamelist" extra="true">
             <pos>0.01 0.17</pos>
             <size>0.655 0.765</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
             <zIndex>1</zIndex>
         </image>
 
         <image name="back-tv_overlay" extra="true">
             <pos>0.67 0.17</pos>
             <size>0.32 0.765</size>
-            <path>./main/midia//back.png</path>
+            <path>./main/media//back.png</path>
         </image>
 
         <image name="back-logo" extra="true">
             <pos>0.67 0.01</pos>
             <size>0.32 0.15</size>
-            <path>./main/midia/header.png</path>
+            <path>./main/media/header.png</path>
         </image>
 
         <image name="logo">
@@ -396,7 +396,7 @@
         <image name="tv_overlay" extra="true">
             <pos>0.68 0.25</pos>
             <size>0.30 0.40</size>
-            <path>./main/midia/tv.png</path>
+            <path>./main/media/tv.png</path>
             <zIndex>140</zIndex>
         </image>
 
@@ -414,14 +414,14 @@
         </text>
 
         <rating name="md_rating">
-            <filledPath>./main/midia/rating_filled.svg</filledPath>
-            <unfilledPath>./main/midia/rating_empty.svg</unfilledPath>
+            <filledPath>./main/media/rating_filled.svg</filledPath>
+            <unfilledPath>./main/media/rating_empty.svg</unfilledPath>
             <color>${baseColor}</color>
             <unfilledColor>808080</unfilledColor>
         </rating>
 
         <image name="md_kidgame">
-            <path>./main/midia/kid.svg</path>
+            <path>./main/media/kid.svg</path>
             <pos>0.882 0.901</pos>
             <maxSize>0.02 0.03</maxSize>
             <origin>0.5 0.5</origin>
@@ -430,7 +430,7 @@
         </image>
 
         <image name="md_hidden">
-            <path>./main/midia/hidden.svg</path>
+            <path>./main/media/hidden.svg</path>
             <pos>0.975 0.205</pos>
             <maxSize>0.02 0.03</maxSize>
             <origin>0.5 0.5</origin>

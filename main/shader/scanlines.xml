@@ -6,7 +6,7 @@
         <image name="crt" extra="true">
             <pos>0 0</pos>
             <size>1 1</size>
-            <path>./main/midia/scanlines.png</path>
+            <path>./main/media/scanlines.png</path>
             <color>FFFFFF60</color>
             <tile>true</tile>
         </image>

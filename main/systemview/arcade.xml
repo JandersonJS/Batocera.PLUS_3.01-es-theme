@@ -65,14 +65,14 @@
             <pos>0.74 0.60</pos>
             <origin>0.5 0.5</origin>
             <maxSize>0.30 0.30</maxSize>
-            <path>./main/midia/scanlines.png</path>
+            <path>./main/media/scanlines.png</path>
             <color>FFFFFF60</color>
             <tile>true</tile>
             <zIndex>999</zIndex>
         </image>
 
         <image name="novideo" extra="static">
-            <default>./main/midia/novideo.png</default>
+            <default>./main/media/novideo.png</default>
             <origin>0.5 0.5</origin>
             <pos>0.74 0.60</pos>
             <maxSize>0.30 0.30</maxSize>
@@ -112,7 +112,7 @@
         </video>
 
         <image name="staticBackground3" extra="static">
-            <path>./main/midia/fundos.png</path>
+            <path>./main/media/fundos.png</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
@@ -140,7 +140,7 @@
             <size>0.03 1</size>
             <pos>0.020 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>40</zIndex>
         </image>
 
@@ -148,7 +148,7 @@
             <size>0.03 1</size>
             <pos>0.050 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>40</zIndex>
         </image>
 
@@ -156,7 +156,7 @@
             <size>0.03 1</size>
             <pos>0.08 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>40</zIndex>
         </image>
 
@@ -164,7 +164,7 @@
             <size>0.03 1</size>
             <pos>0.109 0</pos>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>40</zIndex>
         </image>
 
@@ -178,7 +178,7 @@
         </image>
 
         <image name="BackgroundSys" extra= "static">
-            <path>./main/midia/background.svg</path>
+            <path>./main/media/background.svg</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <minSize>1 1</minSize>
@@ -212,7 +212,7 @@
             <size>0.40 1</size>
             <pos>0.2 1</pos>
             <origin>1 1</origin>
-            <path>./main/midia/centerfade_v.png</path>
+            <path>./main/media/centerfade_v.png</path>
             <color></color>
             <zIndex>11</zIndex>
         </image>
@@ -224,7 +224,7 @@
             <pos>0 0</pos>
             <size>1 0.5</size>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>10</zIndex>
        </image>
 
@@ -235,7 +235,7 @@
             <pos>0 0.5</pos>
             <size>1 0.12</size>
             <origin>0 0</origin>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
             <zIndex>10</zIndex>
        </image>
 

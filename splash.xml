@@ -37,14 +37,14 @@
 
         <image name="progressbar:active">
             <tile>true</tile>
-            <path>./main/midia/progress.png</path>
+            <path>./main/media/progress.png</path>
             <color>${baseColor}</color>
             <colorEnd>${baseColor}</colorEnd>
             <zIndex>50</zIndex>
         </image>
 
         <image name="background">
-            <path>./main/midia/splash.png</path>
+            <path>./main/media/splash.png</path>
             <pos>0.5 0.5</pos>
             <origin>0.5 0.5</origin>
             <minSize>1 1</minSize>
@@ -52,7 +52,7 @@
         </image>
 
         <image name="logo" extra="true">
-            <path>./main/midia/splash_plus.svg</path>
+            <path>./main/media/splash_plus.svg</path>
             <pos>0.52 0.455</pos>
             <origin>0.5 0.5</origin>
             <maxSize>0.8 0.8</maxSize>

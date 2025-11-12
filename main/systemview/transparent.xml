@@ -108,32 +108,32 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="BackgroundAlt" extra= "static">
-            <path>./main/midia/background.svg</path>
+            <path>./main/media/background.svg</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <minSize>1 1</minSize>
@@ -158,7 +158,7 @@
             <pos>0.5 0.5</pos>
             <size>1 0.5</size>
             <origin>0.5 0.5</origin>
-            <path>./main/midia/centerfade.png</path>
+            <path>./main/media/centerfade.png</path>
             <color>${baseColor}</color>
             <zIndex>12</zIndex>
         </image>
@@ -188,7 +188,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <origin>0 0</origin>
-            <path>./main/midia/colorplus.png</path>
+            <path>./main/media/colorplus.png</path>
             <zIndex>1</zIndex>
        </image>
 

@@ -57,28 +57,28 @@
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band2" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band3" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
 
         <image name="band4" extra="static">
             <size>0.03 1</size>
             <origin>0 0</origin>
             <zIndex>35</zIndex>
-            <path>./main/midia/band.svg</path>
+            <path>./main/media/band.svg</path>
         </image>
         
         <!-- When random box -->
@@ -115,7 +115,7 @@
         </video>
 
         <image name="BackgroundSys" extra= "static">
-            <path>./main/midia/background.svg</path>
+            <path>./main/media/background.svg</path>
             <origin>0 0</origin>
             <pos>0 0</pos>
             <minSize>1 1</minSize>
@@ -151,7 +151,7 @@
             <pos>0.5 0</pos>
             <size>1 0.2</size>
             <origin>0.5 0.5</origin>
-            <path>./main/midia/centerfade.png</path>
+            <path>./main/media/centerfade.png</path>
       	    <color>${baseColor}</color>
             <visible>true</visible>
         </image>
@@ -161,7 +161,7 @@
             <pos>0.5 1</pos>
             <size>1 0.25</size>
             <origin>0.5 0.5</origin>
-            <path>./main/midia/centerfade.png</path>
+            <path>./main/media/centerfade.png</path>
       	    <color>${baseColor}</color>
             <visible>true</visible>
         </image>
@@ -172,7 +172,7 @@
             <pos>0.21 0.2175</pos>
             <size>0.36 0.285</size>
             <origin>0.5 0.5</origin>
-            <path>./main/midia/darkwheel.png</path>
+            <path>./main/media/darkwheel.png</path>
             <zIndex>35</zIndex>
        </image>
     <text name="systemInfo" visible="false"/>
